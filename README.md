@@ -1,18 +1,16 @@
-# Victor Hugo
+# grashobber Website 🌱
 
-**A Hugo boilerplate for creating truly epic websites**
+**Website for grashobber GmbH & Co. KG. http://grashobber.de/**
 
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Gulp](https://gulpjs.com/) + [Webpack](https://webpack.js.org/) as your asset pipeline.
+This website is based on [Hugo](https://gohugo.io/) as a static site generator and [Gulp](https://gulpjs.com/) + [Webpack](https://webpack.js.org/) as the asset pipeline tools. Originally it's a heavily modified fork of [victor-hugo](https://github.com/netlify/victor-hugo).
 
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
-
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+This project is released under the [GPL-3.0](LICENSE). Please make sure you understand its implications and guarantees.
 
 ## Usage
 
 ### Prerequisites
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
+You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to build this site.
 
 Next step, clone this repository and run:
 
@@ -20,39 +18,33 @@ Next step, clone this repository and run:
 npm install
 ```
 
-This will take some time and will install all packages necessary to run Victor Hugo and it's tasks.
+This will take some time and will install all packages necessary.
 
 ### Development
 
 While developing your website, use:
 
 ```bash
-npm start
+gulp
 ```
 
-or
-
-```bash
-gulp server
-```
-
-Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
+A new browser should pop up to preview the site. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
 
 ### Static build
 
 To build a static version of the website inside the `/dist` folder, run:
 
 ```bash
-npm run build
+gulp build
 ```
 
 To get a preview of posts or articles not yet published, run:
 
 ```bash
-npm run build-preview
+gulp build-preview
 ```
 
-See [package.json](package.json#L7) or the included gulp file for all tasks.
+See [gulpfile.js](gulpfile.js) for all tasks.
 
 ## Structure
 
@@ -65,7 +57,7 @@ See [package.json](package.json#L7) or the included gulp file for all tasks.
 |  |  |--index.html    // The index page
 |  |--static           // Files in here ends up in the public folder
 |--src                 // Files that will pass through the asset pipeline
-|  |--css              // CSS files in the root of this folder will end up in /css/...
+|  |--css              // CSS (actually SASS) files in the root of this folder will end up in /css/...
 |  |--js               // app.js will be compiled to /app.js with babel
 ```
 
@@ -88,9 +80,6 @@ will end up being available as `/favicon.ico` and so on...
 The `src/js/app.js` file is the entrypoint for webpack and will be built to `/dist/app.js`.
 
 You can use **ES6** and use both relative imports or import libraries from npm.
-
-Any CSS file directly under the `src/css/` folder will get compiled with [PostCSS Next](http://cssnext.io/)
-to `/dist/css/{filename}.css`. Import statements will be resolved as part of the build
 
 ## Environment variables
 
