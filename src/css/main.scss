@@ -1,14 +1,27 @@
-/*
-  You can use import statements to include partials:
- */
-@import "imports/reset";
+//
+// CSS entry file
+// --------------------------------------------------
 
-$color: green;
+// Pre-configuration vendor & libraries
+@import 'vendor/mappy-breakpoints';
+@import 'vendor/typi/typi';
 
-body {
-  font-family: sans-serif;
-  font-size: 1em;
-  text-align: center;
-  display: flex;
-  background: $color;
-}
+// Configuration
+@import 'configuration/colors';
+@import 'configuration/settings';
+@import 'configuration/typography';
+
+// Utility
+@import 'utility/mixins';
+@import 'utility/utility';
+
+// Base
+@import 'base/reset';
+@import 'base/scaffold';
+
+// Objects
+@import 'objects/layout';
+@import 'objects/icon';
+
+// Components
+@import 'components/typography';
