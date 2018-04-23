@@ -18,10 +18,29 @@ html {
 
 body {
   color: $color-content;
-  font-family: $font-family-base;
+
+  // fallback font for initial render to avoid FOIT
+  font-family: $font-family-base-fallback;
+
+  // fonts-loaded flag, triggered by JS (fontfaceobserver)
+  .wf-active & {
+    font-family: $font-family-base;
+  }
+
+  // DEMO ONLY
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-content-ci;
+  color: $color-white;
+}
+
+html {
+  height: 100%;
 }
 
 ::selection {
-  background: $color-green-light;
+  background: $color-green-muted;
   color: $color-white;
 }

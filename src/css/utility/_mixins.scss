@@ -11,3 +11,16 @@
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
 }
+
+@mixin font-ci {
+  @include font-smoothing;
+  font-weight: $font-weight-regular;
+  font-family: $font-family-ci-fallback;
+  transform: scaleX(.7); // very sketchy, but it works 🤷
+
+  // fonts-loaded body flag, triggered by JS (fontfaceobserver)
+  .has-loaded-fonts-ci & {
+    font-family: $font-family-ci;
+    transform: scaleX(1);
+  }
+}

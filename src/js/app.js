@@ -11,8 +11,4 @@ import 'svgxuse';
 import 'babel-polyfill'; // eslint-disable-line import/no-unresolved
 
 // module imports
-import Testmodule from './modules/testmodule';
-
-// init modules
-let testmodule = new Testmodule();
-testmodule.logMe();
+import './modules/fontfaceobserver';
