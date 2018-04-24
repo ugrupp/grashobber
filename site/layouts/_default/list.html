@@ -1,18 +1,17 @@
 {{ define "main" }}
   <div style="text-align: center;">
     <h1 class="c-headline">grashobber GmbH &amp; Co. KG</h1>
-    <div class="c-richtext">
-      {{ .Content }}
-    </div>
+
+    {{ .Content }}
 
     {{ range .Paginator.Pages }}
       <article>
-        <h2><a href="{{ .Permalink }}">Unterseite</a></h2>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         {{ .Content }}
       </article>
     {{ end }}
 
-
+    {{ template "_internal/pagination.html" . }}
   </div>
 {{ end }}
 

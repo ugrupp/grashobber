@@ -9,8 +9,5 @@
   word-wrap: break-word;
   display: block;
   hyphens: auto;
-}
-
-.c-headline--default {
   @include typi('headline--default');
 }

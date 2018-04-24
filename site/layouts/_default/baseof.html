@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+  <head>
+    {{/* Meta tags */}}
+    {{ partial "site/meta.html" . }}
+
+    {{/* <head> includes */}}
+    {{ partial "site/styles.html" . }}
+  </head>
+
+  <body>
+    <div class="pagelayout">
+      {{/* Header/Topbar */}}
+      {{ partial "site/header.html" . }}
+
+      {{/* Content */}}
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+
+      {{/* Footer */}}
+      {{ partial "site/footer.html" . }}
+    </div>
+
+    {{/* <body> includes */}}
+    {{ partial "site/scripts.html" . }}
+  </body>
+</html>
