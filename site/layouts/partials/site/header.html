@@ -14,10 +14,13 @@
       </a>
 
       {{/* Menu opener */}}
-      <a href="#" class="c-topbar__menu">
+      <a href="#menu" class="c-topbar__menu" data-menu-opener>
         {{ partial "util/svg" (dict "svg" (.Scratch.Get "topbarElements").menu) }}
         <span class="u-invisible">Menü öffnen</span>
       </a>
     </div>
   </div>
 </div>
+
+{{/* Menu */}}
+{{ partial "site/menu" . }}

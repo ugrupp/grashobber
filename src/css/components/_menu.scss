@@ -1,0 +1,128 @@
+//
+// Menu
+// --------------------------------------------------
+
+.c-menu {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: index($z-index, menu);
+
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  background-color: $color-content-ci;
+  color: $color-white;
+  @include font-smoothing;
+
+  opacity: .75;
+  transform: translateX(100%);
+  transition: all .3s;
+  // Out: Sharp
+  transition-timing-function: cubic-bezier(.4, 0, .6, 1);
+
+  @include mappy-bp(sm) {
+    width: 50%;
+  }
+}
+
+.c-menu.is-open {
+  // In: Deceleration
+  transition-timing-function: cubic-bezier(0, 0, .2, 1);
+  opacity: 1;
+  transform: none;
+}
+
+.c-menu--inverted {
+  background-color: $color-white;
+  color: $color-content-ci;
+}
+
+// manipulated container for menu (half)
+.c-menu__container {
+  @include mappy-bp(sm) {
+    max-width: rem($container-width-default / 2);
+    margin-left: 0;
+  }
+}
+
+.c-menu__closer {
+  margin-left: auto;
+  margin-top: rem(50px);
+  height: rem(50px);
+  width: rem(50px);
+  display: block;
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.c-menu__inner {
+  margin-top: rem(10px);
+
+  @include mappy-bp(xs) {
+    margin-left: rem(20px);
+  }
+
+  @include mappy-bp(sm) {
+    margin-top: rem(30px);
+    margin-left: rem(40px);
+  }
+
+  @include mappy-bp(lg) {
+    margin-left: rem(100px);
+  }
+}
+
+.c-menu__main {
+  @include font-ci;
+  @include typi('menu');
+  text-transform: uppercase;
+
+  li + li {
+    margin-top: rem(10px);
+  }
+
+  a {
+    display: inline-block;
+    transition: all $transition-time-default;
+
+    &,
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+
+    &:hover,
+    &:focus {
+      transform: translateX(rem(4px));
+      background: rgba(0, 0, 0, .05);
+      box-shadow: 0 0 0 .15em rgba(0, 0, 0, .05);
+    }
+  }
+}
+
+.c-menu__social {
+  margin-top: rem(50px);
+
+  @include mappy-bp(sm) {
+    margin-top: rem(100px);
+  }
+
+  /* stylelint-disable no-descending-specificity */
+  a {
+    display: inline-block;
+  }
+}
+
+.c-menu__social-facebook {
+  svg {
+    height: rem(20px);
+    width: rem(90px);
+  }
+}

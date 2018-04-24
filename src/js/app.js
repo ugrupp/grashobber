@@ -13,3 +13,7 @@ import 'babel-polyfill'; // eslint-disable-line import/no-unresolved
 // module imports
 import 'lazysizes';
 import './modules/fontfaceobserver';
+import Menu from './modules/menu';
+
+// init modules
+new Menu();

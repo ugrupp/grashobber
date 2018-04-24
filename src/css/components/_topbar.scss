@@ -44,7 +44,7 @@
   height: rem(50px);
   width: auto;
   max-width: 100%;
-  margin-right: rem(80px);
+  margin-right: rem(50px);
 
   svg {
     height: 100%;
@@ -54,6 +54,7 @@
 
 .c-topbar__menu {
   margin-left: auto;
+  flex-shrink: 0;
 
   height: rem(50px);
   width: rem(50px);

@@ -25,7 +25,13 @@ $typi: (
   ),
 
   headline--default: (
-    null: (65px, 1.25),
+    null: (35px, 1.25),
+    sm: (65px),
+  ),
+
+  menu: (
+    null: (50px, 1.25),
+    md: (65px),
   ),
 );
 /* stylelint-enable */

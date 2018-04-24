@@ -1,3 +1,9 @@
+---
+title: Startseite
+menu:
+  main:
+    weight: 10
+---
 # Wer stimmige Lösungen für die nachhaltige Rasenpflege und natürliche Sportflächen sucht, findet mit grashobber den passenden Weg.
 
 ## Druckfrisch und umfassend

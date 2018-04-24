@@ -2,18 +2,23 @@
 // Container
 // --------------------------------------------------
 
+$container-gutter: 20px;
+$container-width-default: 1500px;
+$container-width-medium: 1500px;
+$container-width-narrow: 1500px;
+
 .o-container {
-  padding-left: rem(20px);
-  padding-right: rem(20px);
+  padding-left: rem($container-gutter);
+  padding-right: rem($container-gutter);
   margin-left: auto;
   margin-right: auto;
-  max-width: rem(1500px);
+  max-width: rem($container-width-default);
 }
 
 .o-container--medium {
-  max-width: rem(1500px);
+  max-width: rem($container-width-medium);
 }
 
 .o-container--narrow {
-  max-width: rem(1500px);
+  max-width: rem($container-width-narrow);
 }
