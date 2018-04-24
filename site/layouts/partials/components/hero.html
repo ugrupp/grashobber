@@ -1,14 +1,17 @@
-<div class="c-hero">
-  {{ with .Resources.GetMatch "header.jpg" }}
-    {{ $imagePlaceholder := .Resize "100x" }}
-    {{ $imageSmall := .Resize "500x" }}
-    {{ $imageMedium := .Resize "1000x" }}
-    {{ $imageBig := .Resize "2000x" }}
-    <img
-      alt="Header"
-      data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
-      data-src="{{ $imageMedium.RelPermalink }}"
-      src="{{ $imagePlaceholder.RelPermalink }}"
-      class="c-hero__img lazyload" />
-  {{ end }}
+<div class="c-hero{{ if .Params.inverted }} c-hero--inverted{{end}}">
+  <div class="c-hero__img-wrapper">
+      {{ with .Resources.GetMatch "header.jpg" }}
+      {{ $imagePlaceholder := .Resize "100x" }}
+      {{ $imageSmall := .Resize "500x" }}
+      {{ $imageMedium := .Resize "1000x" }}
+      {{ $imageBig := .Resize "2000x" }}
+
+      <img
+        alt="Header"
+        data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+        data-src="{{ $imageMedium.RelPermalink }}"
+        src="{{ $imagePlaceholder.RelPermalink }}"
+        class="c-hero__img lazyload" />
+    {{ end }}
+  </div>
 </div>

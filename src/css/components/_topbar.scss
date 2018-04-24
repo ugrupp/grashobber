@@ -24,15 +24,15 @@
   }
 }
 
-.c-topbar__bg {
+.c-topbar--inverted::after {
+  background-color: $color-green-overlayed;
+}
+
+.c-topbar__container {
   position: relative;
-  z-index: 10; // > white background
+  z-index: 10;
   padding-top: rem(50px);
   padding-bottom: rem(50px);
-
-  .c-topbar--inverted & {
-    background-color: rgba($color-content-ci, .95);
-  }
 }
 
 .c-topbar__content {
