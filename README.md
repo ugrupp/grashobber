@@ -91,5 +91,12 @@ You can access the environment variable inside the theme files with `getenv "NOD
 
 All tasks starting with *build* set the environment variable to `production` - the other will set it to `development`.
 
+## SVG Prepare Task
+
+Prepares SVGs for use within SVG sprite:
+
+```
+svgo ./logo-farbig.svg -o ../../grashobber/src/images/svg/logo-farbig.svg --config '{ "plugins": [ { "inlineStyles": { "onlyMatchedOnce": false } }] }'
+```
 
 ## Enjoy!! 😸

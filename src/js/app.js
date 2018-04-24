@@ -11,4 +11,5 @@ import 'svgxuse';
 import 'babel-polyfill'; // eslint-disable-line import/no-unresolved
 
 // module imports
+import 'lazysizes';
 import './modules/fontfaceobserver';

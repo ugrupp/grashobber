@@ -1,0 +1,66 @@
+//
+// Topbar
+// --------------------------------------------------
+
+.c-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: index($z-index, topbar);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-white;
+
+    @include mappy-bp(sm) {
+      width: 50%;
+    }
+  }
+}
+
+.c-topbar__bg {
+  position: relative;
+  z-index: 10; // > white background
+  padding-top: rem(50px);
+  padding-bottom: rem(50px);
+
+  .c-topbar--inverted & {
+    background-color: rgba($color-content-ci, .95);
+  }
+}
+
+.c-topbar__content {
+  display: flex;
+  align-items: center;
+}
+
+.c-topbar__logo {
+  height: rem(50px);
+  width: auto;
+  max-width: 100%;
+  margin-right: rem(80px);
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.c-topbar__menu {
+  margin-left: auto;
+
+  height: rem(50px);
+  width: rem(50px);
+  display: block;
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}

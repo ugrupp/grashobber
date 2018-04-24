@@ -132,9 +132,6 @@ gulp.task('sass', ['stylelint'], function() {
     }))
     .pipe($.if(process.env.NODE_ENV === 'development', $.sourcemaps.write('./')))
     .pipe(gulp.dest(config.destCSS))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
 });
 
 // STYLELINT TASK: Lint SCSS
@@ -162,7 +159,6 @@ gulp.task('js', ['eslint'], (cb) => {
       colors: true,
       progress: true
     }));
-    browserSync.reload();
     cb();
   });
 });
@@ -201,13 +197,6 @@ gulp.task('svg', function() {
     .pipe(gulp.dest(config.destSVG))
 });
 
-/**
- * Rebuild SVGs & do page reload
- */
-gulp.task('svg-rebuild', ['svg'], function() {
-  browserSync.reload();
-});
-
 
 // IMG TASK: Simply copy images
 // ==============================
@@ -217,13 +206,6 @@ gulp.task('img', function() {
       errorHandler: plumberErrorHandler
     }))
     .pipe(gulp.dest(config.destIMG))
-});
-
-/**
- * Rebuild images & do page reload
- */
-gulp.task('img-rebuild', ['img'], function() {
-  browserSync.reload();
 });
 
 
@@ -271,13 +253,13 @@ gulp.task("server", ["sass", "js", "img", "svg", "fonts"], () => {
   // watch all svg files, recompile SVG spritemap
   $.watch(config.globs.svg, function(vinyl) {
     $.util.log($.util.colors.underline('\nFile changed: ' + vinyl.relative));
-    gulp.start('svg-rebuild');
+    gulp.start('svg');
   });
 
   // watch all image files, recopy images
   $.watch(config.globs.img, function(vinyl) {
     $.util.log($.util.colors.underline('\nFile changed: ' + vinyl.relative));
-    gulp.start('img-rebuild');
+    gulp.start('img');
   });
 
   // watch all image files, recopy images

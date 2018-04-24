@@ -1,0 +1,20 @@
+//
+// Hero
+// --------------------------------------------------
+
+.c-hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; // for filter
+}
+
+.c-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter $transition-time-default;
+
+  &.lazyload {
+    filter: blur(20px);
+  }
+}

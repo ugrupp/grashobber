@@ -26,18 +26,6 @@ body {
   .wf-active & {
     font-family: $font-family-base;
   }
-
-  // DEMO ONLY
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-content-ci;
-  color: $color-white;
-}
-
-html {
-  height: 100%;
 }
 
 ::selection {

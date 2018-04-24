@@ -1,3 +1,24 @@
-<footer>
-  Header
-</footer>
+{{ if .Params.inverted }}
+  {{ .Scratch.Set "topbarElements" (dict "classes" "c-topbar--inverted" "logo" "logo-weiss" "menu" "menu-weiss") }}
+{{ else }}
+  {{ .Scratch.Set "topbarElements" (dict "classes" "" "logo" "logo-farbig" "menu" "menu") }}
+{{ end }}
+<div class='c-topbar {{ (.Scratch.Get "topbarElements").classes }}'>
+  <div class="c-topbar__bg">
+    <div class="o-container">
+      <div class="c-topbar__content">
+        {{/* Logo */}}
+        <a href="/" class="c-topbar__logo">
+          {{ partial "util/svg" (dict "svg" (.Scratch.Get "topbarElements").logo) }}
+          <span class="u-invisible">grashobber</span>
+        </a>
+
+        {{/* Menu opener */}}
+        <a href="#" class="c-topbar__menu">
+          {{ partial "util/svg" (dict "svg" (.Scratch.Get "topbarElements").menu) }}
+          <span class="u-invisible">Menü öffnen</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
