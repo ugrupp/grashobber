@@ -26,7 +26,7 @@ module.exports = {
 
   output: {
     filename: '[name].bundle.js',
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'site/static'),
     publicPath: '/'
   },
   externals:  [/^vendor\/.+\.js$/]

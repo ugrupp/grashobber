@@ -37,6 +37,7 @@ var config = {};
 
 // base
 config.siteName = 'Hugo Boilerplate';
+config.serverDir = './dist/'
 
 // source
 config.src = './src/';
@@ -55,10 +56,11 @@ config.globs = {
   img: config.src + 'images/layout/**/*',
   fonts: config.src + 'fonts/**/*',
   hugo: './site/**/*'
+
 }
 
 // destination directories
-config.dest = './dist/';
+config.dest = './site/static/';
 config.destJS = config.dest + 'js';
 config.destCSS = config.dest + 'css';
 config.destSVG = config.dest + 'images/svg';
@@ -66,7 +68,7 @@ config.destIMG = config.dest + 'images/layout';
 config.destFonts = config.dest + 'fonts';
 
 // Hugo arguments
-config.hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
+config.hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v", "--cleanDestinationDir"];
 config.hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
 
 
@@ -236,7 +238,9 @@ gulp.task('fonts', () => (
 
 // SERVER TASK: Development server with browsersync & watcher
 // ==============================
-gulp.task("server", ["hugo", "sass", "js", "img", "svg", "fonts"], () => {
+gulp.task("server", ["sass", "js", "img", "svg", "fonts"], () => {
+  runSequence(['hugo']);
+
   // generates a port from a string
   function port (str, base = 3000) {
     return str
@@ -248,7 +252,7 @@ gulp.task("server", ["hugo", "sass", "js", "img", "svg", "fonts"], () => {
   browserSync.init({
     port: port(config.siteName),
     server: {
-      baseDir: config.dest
+      baseDir: config.serverDir
     }
   });
 
