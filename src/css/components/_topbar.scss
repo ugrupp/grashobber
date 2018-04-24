@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 .c-topbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -26,6 +26,15 @@
 
 .c-topbar--inverted::after {
   background-color: $color-green-overlayed;
+}
+
+// Headroom modifiers
+.c-topbar--headroom-initialized {
+  transition: transform $transition-time-default;
+}
+
+.c-topbar--unpinned {
+  transform: translateY(-100%);
 }
 
 .c-topbar__container {

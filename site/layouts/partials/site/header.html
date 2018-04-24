@@ -4,7 +4,7 @@
   {{ .Scratch.Set "topbarElements" (dict "classes" "" "logo" "logo-farbig" "menu" "menu") }}
 {{ end }}
 
-<div class='c-topbar {{ (.Scratch.Get "topbarElements").classes }}'>
+<div class='c-topbar {{ (.Scratch.Get "topbarElements").classes }}' data-topbar>
   <div class="c-topbar__container o-container">
     <div class="c-topbar__content">
       {{/* Logo */}}
