@@ -1,6 +1,8 @@
 //
-// Company sections
+// Company
 // --------------------------------------------------
+
+$bulletbox-side-spacing: 100px;
 
 .c-company__bullets {
   background-color: $color-content-ci;
@@ -8,21 +10,29 @@
   @include font-smoothing;
 }
 
+.c-company__bullets-inner {
+  transform: translateY(rem(-30px));
+  margin-left: rem(20px); // box padding
+  margin-right: rem(20px); // box padding
+
+  @include mappy-bp(md) {
+    transform: translateY(rem(-$bulletbox-width-sm));
+
+    // right-align the whole bulletbox section
+    max-width: calc(50% + #{rem($bulletbox-width-sm + $bulletbox-side-spacing)}); // 100px = padding
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
 //
 // Bullet boxes
 // --------------------------------------------------
 
-$bulletbox-width: 214px;
-$bulletbox-width-sm: 260px;
-
 .c-bulletbox {
   position: relative;
-  width: rem($bulletbox-width + 30px);
-  margin-left: auto;
-  margin-right: auto;
 
   @include mappy-bp(sm) {
-    width: auto;
     display: flex;
     align-items: flex-end;
   }
@@ -39,7 +49,7 @@ $bulletbox-width-sm: 260px;
       padding-bottom: rem(80px);
 
       @include mappy-bp(sm) {
-        padding-bottom: rem(120px);
+        padding-bottom: rem(90px);
       }
     }
   }
@@ -75,8 +85,7 @@ $bulletbox-width-sm: 260px;
   z-index: 10; // > track
   width: rem($bulletbox-width);
   height: rem($bulletbox-width);
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: rem(15px);
 
   border: 1px solid rgba($color-white, .3);
   background-clip: padding-box;
@@ -92,9 +101,8 @@ $bulletbox-width-sm: 260px;
     border-color: $color-white;
     width: rem($bulletbox-width-sm);
     height: rem($bulletbox-width-sm);
-    margin-left: 0;
-    margin-right: 0;
     margin-bottom: rem(30px);
+    margin-left: 0;
   }
 
   .c-bulletbox--0 & {
@@ -124,9 +132,8 @@ $bulletbox-width-sm: 260px;
   margin-top: rem(-30px);
 
   @include mappy-bp(sm) {
-    width: 100%;
-    padding-left: rem(50px); // safety padding
     padding-bottom: rem(30px);
+    margin-right: rem($box-default-spacing);
 
     &::after {
       content: '';
@@ -138,12 +145,30 @@ $bulletbox-width-sm: 260px;
       left: rem($bulletbox-width-sm / -2);
     }
   }
+
+  @include mappy-bp(md) {
+    margin-right: rem($box-default-spacing-md);
+  }
+
+  @include mappy-bp(xl) {
+    margin-right: rem($box-default-spacing-xl);
+  }
 }
 
 .c-bulletbox__content {
+  // should match .c-box--default padding
   @include mappy-bp(sm) {
-    max-width: rem(350px);
     margin-left: auto;
+    width: calc(100% - #{rem($bulletbox-side-spacing)});
+    padding-left: rem($box-default-spacing);
+  }
+
+  @include mappy-bp(md) {
+    padding-left: rem($box-default-spacing-md);
+  }
+
+  @include mappy-bp(xl) {
+    padding-left: rem($box-default-spacing-xl);
   }
 }
 

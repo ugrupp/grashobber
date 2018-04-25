@@ -1,6 +1,6 @@
 {{ define "main" }}
-  <section class="o-main__section o-main__section--default">
-    <div class="o-container">
+  <section class="o-main__section o-main__section--default o-main__section--{{.Type}}">
+    <div class="o-container o-container--no-right-pad">
       <div class="o-2col o-2col--default">
         {{ .Content }}
       </div>
@@ -14,7 +14,7 @@
   {{end}}
 
   {{if eq .Type "company"}}
-    <section class="o-main__section o-main__section--product-grid">
+    <section class="o-main__section o-main__section--company">
       {{ partial "components/company" . }}
     </section>
   {{end}}

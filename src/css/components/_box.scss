@@ -15,15 +15,15 @@
 }
 
 // Box in default 2-col
-.o-2col--default .c-box {
-  padding: rem(110px) rem(20px);
+.c-box--default {
+  padding: rem(110px) rem($box-default-spacing);
 
   @include mappy-bp(md) {
-    padding: rem(80px);
+    padding: rem($box-default-spacing-md);
   }
 
   @include mappy-bp(xl) {
-    padding: rem(120px);
+    padding: rem($box-default-spacing-xl);
   }
 }
 

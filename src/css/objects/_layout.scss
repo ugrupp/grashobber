@@ -44,6 +44,15 @@
   }
 }
 
+// green background for section on company page
+.o-main__section--company {
+  @include mappy-bp(md) {
+    &::after {
+      background-color: $color-content-ci;
+    }
+  }
+}
+
 // 2 col layout
 .o-2col {
   position: relative;
@@ -66,13 +75,16 @@
     bottom: auto;
 
     width: 50%;
-    margin-right: rem(25px);
+    padding-right: rem(50px);
+
+    .o-main__section--company & {
+      padding-bottom: rem($bulletbox-width-sm + 30px); // yes.
+    }
   }
 }
 
 .o-2col__two {
   @include mappy-bp(md) {
     width: 50%;
-    margin-left: rem(25px);
   }
 }

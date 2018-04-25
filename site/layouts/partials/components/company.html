@@ -1,6 +1,6 @@
 <div class="c-company">
   <div class="c-company__bullets">
-    <div class="o-container">
+    <div class="o-container o-container--no-right-pad">
       <div class="c-company__bullets-inner">
         {{/* Bulletboxes */}}
         <div class="c-bulletbox c-bulletbox--0">
@@ -16,8 +16,10 @@
 
             <div class="c-bulletbox__contentbox">
               {{/* Bullet description */}}
-              <div class="c-bulletbox__content c-richtext">
-                {{ .content | markdownify }}
+              <div class="c-bulletbox__content">
+                <div class="c-richtext">
+                    {{ .content | markdownify }}
+                </div>
               </div>
             </div>
           </div>

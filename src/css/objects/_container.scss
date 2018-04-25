@@ -22,3 +22,7 @@ $container-width-narrow: 1200px;
 .o-container--narrow {
   max-width: rem($container-width-narrow);
 }
+
+.o-container--no-right-pad {
+  padding-right: 0;
+}
