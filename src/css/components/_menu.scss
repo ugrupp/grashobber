@@ -55,6 +55,12 @@
   height: rem(50px);
   width: rem(50px);
   display: block;
+  transition: all $transition-time-default;
+
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
 
   svg {
     height: 100%;
@@ -100,9 +106,8 @@
 
     &:hover,
     &:focus {
-      transform: translateX(rem(4px));
-      background: rgba(0, 0, 0, .05);
-      box-shadow: 0 0 0 .15em rgba(0, 0, 0, .05);
+      transform: translateX(rem(3px));
+      opacity: .8;
     }
   }
 }
