@@ -42,12 +42,17 @@ $product-grid-gutter: 80px;
 
 $product-bubble-size: 240px;
 $product-bubble-size-sm: 270px;
+$product-bubble-size-lg: 300px;
 
 .c-product__item-inner {
   width: rem($product-bubble-size);
 
   @include mappy-bp(sm) {
     width: rem($product-bubble-size-sm);
+  }
+
+  @include mappy-bp(lg) {
+    width: rem($product-bubble-size-lg);
   }
 }
 
@@ -59,6 +64,11 @@ $product-bubble-size-sm: 270px;
   @include mappy-bp(sm) {
     width: rem($product-bubble-size-sm);
     height: rem($product-bubble-size-sm);
+  }
+
+  @include mappy-bp(lg) {
+    width: rem($product-bubble-size-lg);
+    height: rem($product-bubble-size-lg);
   }
 
   &::after {
@@ -91,4 +101,8 @@ $product-bubble-size-sm: 270px;
 
 .c-product__headline {
   @include typi('product-headline');
+}
+
+.c-product__content {
+  margin-top: .75em;
 }
