@@ -29,6 +29,11 @@ $typi: (
     sm: (65px),
   ),
 
+  headline--richtext: (
+    null: (26px, 1.1),
+    sm: (32px),
+  ),
+
   menu: (
     null: (50px, 1.25),
     md: (65px),
@@ -37,6 +42,11 @@ $typi: (
   product-headline: (
     null: (35px, 1.1),
     md: (45px),
+  ),
+
+  bulletbox: (
+    null: (26px, 1.1),
+    sm: (32px, 1.1),
   ),
 );
 /* stylelint-enable */

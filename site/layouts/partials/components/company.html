@@ -1,0 +1,28 @@
+<div class="c-company">
+  <div class="c-company__bullets">
+    <div class="o-container">
+      <div class="c-company__bullets-inner">
+        {{/* Bulletboxes */}}
+        <div class="c-bulletbox c-bulletbox--0">
+            <div class="c-bulletbox__bullet"></div>
+        </div>
+
+        {{ range $index, $_ := .Site.Data.company.bullets }}
+          <div class="c-bulletbox c-bulletbox--{{add $index 1}}">
+            {{/* Actual bullet */}}
+            <div class="c-bulletbox__bullet">
+              <h2 class="c-bulletbox__headline c-headline c-headline--inverted">{{ .title }}</h2>
+            </div>
+
+            <div class="c-bulletbox__contentbox">
+              {{/* Bullet description */}}
+              <div class="c-bulletbox__content c-richtext">
+                {{ .content | markdownify }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

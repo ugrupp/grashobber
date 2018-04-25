@@ -21,6 +21,10 @@
   }
 }
 
+.c-headline--richtext {
+  @include typi('headline--richtext');
+}
+
 .c-headline--ci {
   color: $color-content-ci;
 }

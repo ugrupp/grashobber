@@ -39,4 +39,11 @@
   a {
     color: $color-content-ci;
   }
+
+  h1,
+  h2,
+  h3 {
+    @extend .c-headline;
+    @extend .c-headline--richtext;
+  }
 }

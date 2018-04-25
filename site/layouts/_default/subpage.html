@@ -12,5 +12,11 @@
       {{ partial "components/product-grid" . }}
     </section>
   {{end}}
+
+  {{if eq .Type "company"}}
+    <section class="o-main__section o-main__section--product-grid">
+      {{ partial "components/company" . }}
+    </section>
+  {{end}}
 {{ end }}
 

@@ -1,0 +1,154 @@
+//
+// Company sections
+// --------------------------------------------------
+
+.c-company__bullets {
+  background-color: $color-content-ci;
+  color: $color-white;
+  @include font-smoothing;
+}
+
+//
+// Bullet boxes
+// --------------------------------------------------
+
+$bulletbox-width: 214px;
+$bulletbox-width-sm: 260px;
+
+.c-bulletbox {
+  position: relative;
+  width: rem($bulletbox-width + 30px);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mappy-bp(sm) {
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &:not(:last-of-type) {
+    padding-bottom: rem(30px);
+
+    @include mappy-bp(sm) {
+      padding-bottom: rem(90px);
+    }
+
+    // more padding for first bullet
+    &.c-bulletbox--0 {
+      padding-bottom: rem(80px);
+
+      @include mappy-bp(sm) {
+        padding-bottom: rem(120px);
+      }
+    }
+  }
+
+  // track
+  &::after {
+    content: '';
+    position: absolute;
+    left: rem(floor(($bulletbox-width + 30px) / 2));
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba($color-white, .3);
+
+    @include mappy-bp(sm) {
+      background-color: $color-white;
+      left: rem(floor($bulletbox-width-sm / 2));
+    }
+  }
+
+  // disable track for last item on mobile
+  &:last-of-type::after {
+    display: none;
+
+    @include mappy-bp(sm) {
+      display: block;
+    }
+  }
+}
+
+.c-bulletbox__bullet {
+  position: relative;
+  z-index: 10; // > track
+  width: rem($bulletbox-width);
+  height: rem($bulletbox-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid rgba($color-white, .3);
+  background-clip: padding-box;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include mappy-bp(sm) {
+    border-color: $color-white;
+    width: rem($bulletbox-width-sm);
+    height: rem($bulletbox-width-sm);
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: rem(30px);
+  }
+
+  .c-bulletbox--0 & {
+    background-color: $color-white;
+  }
+
+  .c-bulletbox--1 & {
+    background-color: $color-green-light;
+  }
+
+  .c-bulletbox--2 & {
+    background-color: $color-green-blue;
+  }
+
+  .c-bulletbox--3 & {
+    background-color: $color-green-muted;
+  }
+
+  .c-bulletbox--4 & {
+    background-color: $color-green-dark;
+  }
+}
+
+.c-bulletbox__contentbox {
+  position: relative;
+  z-index: 10; // > track
+  margin-top: rem(-30px);
+
+  @include mappy-bp(sm) {
+    width: 100%;
+    padding-left: rem(50px); // safety padding
+    padding-bottom: rem(30px);
+
+    &::after {
+      content: '';
+      background-color: $color-white;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: rem($bulletbox-width-sm / -2);
+    }
+  }
+}
+
+.c-bulletbox__content {
+  @include mappy-bp(sm) {
+    max-width: rem(350px);
+    margin-left: auto;
+  }
+}
+
+.c-bulletbox__headline {
+  white-space: nowrap;
+  @include typi('bulletbox');
+  transform-origin: center center;
+}
