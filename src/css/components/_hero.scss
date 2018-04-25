@@ -35,9 +35,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: filter $transition-time-default;
+  transition: all $transition-time-default;
 
   &.lazyload {
     filter: blur(20px);
+    transform: scale(1.1);
   }
 }
