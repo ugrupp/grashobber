@@ -12,7 +12,7 @@
       margin-bottom: 4em;
     }
 
-    &:not(:first-child) {
+    &:not(:last-child) {
       margin-top: 4em;
     }
   }

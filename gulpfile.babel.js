@@ -45,7 +45,6 @@ config.src = './src/';
 // entry files
 config.entries = {
   scss: config.src + 'css/main.scss',
-  js: config.src + 'js/app.js',
 }
 
 // globs

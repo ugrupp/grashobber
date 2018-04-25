@@ -5,7 +5,8 @@ import Stylish from 'webpack-stylish';
 module.exports = {
   context: path.join(__dirname, 'src'),
   entry: {
-    app: './js/app.js'
+    app: './js/app.js',
+    head: './js/head.js'
   },
 
   module: {

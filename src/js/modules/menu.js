@@ -1,5 +1,3 @@
-import util from './util';
-
 export default class Menu {
   constructor() {
     this.inited = false;
@@ -13,7 +11,7 @@ export default class Menu {
         this.openers = [...document.querySelectorAll('[data-menu-opener]')];
         this.closers = [...document.querySelectorAll('[data-menu-closer]')];
       } else {
-        console.error('Error: Menu could not be initialized.');
+        console.error('Error: Menu could not be initialized.'); // eslint-disable-line no-console
         return this;
       }
 
@@ -25,7 +23,7 @@ export default class Menu {
   // Helper method to determine if overlay has been inited. Should be called by all public methods.
   isInited() {
     if (!this.inited) {
-      console.error('Error: Tried to call menu method prior to initialization.');
+      console.error('Error: Tried to call menu method prior to initialization.'); // eslint-disable-line no-console
       return false;
     }
     return true;
@@ -40,7 +38,7 @@ export default class Menu {
           e.preventDefault();
           e.stopPropagation();
           return false;
-        };
+        }
       }, false);
     });
 
@@ -52,7 +50,7 @@ export default class Menu {
           e.preventDefault();
           e.stopPropagation();
           return false;
-        };
+        }
       }, false);
     });
   }
@@ -62,7 +60,7 @@ export default class Menu {
     document.addEventListener('click', (e) => {
       if (this.el !== e.target && !this.el.contains(e.target)) {
         this.close();
-      };
+      }
     });
   }
 
