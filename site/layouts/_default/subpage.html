@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <section class="o-main__section o-main__section--default">
+    <div class="o-container">
+      <div class="o-2col o-2col--default">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <section class="o-main__section o-main__section--product-grid">
+    {{ partial "components/product-grid" . }}
+  </section>
+{{ end }}
+

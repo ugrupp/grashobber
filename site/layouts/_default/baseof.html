@@ -14,7 +14,9 @@
       {{ partial "site/header.html" . }}
 
       {{/* Content */}}
-      <main class="o-main" id="main">
+      <main class="o-main{{ if .Params.inverted }} o-main--inverted{{end}}" id="main">
+        {{ partial "components/hero" . }}
+
         {{ block "main" . }}{{ end }}
       </main>
 

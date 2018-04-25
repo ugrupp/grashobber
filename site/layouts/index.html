@@ -1,23 +1,4 @@
 {{ define "main" }}
-  {{ partial "components/hero" . }}
-
-  <section class="o-main__section o-main__section--product">
-    <div class="o-container">
-      <div class="o-2col o-2col--product">
-        <div class="o-2col__one">
-          <div class="c-headline c-headline--inverted c-headline--curtailed">
-            <span>Wir finden Lösungen für die nachhaltige Rasenpflege</span>
-          </div>
-        </div>
-        <div class="o-2col__two">
-            <div class="c-box">
-              <div class="c-richtext">
-                {{ .Content }}
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  {{ .Section }}
 {{ end }}
 

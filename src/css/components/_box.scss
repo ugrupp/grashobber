@@ -5,16 +5,17 @@
 .c-box {
   background-color: $color-gray-f;
   padding: rem(30px) rem(20px);
+
+  .o-main--inverted & {
+    // green background for inverted section
+    @include font-smoothing;
+    background-color: $color-content-ci;
+    color: $color-white;
+  }
 }
 
-.c-box--ci {
-  @include font-smoothing;
-  background-color: $color-content-ci;
-  color: $color-white;
-}
-
-// Box in product 2-col
-.o-2col--product .c-box {
+// Box in default 2-col
+.o-2col--default .c-box {
   padding: rem(110px) rem(20px) rem(20px);
 
   @include mappy-bp(md) {
@@ -24,4 +25,10 @@
   @include mappy-bp(xl) {
     padding: rem(120px);
   }
+}
+
+
+// Box in contact 2-col
+.o-2col--contact .c-box {
+  // ...
 }

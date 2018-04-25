@@ -12,7 +12,7 @@
   z-index: index($z-index, content);
 }
 
-.o-main__section--product {
+.o-main__section--default {
   margin-top: rem(-100px);
 
   @include mappy-bp(sm) {
@@ -32,8 +32,14 @@
       bottom: 0;
       z-index: -10;
       top: rem(120px);
+
+      .o-main--inverted & {
+        // green background for inverted section
+        background-color: $color-content-ci;
+      }
     }
   }
+
 }
 
 // 2 col layout
