@@ -155,10 +155,6 @@ gulp.task('js', ['eslint'], (cb) => {
 
   webpack(myConfig, (err, stats) => {
     if (err) throw new $.util.PluginError("webpack", err);
-    $.util.log("[webpack]", stats.toString({
-      colors: true,
-      progress: true
-    }));
     cb();
   });
 });

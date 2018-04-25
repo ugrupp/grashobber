@@ -1,5 +1,6 @@
 import webpack from "webpack";
 import path from "path";
+import Stylish from 'webpack-stylish';
 
 module.exports = {
   context: path.join(__dirname, 'src'),
@@ -21,7 +22,8 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       'fetch': 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch'
-    })
+    }),
+    new Stylish()
   ],
 
   output: {
