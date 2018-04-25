@@ -16,7 +16,7 @@
 
 // Box in default 2-col
 .o-2col--default .c-box {
-  padding: rem(110px) rem(20px) rem(20px);
+  padding: rem(110px) rem(20px);
 
   @include mappy-bp(md) {
     padding: rem(80px);

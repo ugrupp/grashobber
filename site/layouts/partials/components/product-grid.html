@@ -1,0 +1,32 @@
+<div class="c-product">
+  <div class="o-container">
+    <div class="c-product__grid">
+
+      {{/* Grid items */}}
+      {{ range $index, $_ := .Site.Data.product.items }}
+        <div class="c-product__item">
+          <div class="c-product__item-inner">
+            {{/* Image */}}
+            <div class="c-product__image">
+                <img
+                  data-src="https://picsum.photos/30{{$index}}/350"
+                  class="lazyload"
+                  alt="">
+            </div>
+
+            <div class="c-product__contentbox">
+              {{/* Headline */}}
+              <strong class="c-product__headline c-headline c-headline--inverted">{{ .title }}</strong>
+
+              {{/* Content */}}
+              <div class="c-product__content c-richtext">
+                {{ .content | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+
+    </div>
+  </div>
+</div>

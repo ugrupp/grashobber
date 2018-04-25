@@ -17,6 +17,7 @@
   font-weight: $font-weight-regular;
   font-family: $font-family-ci-fallback;
   transform: scaleX(.7); // very sketchy, but it works 🤷
+  transform-origin: left top;
 
   // fonts-loaded body flag, triggered by JS (fontfaceobserver)
   .has-loaded-fonts-ci & {

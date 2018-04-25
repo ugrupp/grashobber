@@ -10,6 +10,11 @@
 .o-main__section {
   position: relative;
   z-index: index($z-index, content);
+
+  @include mappy-bp(sm) {
+    padding-left: #{$sidePadding};
+    padding-right: #{$sidePadding};
+  }
 }
 
 .o-main__section--default {
@@ -17,8 +22,6 @@
 
   @include mappy-bp(sm) {
     margin-top: rem(-120px);
-    padding-left: #{$sidePadding};
-    padding-right: #{$sidePadding};
   }
 
   // grey background for whole section
@@ -27,8 +30,8 @@
       content: '';
       background-color: $color-gray-f;
       position: absolute;
-      left: 0;
-      right: 0;
+      left: #{$sidePadding};
+      right: #{$sidePadding};
       bottom: 0;
       z-index: -10;
       top: rem(120px);

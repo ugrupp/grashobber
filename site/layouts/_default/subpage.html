@@ -7,8 +7,10 @@
     </div>
   </section>
 
-  <section class="o-main__section o-main__section--product-grid">
-    {{ partial "components/product-grid" . }}
-  </section>
+  {{if eq .Type "product"}}
+    <section class="o-main__section o-main__section--product-grid">
+      {{ partial "components/product-grid" . }}
+    </section>
+  {{end}}
 {{ end }}
 
