@@ -4,7 +4,9 @@
       <div class="c-company__bullets-inner">
         {{/* Bulletboxes */}}
         <div class="c-bulletbox c-bulletbox--0">
-            <div class="c-bulletbox__bullet"></div>
+            <div class="c-bulletbox__bullet">
+              {{ partial "util/svg" (dict "svg" "signet" "classes" "c-bulletbox__svg") }}
+            </div>
         </div>
 
         {{ range $index, $_ := .Site.Data.company.bullets }}

@@ -106,7 +106,8 @@ $bulletbox-side-spacing: 100px;
   }
 
   .c-bulletbox--0 & {
-    background-color: $color-white;
+    border: 0 none;
+    background-color: $color-green-default;
   }
 
   .c-bulletbox--1 & {
@@ -124,6 +125,11 @@ $bulletbox-side-spacing: 100px;
   .c-bulletbox--4 & {
     background-color: $color-green-dark;
   }
+}
+
+.c-bulletbox__svg {
+  height: 100%;
+  width: 100%;
 }
 
 .c-bulletbox__contentbox {
