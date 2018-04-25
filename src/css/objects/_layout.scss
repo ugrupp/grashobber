@@ -4,5 +4,67 @@
 
 .o-main {
   position: relative;
+  z-index: index($z-index, main);
+}
+
+.o-main__section {
+  position: relative;
   z-index: index($z-index, content);
+}
+
+.o-main__section--product {
+  margin-top: rem(-100px);
+
+  @include mappy-bp(sm) {
+    margin-top: rem(-120px);
+    padding-left: #{$sidePadding};
+    padding-right: #{$sidePadding};
+  }
+
+  // grey background for whole section
+  @include mappy-bp(md) {
+    &::after {
+      content: '';
+      background-color: $color-gray-f;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -10;
+      top: rem(120px);
+    }
+  }
+}
+
+// 2 col layout
+.o-2col {
+  position: relative;
+
+  @include mappy-bp(md) {
+    display: flex;
+  }
+}
+
+.o-2col__one {
+  position: absolute;
+  bottom: calc(100% - #{rem(70px)});
+  left: rem(20px);
+  right: rem(20px);
+
+  @include mappy-bp(md) {
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    width: 50%;
+    margin-right: rem(25px);
+  }
+}
+
+.o-2col__two {
+  @include mappy-bp(md) {
+    width: 50%;
+    margin-left: rem(25px);
+  }
 }

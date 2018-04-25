@@ -10,4 +10,33 @@
   display: block;
   hyphens: auto;
   @include typi('headline--default');
+
+  span {
+    line-height: 1.35;
+    padding-left: .15em;
+    padding-right: .15em;
+    display: inline;
+    box-decoration-break: clone;
+    background-color: $color-white;
+  }
+}
+
+.c-headline--ci {
+  color: $color-content-ci;
+}
+
+.c-headline--inverted {
+  color: $color-white;
+
+  span {
+    background-color: rgba($color-content-ci, .85);
+  }
+}
+
+.c-headline--curtailed {
+  max-width: rem(260px);
+
+  @include mappy-bp(sm) {
+    max-width: rem(450px);
+  }
 }

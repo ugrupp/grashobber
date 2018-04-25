@@ -1,0 +1,27 @@
+//
+// Content box
+// --------------------------------------------------
+
+.c-box {
+  background-color: $color-gray-f;
+  padding: rem(30px) rem(20px);
+}
+
+.c-box--ci {
+  @include font-smoothing;
+  background-color: $color-content-ci;
+  color: $color-white;
+}
+
+// Box in product 2-col
+.o-2col--product .c-box {
+  padding: rem(110px) rem(20px) rem(20px);
+
+  @include mappy-bp(md) {
+    padding: rem(80px);
+  }
+
+  @include mappy-bp(xl) {
+    padding: rem(120px);
+  }
+}
