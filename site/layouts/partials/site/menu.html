@@ -31,7 +31,7 @@
     {{/* Social menu */}}
     <ul class="c-menu__social">
       <li>
-        <a href="#" class="c-menu__social-facebook">
+        <a href="{{.Site.Params.facebookURL}}" target="_blank" class="c-menu__social-facebook">
           {{ partial "util/svg" (dict "svg" (.Scratch.Get "menuElements").facebook) }}
           <span class="u-invisible">Facebook</span>
         </a>

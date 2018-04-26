@@ -1,0 +1,117 @@
+//
+// Footer
+// --------------------------------------------------
+
+.c-footer {
+  background-color: $color-gray-e;
+
+  padding: rem(80px) #{$box-default-spacing};
+
+  @include mappy-bp(sm) {
+    padding: rem(100px) #{$sidePadding};
+  }
+}
+
+.c-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.c-footer__cols {
+  @include mappy-bp(sm) {
+    display: flex;
+  }
+}
+
+.c-footer__col2 {
+  margin-top: rem(80px);
+
+  @include mappy-bp(sm) {
+    margin-top: 0;
+    margin-left: rem(80px);
+    padding-left: rem(80px);
+    border-left: 1px solid rgba(0, 0, 0, .2);
+
+    display: flex;
+    flex-grow: 1;
+  }
+}
+
+.c-footer__address-headline {
+  @include typi('headline--footer');
+  letter-spacing: .05em;
+  @include font-ci;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+}
+
+.c-footer__toplink {
+  margin-left: rem(20px);
+  position: relative;
+  display: block;
+  color: inherit;
+  transition: all $transition-time-default;
+
+  &:hover,
+  &:focus {
+    color: $color-content-ci;
+  }
+
+  svg {
+    display: block;
+    width: rem(20px);
+    height: rem(20px);
+
+    margin-bottom: rem(60px);
+  }
+}
+
+.c-footer__toplink-label {
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%) rotate(-90deg) translateY(.055em); // magic number for perfect alignment
+  display: block;
+  transform-origin: center center;
+  white-space: nowrap;
+  @include typi('headline--footer');
+  letter-spacing: .05em;
+  @include font-smoothing;
+
+  span {
+    display: block;
+    @include font-ci;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.c-footer__social-facebook {
+  display: inline-block;
+
+  svg {
+    height: rem(20px);
+    width: rem(90px);
+  }
+}
+
+.c-footer__nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-footer__nav-list {
+  margin-top: auto;
+
+  a {
+    color: inherit;
+    transition: all $transition-time-default;
+
+    &:hover,
+    &:focus {
+      color: $color-content-ci;
+    }
+  }
+}

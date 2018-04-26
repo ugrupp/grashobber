@@ -28,10 +28,13 @@
 @import 'objects/layout';
 @import 'objects/icon';
 
-// Components
+// Components (functional & static)
 @import 'components/typography';
 @import 'components/richtext';
 @import 'components/topbar';
+@import 'components/footer';
+
+// Components (content)
 @import 'components/hero';
 @import 'components/menu';
 @import 'components/box';

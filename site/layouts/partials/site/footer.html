@@ -1,3 +1,47 @@
-<footer>
-  Footer
+<footer class="c-footer">
+  <div class="o-container">
+    <div class="c-footer__inner">
+      {{/* Footer content */}}
+      <div class="c-footer__cols">
+        <div class="c-footer__col1">
+          {{/* Address */}}
+          <address class="c-footer__address c-richtext">
+            <strong class="c-footer__address-headline">Grashobber HmbH &amp; Co. KG</strong><br />
+            Andreasweg 7<br />
+            D-72401 Haigerloch<br />
+            <strong>T</strong> +49 7474 / 918635<br />
+            <strong>F</strong> +49 7474 / 918636<br />
+            <a href="mailto:info@grashobber.de">info@grashobber.de</a>
+          </address>
+        </div>
+
+        <div class="c-footer__col2">
+          <nav class="c-footer__nav">
+            {{/* Social menu */}}
+            <div class="c-footer__social">
+              <a href="{{.Site.Params.facebookURL}}" target="_blank" class="c-footer__social-facebook">
+                {{ partial "util/svg" (dict "svg" "facebook-grau") }}
+                <span class="u-invisible">Facebook</span>
+              </a>
+            </div>
+
+            {{/* Meta menu */}}
+            <ul class="c-footer__nav-list">
+              <li><a href="#">Impressum</a></li>
+              <li><a href="#">Datenschutz</a></li>
+              <li><a href="#">AGBs</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      {{/* Toplink */}}
+      <a href="#" class="c-footer__toplink">
+        {{ partial "util/svg" (dict "svg" "top") }}
+        <span class="c-footer__toplink-label">
+          <span>Nach oben</span>
+        </span>
+      </a>
+    </div>
+  </div>
 </footer>
