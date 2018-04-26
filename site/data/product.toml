@@ -1,5 +1,6 @@
 [[items]]
 title = "Analytik"
+image = "analytik.png"
 content = """
 - The quick brown
 - fox **jumps** over
@@ -8,6 +9,7 @@ content = """
 
 [[items]]
 title = "Granulierte Produkte"
+image = "granulierteprodukte.png"
 content = """
 - The quick brown
 - fox **jumps** over
@@ -16,6 +18,7 @@ content = """
 
 [[items]]
 title = "Flüssige Produkte"
+image = "fluessigeprodukte.png"
 content = """
 - The quick brown
 - fox **jumps** over
@@ -24,6 +27,7 @@ content = """
 
 [[items]]
 title = "Quarzsand, Sand und Substrate"
+image = "sand.png"
 content = """
 - The quick brown
 - fox **jumps** over
@@ -32,6 +36,7 @@ content = """
 
 [[items]]
 title = "Sandlagerung"
+image = "sandlagerung.png"
 content = """
 - The quick brown
 - fox **jumps** over
@@ -40,6 +45,7 @@ content = """
 
 [[items]]
 title = "Drainage"
+image = "drainage.png"
 content = """
 - The quick brown
 - fox **jumps** over

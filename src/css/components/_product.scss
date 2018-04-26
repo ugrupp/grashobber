@@ -61,6 +61,10 @@ $product-bubble-size-lg: 300px;
   height: rem($product-bubble-size);
   position: relative;
 
+  // for blur filter
+  overflow: hidden;
+  border-radius: 50%;
+
   @include mappy-bp(sm) {
     width: rem($product-bubble-size-sm);
     height: rem($product-bubble-size-sm);
@@ -88,6 +92,12 @@ $product-bubble-size-lg: 300px;
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: all $transition-time-medium;
+
+    &.lazyload {
+      filter: blur(20px);
+    }
   }
 }
 

@@ -3,15 +3,21 @@
     <div class="c-product__grid">
 
       {{/* Grid items */}}
-      {{ range $index, $_ := .Site.Data.product.items }}
+      {{ range $index, $item := .Site.Data.product.items }}
         <div class="c-product__item">
           <div class="c-product__item-inner">
             {{/* Image */}}
             <div class="c-product__image">
+              {{ with $.Resources.GetMatch .image }}
+                {{ $imagePlaceholder := .Resize "50x" }}
+                {{ $image := .Resize "300x" }}
+
                 <img
-                  data-src="https://picsum.photos/30{{$index}}/350"
-                  class="lazyload"
-                  alt="">
+                  alt="{{ $item.title }}"
+                  data-src="{{ $image.RelPermalink }}"
+                  src="{{ $imagePlaceholder.RelPermalink }}"
+                  class="lazyload" />
+              {{ end }}
             </div>
 
             <div class="c-product__contentbox">
