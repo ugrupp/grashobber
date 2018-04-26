@@ -4,7 +4,7 @@
 
 .c-hero {
   width: 100%;
-  height: 100vh;
+  height: $hero-height;
   position: relative;
   z-index: index($z-index, hero);
 

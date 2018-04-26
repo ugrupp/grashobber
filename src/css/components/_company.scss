@@ -1,3 +1,27 @@
+// Sections
+
+$company-section-height: 430px; // totally magic number, based on headline height & textbox content height
+
+// green background for section on company page
+.o-main__section--company {
+  @include mappy-bp(md) {
+    position: absolute;
+    top: $hero-height; // hero height
+    left: 0;
+    right: 0;
+
+    &::after {
+      background-color: transparent;
+    }
+  }
+}
+
+.o-main__section--company-bullets {
+  @include mappy-bp(md) {
+    z-index: index($z-index, content-minor);
+  }
+}
+
 //
 // Bulletboxes
 // --------------------------------------------------
@@ -10,6 +34,10 @@ $bulletbox-side-spacing: 100px;
   background-color: $color-content-ci;
   color: $color-white;
   @include font-smoothing;
+
+  @include mappy-bp(md) {
+    padding-top: rem($company-section-height);
+  }
 }
 
 .c-company-bullets__inner {
