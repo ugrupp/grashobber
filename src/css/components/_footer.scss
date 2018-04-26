@@ -38,6 +38,18 @@
   }
 }
 
+.c-footer__address {
+  a {
+    color: inherit;
+    transition: all $transition-time-default;
+
+    &:hover,
+    &:focus {
+      color: $color-content-ci;
+    }
+  }
+}
+
 .c-footer__address-headline {
   @include typi('headline--footer');
   letter-spacing: .05em;
