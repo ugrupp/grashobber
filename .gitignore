@@ -3,6 +3,7 @@ site/static/images
 site/static/fonts
 site/static/css
 site/static/app.bundle.js
+site/resources/_gen
 
 # Created by https://www.gitignore.io/api/osx,hugo,node,macos,windows
 
