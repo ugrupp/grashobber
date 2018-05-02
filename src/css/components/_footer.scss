@@ -50,12 +50,9 @@
   }
 }
 
-.c-footer__address-headline {
-  @include typi('headline--xs');
-  letter-spacing: .05em;
-  @include font-ci;
-  text-transform: uppercase;
-  font-weight: $font-weight-bold;
+.c-richtext .c-footer__address-headline {
+  display: inline;
+  font-weight: $font-weight-regular;
 }
 
 .c-footer__toplink {
@@ -88,14 +85,12 @@
   transform-origin: center center;
   white-space: nowrap;
   @include typi('headline--xs');
-  letter-spacing: .05em;
   @include font-smoothing;
 
   span {
     display: block;
     @include font-ci;
     text-transform: uppercase;
-    font-weight: $font-weight-bold;
   }
 }
 

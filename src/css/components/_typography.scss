@@ -27,7 +27,6 @@
 
 .c-headline--xs {
   @include typi('headline--xs');
-  letter-spacing: .05em;
   hyphens: none;
 }
 
