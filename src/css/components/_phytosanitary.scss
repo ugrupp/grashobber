@@ -1,0 +1,130 @@
+//
+// Phytosanitary
+// --------------------------------------------------
+
+$phytosanitary-img-height: 400px;
+$phytosanitary-img-height-md: 660px;
+$phytosanitary-top-offset: 60px;
+$phytosanitary-bg-color: $color-green-light;
+
+.o-main__section--company-phytosanitary {
+  background-color: $phytosanitary-bg-color;
+  color: $color-white;
+  @include font-smoothing;
+
+  @include mappy-bp(sm) {
+    margin-right: #{$sidePadding};
+    padding-right: 0;
+  }
+
+  &::after {
+    background-color: transparent;
+  }
+}
+
+.c-phytosanitary__img-wrapper {
+  transform: translateY(rem(-$phytosanitary-top-offset));
+  height: rem($phytosanitary-img-height);
+  overflow: hidden; // for filter
+  margin-left: rem(20px);
+
+  @include mappy-bp(sm) {
+    margin-left: 0;
+  }
+
+  @include mappy-bp(md) {
+    height: rem($phytosanitary-img-height-md);
+  }
+}
+
+.c-phytosanitary__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: all $transition-time-medium;
+
+  &.lazyload {
+    filter: blur(20px);
+  }
+}
+
+.c-phytosanitary__content {
+  margin-top: rem(-$phytosanitary-img-height + $phytosanitary-top-offset);
+
+  @include mappy-bp(md) {
+    margin-top: rem(-$phytosanitary-img-height-md + $phytosanitary-top-offset);
+  }
+}
+
+.c-phytosanitary__headline {
+  padding-left: rem($box-default-spacing);
+  padding-right: rem($box-default-spacing);
+}
+
+.c-phytosanitary__primary-box {
+  margin-top: rem(170px);
+
+  @include mappy-bp(md) {
+    margin-top: rem(240px);
+  }
+}
+
+.c-phytosanitary__headline,
+.c-phytosanitary__primary-box {
+  @include mappy-bp(md) {
+    max-width: rem(480px);
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+  }
+}
+
+.c-phytosanitary__paragraph {
+  & + & {
+    margin-top: rem(30px);
+
+    @include mappy-bp(sm) {
+      margin-top: rem(50px);
+    }
+  }
+}
+
+
+// phytosanitary 2 col layout
+.o-2col-phytosanitary {
+  position: relative;
+
+  @include mappy-bp(md) {
+    display: flex;
+  }
+}
+
+.o-2col-phytosanitary__one {
+  @include mappy-bp(md) {
+    width: 50%;
+    padding-right: rem(50px);
+    padding-bottom: rem($box-default-spacing-md);
+  }
+
+  @include mappy-bp(xl) {
+    padding-bottom: rem($box-default-spacing-xl);
+  }
+}
+
+.o-2col-phytosanitary__two {
+  margin-top: rem(30px);
+  padding-left: rem($box-default-spacing);
+  padding-right: rem($box-default-spacing);
+  padding-bottom: rem(80px);
+
+  @include mappy-bp(md) {
+    margin-top: 0;
+    padding: rem($box-default-spacing-md);
+    background: $phytosanitary-bg-color;
+    width: 50%;
+  }
+
+  @include mappy-bp(xl) {
+    padding: rem($box-default-spacing-xl);
+  }
+}

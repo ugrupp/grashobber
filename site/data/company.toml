@@ -27,3 +27,35 @@ content = """
 ### Wir sind interessiert und weit vernetzt
 Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 """
+
+
+[phytosanitary]
+title = "Integrierter Pflanzenschutz"
+content = """
+Wir setzen auf die Reduktion von chemischem Pflanzenschutz durch biologische und biotechnische, präventive Maßnahmen. Ebenso wie auch der Ansatz des integrierten Pflanzenschutzes, für den die Berufsverbände in den letzten Jahren entsprechende Leitlinien verfasst haben.
+
+Wir legen den Fokus bei unserem Tun auf eine gesunde und wirksame Bodenstruktur, die die Basis für eine starke und widerstandsfähige Pflanze bildet.
+"""
+
+[[phytosanitary.paragraphs]]
+content = """
+### Vorbeugung durch Beratung
+Wir beraten so, dass Mittel stets sachgerecht und nach guter fachlicher Praxis eingesetzt werden, damit Pflanzen gestärkt werden und Krankheiten vorgebeugt wird. Dies beginnt bei der Auswahl der Gräser, geht über die Optimierung des Wasser- und Lufthaushaltes, das Hygienemanagement, bis zur bedarfsgerechten Nährstoffversorgung der Pflanzen.
+"""
+
+[[phytosanitary.paragraphs]]
+content = """
+### Entscheidungshilfe Analytik
+Unsere Bodenanalysen geben Aufschluss über die physikalischen, chemischen und biologischen Eigenschaften des Bodens. Regelmäßige Analysen verhelfen dazu, das Richtige mit dem optimalen Mitteleinsatz zu tun.
+"""
+
+[[phytosanitary.paragraphs]]
+content = """
+### IPS-gerechte Produktlösungen
+Unsere Philosophie beruht auf dem vorbeugenden Einsatz von pflanzenstärkenden Mitteln und Bodenhilfsstoffen. Bei Krankheitsbefall empfehlen wir den Einsatz biologischer, nützlings- und umweltschonender Mittel, ausgewogender mechanischer Maßnahmen sowie ein gutes Hygienemanagement.
+"""
+
+[[phytosanitary.paragraphs]]
+content = """
+### Unsere Produktlösungen ermöglichen den integrierten Pflanzenschutz
+"""

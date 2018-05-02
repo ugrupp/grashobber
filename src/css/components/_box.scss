@@ -4,7 +4,8 @@
 
 .c-box {
   background-color: $color-gray-f;
-  padding: rem(30px) rem(20px);
+  color: $color-content;
+  padding: rem(30px) rem($box-default-spacing);
 
   .o-main--inverted & {
     // green background for inverted section

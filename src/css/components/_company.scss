@@ -2,7 +2,6 @@
 
 $company-section-height: 430px; // totally magic number, based on headline height & textbox content height
 
-// green background for section on company page
 .o-main__section--company {
   @include mappy-bp(md) {
     position: absolute;
@@ -36,9 +35,11 @@ $bulletbox-side-spacing: 100px;
   background-color: $color-content-ci;
   color: $color-white;
   @include font-smoothing;
+  padding-bottom: rem(85px); // since phytosanitary section will overlap
 
   @include mappy-bp(md) {
     padding-top: rem($company-section-height);
+    padding-bottom: 0;
   }
 }
 
