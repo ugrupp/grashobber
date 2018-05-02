@@ -2,52 +2,83 @@
 title = "Analytik"
 image = "analytik.png"
 content = """
-- The quick brown
-- fox **jumps** over
-- the lazy dog.
+- Bodenanalytik
+- DNA-Analyse
+- Wasseranalytik
+- Messtechnik für die Selbstanwendung
 """
 
 [[items]]
 title = "Granulierte Produkte"
 image = "granulierteprodukte.png"
 content = """
-- The quick brown
-- fox **jumps** over
-- the lazy dog again.
+- Bodenstimulanzien
+- Bodenernährung
+- Spezialdünger
 """
 
 [[items]]
 title = "Flüssige Produkte"
 image = "fluessigeprodukte.png"
 content = """
-- The quick brown
-- fox **jumps** over
-- the lazy dog.
+- Biostimulanzien
+- Bodenhilfsstoffe
+- Netzmittel
+- Formulierte Suspensionen
+- Flüssige Spezialdünger
+- Pflanzenernährung
+- Hilfsstoffe
 """
 
 [[items]]
 title = "Quarzsand, Sand und Substrate"
 image = "sand.png"
 content = """
-- The quick brown
-- fox **jumps** over
-- the lazy dog again.
+- Topdressingsand
+- Aerifiziersand
+- Bunkersand
+- Besandungs- und Fairwaysand
+- Sonstige Sportsande
+- Rasentragschichtsubstrate
 """
 
 [[items]]
 title = "Sandlagerung"
 image = "sandlagerung.png"
 content = """
-- The quick brown
-- fox **jumps** over
-- the lazy dog again.
+- Trockensandsilos
 """
 
 [[items]]
 title = "Drainage"
 image = "drainage.png"
 content = """
-- The quick brown
-- fox **jumps** over
-- the lazy dog again.
+- DrainBelt
+"""
+
+[[items]]
+title = "Bodenbefestigung"
+image = "bodenbefestigung.png"
+content = """
+- Ecoraster
+"""
+
+[[items]]
+title = "Hygienemanagement"
+image = "hygienemanagement.png"
+content = """
+- Maschinenhygiene
+- Personal- und Spielerhygiene
+"""
+
+[[items]]
+title = "Messtechnik"
+image = "messtechnik.png"
+content = """
+- Feuchtigkeitsmesstechnik
+- Temperaturmesstechnik
+- pH-Messtechnik
+- Lupen und Mikroskope
+- Bodenmesstechnik
+- Beratungskoffer
 """

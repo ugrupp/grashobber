@@ -12,8 +12,8 @@ menu:
 
 {{% col2 %}}
 {{% box %}}
-Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum.
+Seit mehr als zehn Jahren stehen wir für einen nachhaltigen Weg in der Rasenpflege. Im Zuge der weiter fortschreitenden Einschänkung des herkömmlichen Pflanzenschutzes, wird dieser alternative Weg von Jahr zu Jahr relevanter. Der Ruf nach einem integrierten Pflanzenschutz wird die letzten Jahre lauter. [Zur grashobber-DNA hat der integrierte Pflanzenschutz im Grunde schon immer gehört.](https://www.google.de)
 
-Donec id elit non mi porta **gravida** at eget metus. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Donec sed odio dui. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+Wir sind nicht nur Verkäufer. In jedem von uns schlägt auch das Beraterherz. Wir wissen, dass nur individuelle Lösungen auch stimmige Lösungen sind. Daher gehören Beratung und Verkauf für uns zusammen. Fundierte Analysen und ein breites Netzwerk bilden die weiteren Standbeine unseres Gesamtkonzeptes.
 {{% /box %}}
 {{% /col2 %}}
