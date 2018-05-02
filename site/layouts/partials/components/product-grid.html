@@ -1,4 +1,13 @@
+{{/* Set background texture */}}
+{{ with .Resources.GetMatch "header.jpg" }}
+  {{ $imageSmall := .Resize "500x" }}
+  {{ $.Scratch.Set "bgTexture" $imageSmall.RelPermalink }}
+{{ end }}
+
 <div class="c-product">
+  {{/* Background div so we can blur it */}}
+  <div class="c-product__bg" style="background-image: url({{ $.Scratch.Get "bgTexture" }})"></div>
+
   <div class="o-container o-container--medium">
     <div class="c-product__grid">
 

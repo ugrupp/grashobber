@@ -3,9 +3,23 @@
 // --------------------------------------------------
 
 .c-product {
+  position: relative; // for background
+
   background-color: $color-content-ci;
   color: $color-white;
   @include font-smoothing;
+}
+
+.c-product__bg {
+  // background-image texture should be set in template (same as header image)
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .15;
+  filter: blur(20px);
 }
 
 $product-grid-gutter: 80px;
