@@ -1,0 +1,106 @@
+//
+// Downloads
+// --------------------------------------------------
+
+.c-downloads {
+  @include mappy-bp(md) {
+    background-color: $color-gray-f;
+    padding-bottom: rem(100px);
+  }
+}
+
+.c-downloads__inner {
+  background-color: $color-gray-f;
+  padding-left: rem($box-default-spacing);
+  padding-right: rem($box-default-spacing);
+  padding-bottom: rem(80px);
+
+  @include mappy-bp(md) {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+.c-downloads__list {
+  margin-bottom: rem(80px);
+}
+
+.c-downloads__file {
+  & + & {
+    margin-top: rem(20px);
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+
+    color: inherit;
+    @include font-smoothing;
+    transition: all $transition-time-default;
+
+    &:hover,
+    &:focus {
+      color: $color-content-ci;
+    }
+
+    svg {
+      height: rem(32px);
+      width: rem(32px);
+    }
+  }
+}
+
+.c-downloads__svg-filetype {
+  margin-right: rem(10px);
+}
+
+.c-downloads__svg-download {
+  margin-right: rem(20px);
+}
+
+.c-downloads__headline {
+  margin-bottom: rem(20px);
+
+  @include mappy-bp(md) {
+    margin-bottom: rem(40px);
+  }
+}
+
+.c-downloads__subheadline {
+  margin-bottom: rem(10px);
+
+  @include mappy-bp(md) {
+    margin-bottom: rem(20px);
+  }
+}
+
+
+// 2 col layout for downloads
+.o-2col-downloads {
+  @include mappy-bp(md) {
+    display: flex;
+  }
+}
+
+.o-2col-downloads__one {
+  @include mappy-bp(md) {
+    width: 50%;
+    padding-right: rem(50px);
+  }
+}
+
+.o-2col-downloads__two {
+  @include mappy-bp(md) {
+    width: 50%;
+    padding-left: rem($box-default-spacing-md);
+    padding-right: rem($box-default-spacing-md);
+    padding-top: 0;
+  }
+
+  @include mappy-bp(xl) {
+    padding-left: rem($box-default-spacing-xl);
+    padding-right: rem($box-default-spacing-xl);
+  }
+}

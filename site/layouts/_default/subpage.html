@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section class="o-main__section o-main__section--default o-main__section--{{.Type}}">
     <div class="o-container o-container--no-right-pad">
-      <div class="o-2col o-2col--default">
+      <div class="o-2col">
         {{ .Content }}
       </div>
     </div>
@@ -20,6 +20,12 @@
 
     <section class="o-main__section o-main__section--company-phytosanitary">
       {{ partial "components/phytosanitary" . }}
+    </section>
+  {{end}}
+
+  {{if eq .Type "downloads"}}
+    <section class="o-main__section o-main__section--download-list">
+      {{ partial "components/downloads" . }}
     </section>
   {{end}}
 {{ end }}

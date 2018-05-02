@@ -1,0 +1,7 @@
+<li class="c-downloads__file">
+  <a class="c-headline c-headline--xs" href="{{ .Permalink }}">
+    {{ partial "util/svg" (dict "svg" .Params.icon "classes" "c-downloads__svg-filetype") }}
+    {{ partial "util/svg" (dict "svg" "download" "classes" "c-downloads__svg-download") }}
+    {{ .Title }}
+  </a>
+</li>

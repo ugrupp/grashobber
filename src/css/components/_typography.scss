@@ -21,6 +21,16 @@
   }
 }
 
+.c-headline--sm {
+  @include typi('headline--sm');
+}
+
+.c-headline--xs {
+  @include typi('headline--xs');
+  letter-spacing: .05em;
+  hyphens: none;
+}
+
 .c-headline--richtext {
   @include typi('headline--richtext');
 }

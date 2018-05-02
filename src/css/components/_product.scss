@@ -109,10 +109,6 @@ $product-bubble-size-lg: 300px;
   margin-top: rem(-50px);
 }
 
-.c-product__headline {
-  @include typi('product-headline');
-}
-
 .c-product__content {
   margin-top: .75em;
 }

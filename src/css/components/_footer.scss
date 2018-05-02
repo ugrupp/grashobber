@@ -51,7 +51,7 @@
 }
 
 .c-footer__address-headline {
-  @include typi('headline--footer');
+  @include typi('headline--xs');
   letter-spacing: .05em;
   @include font-ci;
   text-transform: uppercase;
@@ -87,7 +87,7 @@
   display: block;
   transform-origin: center center;
   white-space: nowrap;
-  @include typi('headline--footer');
+  @include typi('headline--xs');
   letter-spacing: .05em;
   @include font-smoothing;
 
