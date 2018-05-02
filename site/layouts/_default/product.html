@@ -1,0 +1,55 @@
+{{ define "main" }}
+  {{ partial "components/intro-section" . }}
+
+  {{/* Product grid section */}}
+  <section class="o-main__section o-main__section--product-grid">
+    {{/* Set background texture */}}
+    {{ with .Resources.GetMatch "header.jpg" }}
+      {{ $imageSmall := .Resize "500x" }}
+      {{ $.Scratch.Set "bgTexture" $imageSmall.RelPermalink }}
+    {{ end }}
+
+    <div class="c-product">
+      {{/* Background div so we can blur it */}}
+      <div class="c-product__bg" style="background-image: url({{ $.Scratch.Get "bgTexture" }})"></div>
+
+      <div class="o-container o-container--medium">
+        <div class="c-product__grid">
+
+          {{/* Grid items */}}
+          {{ range $index, $item := .Site.Data.product.items }}
+            <div class="c-product__item">
+              <div class="c-product__item-inner">
+                {{/* Image */}}
+                <div class="c-product__image">
+                  {{ with $.Resources.GetMatch .image }}
+                    {{ $imagePlaceholder := .Resize "50x" }}
+                    {{ $image := .Resize "300x" }}
+
+                    <img
+                      alt="{{ $item.title }}"
+                      data-src="{{ $image.RelPermalink }}"
+                      src="{{ $imagePlaceholder.RelPermalink }}"
+                      class="lazyload" />
+                  {{ end }}
+                </div>
+
+                <div class="c-product__contentbox">
+                  {{/* Headline */}}
+                  <strong class="c-product__headline c-headline c-headline--inverted c-headline--sm">{{ .title }}</strong>
+
+                  {{/* Content */}}
+                  <div class="c-product__content c-richtext">
+                    {{ .content | markdownify }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+

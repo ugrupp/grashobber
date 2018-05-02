@@ -1,6 +1,6 @@
 ---
 title: Produktlösungen
-layout: subpage
+layout: product
 type: product
 menu:
   main:

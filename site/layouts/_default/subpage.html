@@ -1,32 +1,4 @@
+{{/* Default subpage template */}}
 {{ define "main" }}
-  <section class="o-main__section o-main__section--default o-main__section--{{.Type}}">
-    <div class="o-container o-container--no-right-pad">
-      <div class="o-2col">
-        {{ .Content }}
-      </div>
-    </div>
-  </section>
-
-  {{if eq .Type "product"}}
-    <section class="o-main__section o-main__section--product-grid">
-      {{ partial "components/product-grid" . }}
-    </section>
-  {{end}}
-
-  {{if eq .Type "company"}}
-    <section class="o-main__section o-main__section--company-bullets">
-      {{ partial "components/bulletboxes" . }}
-    </section>
-
-    <section class="o-main__section o-main__section--company-phytosanitary">
-      {{ partial "components/phytosanitary" . }}
-    </section>
-  {{end}}
-
-  {{if eq .Type "downloads"}}
-    <section class="o-main__section o-main__section--download-list">
-      {{ partial "components/downloads" . }}
-    </section>
-  {{end}}
+  {{ partial "components/intro-section" . }}
 {{ end }}
-

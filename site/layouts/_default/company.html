@@ -1,0 +1,103 @@
+{{ define "main" }}
+  {{ partial "components/intro-section" . }}
+
+  {{/* Bulletboxes section */}}
+  <section class="o-main__section o-main__section--company-bullets">
+    {{/* Set background texture */}}
+    {{ with .Resources.GetMatch "header.jpg" }}
+      {{ $imageSmall := .Resize "500x" }}
+      {{ $.Scratch.Set "bgTexture" $imageSmall.RelPermalink }}
+    {{ end }}
+
+    <div class="c-company-bullets">
+      {{/* Background div so we can blur it */}}
+      <div class="c-company-bullets__bg" style="background-image: url({{ $.Scratch.Get "bgTexture" }})"></div>
+
+      <div class="o-container o-container--no-right-pad">
+        <div class="c-company-bullets__inner">
+          {{/* Bulletboxes */}}
+          <div class="c-bulletbox c-bulletbox--0">
+              <div class="c-bulletbox__bullet">
+                {{ partial "util/svg" (dict "svg" "signet" "classes" "c-bulletbox__svg") }}
+              </div>
+          </div>
+
+          {{ range $index, $_ := .Site.Data.company.bullets }}
+            <div class="c-bulletbox c-bulletbox--{{add $index 1}}">
+              {{/* Actual bullet */}}
+              <div class="c-bulletbox__bullet">
+                <h2 class="c-bulletbox__headline c-headline c-headline--inverted">{{ .title }}</h2>
+              </div>
+
+              <div class="c-bulletbox__contentbox">
+                {{/* Bullet description */}}
+                <div class="c-bulletbox__content">
+                  <div class="c-richtext">
+                      {{ .content | markdownify }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* Phytosanitary section */}}
+  <section class="o-main__section o-main__section--company-phytosanitary">
+    {{ with $.Site.Data.company.phytosanitary }}
+      <div class="c-phytosanitary">
+        {{/* Store title */}}
+        {{ $.Scratch.Set "title" .title }}
+
+        {{/* Top/BG image */}}
+        {{ with $.Resources.GetMatch "phytosanitary.jpg" }}
+          {{ $imagePlaceholder := .Resize "100x" }}
+          {{ $imageSmall := .Resize "500x" }}
+          {{ $imageMedium := .Resize "1000x" }}
+          {{ $imageBig := .Resize "2000x" }}
+
+          <div class="c-phytosanitary__img-wrapper">
+            <img
+              alt='{{ $.Scratch.Get "title" }}'
+              data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+              data-src="{{ $imageMedium.RelPermalink }}"
+              src="{{ $imagePlaceholder.RelPermalink }}"
+              class="c-phytosanitary__img lazyload" />
+          </div>
+        {{ end }}
+
+        {{/* Content */}}
+        <div class="c-phytosanitary__content">
+          <div class="o-container o-container--no-right-pad">
+            <div class="o-2col-phytosanitary">
+              <div class="o-2col-phytosanitary__one">
+                <h2 class="c-phytosanitary__headline c-headline c-headline--inverted">{{ .title }}</h2>
+                <div class="c-phytosanitary__primary-box c-box">
+                  <div class="c-richtext">
+                    {{ .content | markdownify }}
+                  </div>
+                </div>
+              </div>
+
+              <div class="o-2col-phytosanitary__two">
+                <ul class="c-phytosanitary__paragraphs">
+                  {{ range .paragraphs }}
+                    <li class="c-phytosanitary__paragraph">
+                      <div class="c-richtext">
+                        <h3>{{ .title }}</h3>
+                        {{ .content | markdownify }}
+                      </div>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </section>
+{{ end }}
+

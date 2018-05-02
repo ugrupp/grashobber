@@ -1,6 +1,6 @@
 ---
 title: Unternehmen
-layout: subpage
+layout: company
 type: company
 menu:
   main:

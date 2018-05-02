@@ -1,6 +1,6 @@
 ---
 title: Downloads
-layout: subpage
+layout: downloads
 type: downloads
 menu:
   main:
