@@ -1,4 +1,13 @@
+{{/* Set background texture */}}
+{{ with .Resources.GetMatch "header.jpg" }}
+  {{ $imageSmall := .Resize "500x" }}
+  {{ $.Scratch.Set "bgTexture" $imageSmall.RelPermalink }}
+{{ end }}
+
 <div class="c-company-bullets">
+  {{/* Background div so we can blur it */}}
+  <div class="c-company-bullets__bg" style="background-image: url({{ $.Scratch.Get "bgTexture" }})"></div>
+
   <div class="o-container o-container--no-right-pad">
     <div class="c-company-bullets__inner">
       {{/* Bulletboxes */}}
