@@ -162,7 +162,7 @@ $catalog-bottom-padding: 5%;
   background-color: $color-white;
   color: $color-white;
   @include font-smoothing;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, .5)
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, .5);
 }
 
 .c-catalog__bg {

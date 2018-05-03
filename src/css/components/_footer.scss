@@ -112,6 +112,7 @@
 .c-footer__nav-list {
   margin-top: auto;
 
+  /* stylelint-disable no-descending-specificity */
   a {
     color: inherit;
     transition: all $transition-time-default;
