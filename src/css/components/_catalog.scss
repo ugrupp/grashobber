@@ -201,9 +201,9 @@ $catalog-bottom-padding: 5%;
 .c-catalog__title {
   position: absolute;
   top: $catalog-top-padding;
-  left: $catalog-side-padding - 1%;
-  right: $catalog-side-padding - 1%;
-  bottom: $catalog-bottom-padding - 1%;
+  left: $catalog-side-padding - 1.5%;
+  right: $catalog-side-padding - 1.5%;
+  bottom: $catalog-bottom-padding - 1.5%;
   opacity: .95;
 
   svg {
