@@ -5,7 +5,8 @@
 .c-button {
   @include button-reset;
 
-  display: inline-flex;
+  display: inline-block; // fallback
+  display: inline-flex; // might not work in safari
   align-items: center;
 
   @include font-ci;
@@ -17,6 +18,7 @@
   color: $color-white;
   padding: rem(10px) rem(12px);
   white-space: nowrap;
+  cursor: pointer;
   transition: all $transition-time-default;
 
   &:hover,
@@ -25,10 +27,13 @@
   }
 
   span {
+    vertical-align: middle;
     transform: translateY(.05em);
   }
 
   svg {
+    display: inline-block;
+    vertical-align: middle;
     margin-left: .5em;
     height: rem(18px);
     width: rem(18px);

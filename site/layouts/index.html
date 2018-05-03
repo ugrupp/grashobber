@@ -64,16 +64,33 @@
           <div class="o-2col-catalog__two">
             {{/* Catalog order */}}
             <div class="c-catalog-order">
-              {{ with $bundle.Resources.GetMatch "catalog-order.md" }}
-                <div class="c-richtext">
-                  {{ .Content }}
-                </div>
+              <form class="c-catalog-order__form" action="https://formspree.io/urs@21sieben.de" method="POST">
+                {{ with $bundle.Resources.GetMatch "catalog-order.md" }}
+                  {{/* Intro */}}
+                  <div class="c-richtext">
+                    {{ .Content }}
+                  </div>
 
-                <a href="#" class="c-button c-button">
-                  <span>{{.Params.buttontext}}</span>
-                  {{ partial "util/svg" (dict "svg" "pfeil-weiss") }}
-                </a>
-              {{ end }}
+                  {{/* Form elements */}}
+                  <fieldset class="c-fieldset">
+                    <input class="c-fieldset__input" type="text" name="name" required placeholder="Name">
+                    <input class="c-fieldset__input" type="text" name="street" required placeholder="Straße, Hausnummer">
+                    <input class="c-fieldset__input" type="text" name="city" required placeholder="Postleitzahl, Ort">
+                    <input class="c-fieldset__input" type="email" name="email" required placeholder="E-Mail">
+                  </fieldset>
+
+                  <input type="hidden" name="_subject" value="Neue Katalogbestellung auf grashobber.de" />
+                  <input type="hidden" name="_next" value="http://www.grashobber.de/" />
+                  <input type="hidden" name="_language" value="de" />
+                  <input type="text" name="_gotcha" style="display:none" />
+
+                  {{/* Submit */}}
+                  <button type="submit" class="c-button c-button">
+                    <span>{{.Params.buttontext}}</span>
+                    {{ partial "util/svg" (dict "svg" "pfeil-weiss") }}
+                  </button>
+                {{ end }}
+              </form>
             </div>
           </div>
         </div>

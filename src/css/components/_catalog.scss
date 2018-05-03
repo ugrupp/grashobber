@@ -75,8 +75,21 @@
     padding-bottom: 0;
   }
 
+  // Component spacing
+  .c-fieldset {
+    margin-top: rem(30px);
+
+    @include mappy-bp(md) {
+      margin-top: rem(40px);
+    }
+  }
+
   .c-button {
-    margin-top: 1em;
+    margin-top: rem(40px);
+
+    @include mappy-bp(md) {
+      margin-top: rem(60px);
+    }
   }
 }
 
@@ -91,6 +104,7 @@
   @include mappy-bp(md) {
     width: 50%;
     padding-right: rem(50px);
+    padding-bottom: rem(120px);
   }
 }
 
@@ -123,6 +137,10 @@ $catalog-bottom-padding: 5%;
 .c-catalog {
   width: 100%;
   max-width: rem(400px);
+
+  @include mappy-bp(lg) {
+    max-width: rem(500px);
+  }
 }
 
 .c-catalog__aspect-box {

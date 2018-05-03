@@ -1,0 +1,31 @@
+//
+// Fieldset
+// --------------------------------------------------
+
+.c-fieldset {
+
+}
+
+.c-fieldset__input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid rgba($color-content, .3);
+  color: $color-content;
+  @include font-ci;
+  @include typi('form');
+  text-transform: uppercase;
+  padding: .25em .5em;
+
+  &::placeholder {
+    color: rgba($color-content, .5);
+  }
+
+  & + & {
+    margin-top: rem(30px);
+
+    @include mappy-bp(md) {
+      margin-top: rem(40px);
+    }
+  }
+}
