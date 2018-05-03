@@ -1,0 +1,35 @@
+//
+// Socialwall section
+// --------------------------------------------------
+
+.o-main__section--socialwall {
+  margin-top: rem(80px);
+
+  @include mappy-bp(sm) {
+    padding-left: 0;
+  }
+}
+
+$socialwall-img-height: 400px;
+$socialwall-img-height-md: 500px;
+
+.c-socialwall__img-wrapper {
+  height: rem($socialwall-img-height);
+  overflow: hidden; // for filter
+
+  @include mappy-bp(md) {
+    height: rem($socialwall-img-height-md);
+  }
+}
+
+.c-socialwall__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: all $transition-time-medium;
+
+  &.lazyload {
+    filter: blur(20px);
+  }
+}

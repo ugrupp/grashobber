@@ -26,6 +26,11 @@
   padding: rem($box-default-spacing);
   padding-right: rem($container-gutter + $box-default-spacing);
 
+  @include mappy-bp(xs) {
+    padding-top: rem(60px);
+    padding-bottom: rem(60px);
+  }
+
   @include mappy-bp(sm) {
     margin-left: rem($container-gutter);
   }

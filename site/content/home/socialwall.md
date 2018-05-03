@@ -1,1 +1,3 @@
-## Es ist immer etwas los bei uns. Kein Geheimnis – schauen Sie selbst.
+---
+title: Es ist immer etwas los bei uns. Kein Geheimnis – schauen Sie selbst.
+---

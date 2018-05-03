@@ -21,9 +21,17 @@
   padding-left: $container-gutter;
   padding-right: $container-gutter;
 
-  @include mappy-bp(xs) {
+  @include mappy-bp(sm) {
     display: flex;
     align-items: flex-start;
+  }
+
+  @include mappy-bp(md) {
+    display: block;
+  }
+
+  @include mappy-bp(xl) {
+    display: flex;
   }
 }
 
@@ -34,7 +42,7 @@
   position: relative;
   z-index: 20; // > catalog
 
-  @include mappy-bp(xs) {
+  @include mappy-bp(sm) {
     flex-shrink: 0;
     max-width: rem(300px);
   }
@@ -50,13 +58,25 @@
   z-index: 10; // < box
 
   @include mappy-bp(xs) {
+    margin-left: rem(20px);
+  }
+
+  @include mappy-bp(sm) {
     width: 100%;
-    margin-top: rem(70px);
-    margin-left: rem(-70px);
+    margin-top: rem(130px);
+    margin-left: rem(-60px);
   }
 
   @include mappy-bp(md) {
+    width: auto;
+    margin-top: rem(-70px);
+    margin-left: rem(80px);
+  }
+
+  @include mappy-bp(xl) {
+    width: 100%;
     margin-top: rem(90px);
+    margin-left: rem(-70px);
   }
 }
 
@@ -64,6 +84,7 @@
 .c-catalog-order {
   background-color: $color-white;
   padding: rem($container-gutter + $box-default-spacing);
+  padding-bottom: 0;
 
   @include mappy-bp(md) {
     padding: rem($box-default-spacing-md);
@@ -106,8 +127,6 @@
   @include mappy-bp(md) {
     width: 50%;
     padding-right: rem(50px);
-    padding-bottom: rem(120px);
-
     transform: translateY(rem(-200px));
   }
 }
@@ -140,7 +159,11 @@ $catalog-bottom-padding: 5%;
 
 .c-catalog {
   width: 100%;
-  max-width: rem(400px);
+  max-width: rem(350px);
+
+  @include mappy-bp(md) {
+    max-width: rem(400px);
+  }
 
   @include mappy-bp(lg) {
     max-width: rem(500px);

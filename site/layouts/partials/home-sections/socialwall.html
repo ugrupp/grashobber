@@ -2,9 +2,28 @@
 
 {{/* Get headless home bundle which holds the content */}}
 {{ $bundle := .Site.GetPage "page" "home" }}
+<section class="o-main__section o-main__section--socialwall">
+  <div class="c-socialwall">
+    {{ with $bundle.Resources.GetMatch "socialwall.md" }}
+      {{/* Store title */}}
+      {{ $.Scratch.Set "title" .Params.title }}
 
-<div class="c-home__social">
-  {{ with $bundle.Resources.GetMatch "socialwall.md" }}
-    {{ .Content }}
-  {{ end }}
-</div>
+      {{/* Top/BG image */}}
+      {{ with $bundle.Resources.GetMatch "socialwall.jpg" }}
+        {{ $imagePlaceholder := .Resize "100x" }}
+        {{ $imageSmall := .Resize "500x" }}
+        {{ $imageMedium := .Resize "1000x" }}
+        {{ $imageBig := .Resize "2000x" }}
+
+        <div class="c-socialwall__img-wrapper">
+          <img
+            alt='{{ $.Scratch.Get "title" }}'
+            data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+            data-src="{{ $imageMedium.RelPermalink }}"
+            src="{{ $imagePlaceholder.RelPermalink }}"
+            class="c-socialwall__img lazyload" />
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
