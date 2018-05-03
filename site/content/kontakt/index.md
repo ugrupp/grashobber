@@ -1,5 +1,6 @@
 ---
 title: Kontakt
+description: Wir nehmen uns Zeit für Sie. Sprechen Sie uns an. Wir sind gerne für Sie da.
 layout: subpage
 type: contact
 menu:

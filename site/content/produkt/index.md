@@ -1,5 +1,6 @@
 ---
 title: Produktlösungen
+description: Unsere Produktlösungen unterstützen eine Pflege, die ohne hohe Stickstoffgaben und mit wenig Pflanzenschutz auskommt und damit auch den integrierten Pflanzenschutz.
 layout: product
 type: product
 menu:
@@ -7,14 +8,14 @@ menu:
     weight: 30
 ---
 {{% col1 %}}
-{{< headline class="c-headline--inverted c-headline--curtailed" level="1" title="Lösungen für die nachhaltige Sportrasenpflege" >}}
+{{< headline class="c-headline--inverted c-headline--curtailed" level="1" title="Unsere Produktlösungen. Eine runde Sache." >}}
 {{% /col1 %}}
 
 {{% col2 %}}
 {{% box %}}
-Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum.
+Zugegeben, unser Angebotsfeld ist breit aufgestellt. Das hat seinen Grund. Denn Produktlösungen für nachhaltige Rasenpflege liegen für uns nicht nur im Bereich Düngung. Der richtige Sand ist zum Beispiel elementar für eine gesunde Bodenstruktur. So ist ein Portfolio entstanden, das einzigartig ist am Markt. Ihr Rundumpakt für eine nachhaltige Rasenpflege, die ohne hohe Stickstoffgaben und mit wenig Pflanzenschutz auskommt.
 
-Donec id elit non mi porta **gravida** at eget metus. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Donec sed odio dui. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+Auf unserer Downloadseite finden Sie weitere Produktinfos. Das zentrale Informationsmedium ist unser Produktkatalog, den Sie auf der Startseite anfordern können. Und natürlich sind wir jederzeit auch gerne persönlich für Sie da. Wir freuen uns darauf, auch für Sie stimmige Lösungen zu finden.
 {{% /box %}}
 {{% /col2 %}}
 

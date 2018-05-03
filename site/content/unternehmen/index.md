@@ -1,5 +1,6 @@
 ---
 title: Unternehmen
+description: "Bei uns bekommen Sie das Komplettpaket: fundierte Beratung, weitreichendes Fachwissen, Analysemöglichkeiten und stimmige Produktlösungen."
 layout: company
 type: company
 menu:
