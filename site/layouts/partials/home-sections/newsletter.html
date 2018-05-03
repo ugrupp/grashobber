@@ -3,8 +3,54 @@
 {{/* Get headless home bundle which holds the content */}}
 {{ $bundle := .Site.GetPage "page" "home" }}
 
-<div class="c-home__newsletter">
-  {{ with $bundle.Resources.GetMatch "newsletter.md" }}
-    {{ .Content }}
-  {{ end }}
-</div>
+<section class="o-main__section o-main__section--newsletter">
+  <div class="c-newsletter">
+    {{/* Background div so we can blur it */}}
+    <div class="c-newsletter__bg" style='background-image: url({{ $.Scratch.Get "textureHeaderImage" }})'></div>
+
+    <div class="c-newsletter__container o-container o-container--no-pad">
+      <div class="o-2col-newsletter">
+        <div class="o-2col-newsletter__one">
+          {{/* Headline */}}
+          {{ with $bundle.Resources.GetMatch "newsletter.md" }}
+            <h2 class="c-newsletter__headline c-headline c-headline--ci c-headline--sm c-headline--curtailed">
+              <span>{{ .Params.title }}</span>
+            </h2>
+          {{ end }}
+        </div>
+
+        <div class="o-2col-newsletter__two">
+          {{/* Form */}}
+          {{ with $bundle.Resources.GetMatch "newsletter.md" }}
+            <form class="c-newsletter__form" action="https://formspree.io/urs@21sieben.de" method="POST">
+              {{ with $bundle.Resources.GetMatch "newsletter.md" }}
+                {{/* Intro */}}
+                <div class="c-richtext">
+                  {{ .Content }}
+                </div>
+
+                {{/* Form elements */}}
+                <fieldset class="c-fieldset c-fieldset--inverted">
+                  <input class="c-fieldset__input" type="email" name="email" required placeholder="E-Mail *">
+                  <input class="c-fieldset__input" type="text" name="firstname" required placeholder="Vorname *">
+                  <input class="c-fieldset__input" type="text" name="lastname" required placeholder="Nachname *">
+                  <input class="c-fieldset__input" type="text" name="company" placeholder="Firma">
+                </fieldset>
+
+                <input type="hidden" name="_subject" value="Neue Newsletter-Anmeldung auf grashobber.de" />
+                <input type="hidden" name="_next" value="http://www.grashobber.de/" />
+                <input type="hidden" name="_language" value="de" />
+                <input type="text" name="_gotcha" style="display:none" />
+
+                {{/* Submit */}}
+                <button type="submit" class="c-button c-button c-button--inverted">
+                  <span>{{.Params.buttontext}}</span>
+                  {{ partial "util/svg" (dict "svg" "pfeil-gruen") }}
+                </button>
+              {{ end }}
+            </form>
+          {{ end }}
+        </div>
+    </div>
+  </div>
+</section>

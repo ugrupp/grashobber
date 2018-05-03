@@ -24,9 +24,19 @@
 
   & + & {
     margin-top: rem(30px);
+  }
 
-    @include mappy-bp(md) {
-      margin-top: rem(40px);
+  // inverted colors
+  .c-fieldset--inverted & {
+    color: $color-white;
+    border-color: rgba($color-white, .3);
+
+    &::placeholder {
+      color: rgba($color-white, .5);
+    }
+
+    &:focus {
+      border-color: rgba($color-white, .75);
     }
   }
 }

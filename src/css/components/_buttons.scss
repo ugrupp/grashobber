@@ -43,4 +43,9 @@
 .c-button--inverted {
   background: $color-white;
   color: $color-content-ci;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color-white, .85);
+  }
 }
