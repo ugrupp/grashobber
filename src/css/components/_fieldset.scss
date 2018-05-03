@@ -12,9 +12,14 @@
   @include typi('form');
   text-transform: uppercase;
   padding: .25em .5em;
+  transition: all $transition-time-default;
 
   &::placeholder {
     color: rgba($color-content, .5);
+  }
+
+  &:focus {
+    border-color: rgba($color-content, .75);
   }
 
   & + & {
