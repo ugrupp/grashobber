@@ -9,7 +9,7 @@
     <div class="c-newsletter__bg" style='background-image: url({{ $.Scratch.Get "textureHeaderImage" }})'></div>
 
     <div class="c-newsletter__container o-container o-container--no-pad">
-      <div class="o-2col-newsletter">
+      <div class="o-2col-newsletter" data-reveal>
         <div class="o-2col-newsletter__one">
           {{/* Headline */}}
           {{ with $bundle.Resources.GetMatch "newsletter.md" }}

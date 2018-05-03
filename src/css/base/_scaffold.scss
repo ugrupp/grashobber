@@ -32,3 +32,8 @@ body {
   background: $color-green-light;
   color: $color-white;
 }
+
+// Ensure elements load hidden before ScrollReveal runs
+html.sr [data-reveal] {
+  visibility: hidden;
+}

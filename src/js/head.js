@@ -2,5 +2,9 @@
 // JS <head> file
 // --------------------------------------------------
 
-// module imports
+// init lazysizes
 import 'lazysizes';
+
+// scrollreveal html flag
+import scrollReveal from 'scrollreveal';
+window.sr = scrollReveal();

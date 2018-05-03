@@ -6,7 +6,6 @@
 .c-headline {
   @include font-ci;
   text-transform: uppercase;
-  word-wrap: break-word;
   display: block;
   //hyphens: auto;
   @include typi('headline--default');

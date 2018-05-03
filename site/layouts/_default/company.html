@@ -11,7 +11,7 @@
         <div class="c-company-bullets__inner">
           {{/* Bulletboxes */}}
           <div class="c-bulletbox c-bulletbox--0">
-              <div class="c-bulletbox__bullet">
+              <div class="c-bulletbox__bullet" data-reveal>
                 {{ partial "util/svg" (dict "svg" "signet" "classes" "c-bulletbox__svg") }}
               </div>
           </div>
@@ -19,13 +19,13 @@
           {{ range $index, $_ := .Site.Data.company.bullets }}
             <div class="c-bulletbox c-bulletbox--{{add $index 1}}">
               {{/* Actual bullet */}}
-              <div class="c-bulletbox__bullet">
+              <div class="c-bulletbox__bullet" data-reveal>
                 <h2 class="c-bulletbox__headline c-headline c-headline--inverted">{{ .title }}</h2>
               </div>
 
               <div class="c-bulletbox__contentbox">
                 {{/* Bullet description */}}
-                <div class="c-bulletbox__content">
+                <div class="c-bulletbox__content" data-reveal>
                   <div class="c-richtext">
                       {{ .content | markdownify }}
                   </div>
@@ -66,7 +66,7 @@
         <div class="c-phytosanitary__content">
           <div class="o-container o-container--no-right-pad">
             <div class="o-2col-phytosanitary">
-              <div class="o-2col-phytosanitary__one">
+              <div class="o-2col-phytosanitary__one" data-reveal>
                 <h2 class="c-phytosanitary__headline c-headline c-headline--inverted">{{ .title }}</h2>
                 <div class="c-phytosanitary__primary-box c-box">
                   <div class="c-richtext">
@@ -75,7 +75,7 @@
                 </div>
               </div>
 
-              <div class="o-2col-phytosanitary__two">
+              <div class="o-2col-phytosanitary__two" data-reveal>
                 <ul class="c-phytosanitary__paragraphs">
                   {{ range .paragraphs }}
                     <li class="c-phytosanitary__paragraph">

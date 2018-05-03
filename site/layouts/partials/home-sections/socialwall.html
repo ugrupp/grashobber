@@ -3,7 +3,7 @@
 {{/* Get headless home bundle which holds the content */}}
 {{ $bundle := .Site.GetPage "page" "home" }}
 <section class="o-main__section o-main__section--socialwall">
-  <div class="c-socialwall">
+  <div class="c-socialwall" data-reveal>
     {{ with $bundle.Resources.GetMatch "socialwall.md" }}
       {{/* Store title */}}
       {{ $.Scratch.Set "title" .Params.title }}

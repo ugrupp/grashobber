@@ -190,6 +190,7 @@ $bulletbox-side-spacing: 100px;
     padding-bottom: rem(30px);
     margin-right: rem($box-default-spacing);
 
+    // bottom border
     &::after {
       content: '';
       background-color: $color-white;
