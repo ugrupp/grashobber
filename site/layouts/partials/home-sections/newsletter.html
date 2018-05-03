@@ -1,0 +1,10 @@
+{{/* Newsletter */}}
+
+{{/* Get headless home bundle which holds the content */}}
+{{ $bundle := .Site.GetPage "page" "home" }}
+
+<div class="c-home__newsletter">
+  {{ with $bundle.Resources.GetMatch "newsletter.md" }}
+    {{ .Content }}
+  {{ end }}
+</div>

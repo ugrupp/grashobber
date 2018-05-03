@@ -1,0 +1,10 @@
+{{/* Intro */}}
+
+{{/* Get headless home bundle which holds the content */}}
+{{ $bundle := .Site.GetPage "page" "home" }}
+
+<div class="c-home-intro">
+  {{ with $bundle.Resources.GetMatch "intro.md" }}
+    {{ .Content }}
+  {{ end }}
+</div>

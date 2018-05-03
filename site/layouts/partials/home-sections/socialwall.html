@@ -1,0 +1,10 @@
+{{/* Social wall */}}
+
+{{/* Get headless home bundle which holds the content */}}
+{{ $bundle := .Site.GetPage "page" "home" }}
+
+<div class="c-home__social">
+  {{ with $bundle.Resources.GetMatch "socialwall.md" }}
+    {{ .Content }}
+  {{ end }}
+</div>
