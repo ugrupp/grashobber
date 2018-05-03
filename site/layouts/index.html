@@ -23,7 +23,10 @@
                     {{ .Content }}
                   </div>
 
-                  <button>{{.Params.buttontext}}</button>
+                  <a href="#" class="c-button c-button">
+                    <span>{{.Params.buttontext}}</span>
+                    {{ partial "util/svg" (dict "svg" "pfeil-weiss") }}
+                  </a>
                 {{ end }}
               </div>
 
@@ -66,7 +69,10 @@
                   {{ .Content }}
                 </div>
 
-                <button>{{.Params.buttontext}}</button>
+                <a href="#" class="c-button c-button">
+                  <span>{{.Params.buttontext}}</span>
+                  {{ partial "util/svg" (dict "svg" "pfeil-weiss") }}
+                </a>
               {{ end }}
             </div>
           </div>

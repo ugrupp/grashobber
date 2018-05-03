@@ -25,3 +25,20 @@
     transform: scaleX(1);
   }
 }
+
+// Reset all default button styles
+@mixin button-reset {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  user-select: none;
+  white-space: normal;
+
+  &:focus {
+    outline: none;
+  }
+}
