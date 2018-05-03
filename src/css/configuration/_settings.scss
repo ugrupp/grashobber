@@ -20,7 +20,7 @@ $transition-time-long: .8s;
 $z-index: hero, content-minor, content, main, topbar, menu;
 
 // Sizes
-$sidePadding: rem(40px);
+$sidePadding: 40px;
 
 $bulletbox-width: 214px;
 $bulletbox-width-sm: 260px;
@@ -30,3 +30,8 @@ $box-default-spacing-md: 80px;
 $box-default-spacing-xl: 120px;
 
 $hero-height: 100vh;
+
+$container-gutter: 20px;
+$container-width-default: 1500px;
+$container-width-medium: 1200px;
+$container-width-narrow: 1200px;

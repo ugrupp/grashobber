@@ -9,7 +9,7 @@
   z-index: index($z-index, hero);
 
   @include mappy-bp(sm) {
-    padding: #{$sidePadding};
+    padding: rem($sidePadding);
     padding-bottom: 0;
   }
 }

@@ -12,8 +12,8 @@
   z-index: index($z-index, content);
 
   @include mappy-bp(sm) {
-    padding-left: #{$sidePadding};
-    padding-right: #{$sidePadding};
+    padding-left: rem($sidePadding);
+    padding-right: rem($sidePadding);
   }
 }
 
@@ -30,8 +30,8 @@
       content: '';
       background-color: $color-gray-f;
       position: absolute;
-      left: #{$sidePadding};
-      right: #{$sidePadding};
+      left: rem($sidePadding);
+      right: rem($sidePadding);
       bottom: 0;
       z-index: -10;
       top: rem(120px);

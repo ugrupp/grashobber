@@ -1,0 +1,168 @@
+//
+// Catalog
+// --------------------------------------------------
+
+.o-main__section--catalog {
+  @include mappy-bp(sm) {
+    padding-left: 0;
+  }
+}
+
+.c-catalog-section {
+  background-color: $color-gray-f;
+
+  @include mappy-bp(sm) {
+    padding-left: rem($sidePadding);
+  }
+}
+
+// View
+.c-catalog-view {
+  padding-left: $container-gutter;
+  padding-right: $container-gutter;
+
+  @include mappy-bp(xs) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.c-catalog-view__box {
+  background-color: $color-white;
+  padding: rem($box-default-spacing);
+  max-width: rem(250px);
+  position: relative;
+  z-index: 20; // > catalog
+
+  @include mappy-bp(xs) {
+    flex-shrink: 0;
+    max-width: rem(300px);
+  }
+}
+
+.c-catalog-view__catalog {
+  margin-top: rem(-70px);
+  position: relative;
+  z-index: 10; // < box
+
+  @include mappy-bp(xs) {
+    width: 100%;
+    margin-top: rem(70px);
+    margin-left: rem(-70px);
+  }
+
+  @include mappy-bp(md) {
+    margin-top: rem(90px);
+  }
+}
+
+// Order
+.c-catalog-order {
+  background-color: $color-white;
+  padding: rem($container-gutter + $box-default-spacing);
+
+  @include mappy-bp(md) {
+    padding: rem($box-default-spacing-md);
+    padding-bottom: 0;
+  }
+
+  @include mappy-bp(xl) {
+    padding: rem($box-default-spacing-xl);
+  }
+}
+
+// 2 col layout for catalog section
+.o-2col-catalog {
+  @include mappy-bp(md) {
+    display: flex;
+  }
+}
+
+.o-2col-catalog__one {
+  @include mappy-bp(md) {
+    width: 50%;
+    padding-right: rem(50px);
+  }
+}
+
+.o-2col-catalog__two {
+  @include mappy-bp(md) {
+    width: 50%;
+  }
+}
+
+
+// Catalog
+$catalog-side-padding: 7%;
+$catalog-top-padding: 8.5%;
+$catalog-bottom-padding: 5%;
+
+.c-catalog {
+  width: 100%;
+  max-width: rem(400px);
+}
+
+.c-catalog__aspect-box {
+  padding-bottom: (707.14 / 500) * 100%;
+  height: 0;
+  width: 100%;
+  position: relative;
+}
+
+.c-catalog__aspect-target {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: $color-white;
+  color: $color-white;
+  @include font-smoothing;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, .5)
+}
+
+.c-catalog__bg {
+  position: absolute;
+  left: $catalog-side-padding;
+  right: $catalog-side-padding;
+  bottom: $catalog-bottom-padding;
+  top: $catalog-top-padding;
+  background-size: cover;
+  background-position: left bottom; // totally based on the home background image
+}
+
+.c-catalog__content {
+  position: relative;
+  z-index: 10; // > bg
+  height: 100%;
+  background-color: rgba($color-content-ci, .94);
+}
+
+.c-catalog__logo {
+  height: $catalog-top-padding;
+  padding-left: $catalog-side-padding;
+  padding-right: $catalog-side-padding;
+  display: flex;
+  align-items: center;
+
+  svg {
+    height: 33.3333%;
+  }
+}
+
+.c-catalog__title {
+  position: absolute;
+  top: $catalog-top-padding;
+  left: $catalog-side-padding - 1%;
+  right: $catalog-side-padding - 1%;
+  bottom: $catalog-bottom-padding - 1%;
+  opacity: .95;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}

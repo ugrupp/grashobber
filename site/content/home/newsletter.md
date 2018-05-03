@@ -1,6 +1,5 @@
 ---
-params:
-  buttontext: Abonnieren
+buttontext: Abonnieren
 ---
 
 ## Sie möchten zu Produkten und Angeboten auf dem Laufenden bleiben?

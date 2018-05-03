@@ -2,11 +2,6 @@
 // Container
 // --------------------------------------------------
 
-$container-gutter: 20px;
-$container-width-default: 1500px;
-$container-width-medium: 1200px;
-$container-width-narrow: 1200px;
-
 .o-container {
   padding-left: rem($container-gutter);
   padding-right: rem($container-gutter);
@@ -24,5 +19,10 @@ $container-width-narrow: 1200px;
 }
 
 .o-container--no-right-pad {
+  padding-right: 0;
+}
+
+.o-container--no-pad {
+  padding-left: 0;
   padding-right: 0;
 }

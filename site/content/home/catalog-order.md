@@ -1,6 +1,5 @@
 ---
-params:
-  buttontext: Postbote losschicken
+buttontext: Postbote losschicken
 ---
 
 ## Sie wollen das gute Stück lieber in den Händen halten?

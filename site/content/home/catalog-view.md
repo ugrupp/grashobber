@@ -1,6 +1,5 @@
 ---
-params:
-  buttontext: Viel Spaß beim blättern
+buttontext: Viel Spaß beim blättern
 ---
 
 ## Druckfrisch und umfassend

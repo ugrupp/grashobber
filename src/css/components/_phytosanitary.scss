@@ -13,7 +13,7 @@ $phytosanitary-bg-color: $color-green-light;
   @include font-smoothing;
 
   @include mappy-bp(sm) {
-    margin-right: #{$sidePadding};
+    margin-right: rem($sidePadding);
     padding-right: 0;
   }
 
