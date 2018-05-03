@@ -6,6 +6,10 @@
       {{ $imageMedium := .Resize "1000x" }}
       {{ $imageBig := .Resize "2000x" }}
 
+      {{/* Store the small image for further use within the templates */}}
+      {{ $.Scratch.Set "textureHeaderImage" $imageSmall.RelPermalink }}
+
+      {{/* Render the actual hero */}}
       <img
         alt="Header"
         data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"

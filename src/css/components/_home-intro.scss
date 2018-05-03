@@ -1,0 +1,86 @@
+//
+// Home intro section
+// --------------------------------------------------
+
+.o-main__section--home-intro {
+  @include mappy-bp(sm) {
+    padding-left: 0;
+  }
+}
+
+.c-home-intro {
+  background-color: $color-gray-f;
+  padding-top: 1px; // since negative top-margin
+  padding-bottom: rem(70px);
+  padding-left: $container-gutter;
+
+  @include mappy-bp(sm) {
+    padding-left: rem($sidePadding);
+  }
+}
+
+.c-home-intro__box {
+  margin-top: -71px; // +1px to reset the 1px padding-top
+
+  position: relative;
+  padding: rem($box-default-spacing);
+  padding-right: rem($container-gutter + $box-default-spacing);
+
+  @include mappy-bp(sm) {
+    margin-left: rem($container-gutter);
+  }
+
+  @include mappy-bp(md) {
+    margin-top: -121px; // +1px to reset the 1px padding-top
+    padding: rem($box-default-spacing-md);
+
+    width: 50%;
+    margin-left: auto;
+  }
+
+  @include mappy-bp(xl) {
+    padding: rem($box-default-spacing-xl);
+  }
+
+  // background-color
+  &::after {
+    content: '';
+    background-color: rgba($color-content-ci, .95);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 15; // > bg, < content
+  }
+}
+
+.c-home-intro__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: left bottom;
+  z-index: 10; // < content, < color
+}
+
+.c-home-intro__content {
+  position: relative;
+  z-index: 20; // > bg, > color
+
+  color: $color-white;
+  @include font-smoothing;
+
+  // Headline style
+  .c-richtext {
+    h1,
+    h2,
+    h3 {
+      @extend .c-headline--sm;
+    }
+  }
+}

@@ -101,10 +101,14 @@
 }
 
 .o-2col-catalog__one {
+  padding-bottom: rem(70px);
+
   @include mappy-bp(md) {
     width: 50%;
     padding-right: rem(50px);
     padding-bottom: rem(120px);
+
+    transform: translateY(rem(-200px));
   }
 }
 
@@ -116,7 +120,7 @@
   }
 }
 
-// Headline color
+// Headline style
 .c-catalog-view,
 .c-catalog-order {
   .c-richtext {

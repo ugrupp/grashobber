@@ -29,12 +29,7 @@
               <div class="c-catalog">
                 <div class="c-catalog__aspect-box">
                   <div class="c-catalog__aspect-target">
-                    {{/* Background image */}}
-                    {{ with .Resources.GetMatch "header.jpg" }}
-                      {{ $imageSmall := .Resize "500x" }}
-                      {{ $.Scratch.Set "catalogImg" $imageSmall.RelPermalink }}
-                    {{ end }}
-                    <div class="c-catalog__bg" style="background-image: url({{ $.Scratch.Get "catalogImg" }})"></div>
+                    <div class="c-catalog__bg" style='background-image: url({{ $.Scratch.Get "textureHeaderImage" }})'></div>
 
                     <div class="c-catalog__content">
                       {{/* Logo */}}
