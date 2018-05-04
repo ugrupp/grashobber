@@ -106,6 +106,13 @@
 
 .c-footer__social-facebook {
   display: inline-block;
+  color: inherit;
+  transition: all $transition-time-default;
+
+  &:hover,
+  &:focus {
+    color: $color-content-ci;
+  }
 
   svg {
     height: rem(20px);
