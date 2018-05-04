@@ -8,7 +8,7 @@ menu:
     weight: 30
 ---
 {{% col1 %}}
-{{< headline class="c-headline--inverted c-headline--curtailed" level="1" title="Unsere Produktlösungen. Eine runde Sache." >}}
+{{< headline class="c-headline--inverted" level="1" title="Unsere Produktlösungen.<span class='br'></span> Eine runde Sache." >}}
 {{% /col1 %}}
 
 {{% col2 %}}

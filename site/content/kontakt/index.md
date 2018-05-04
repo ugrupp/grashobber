@@ -7,7 +7,7 @@ menu:
   main:
     weight: 50
 inverted: true
-h1: Wir finden Lösungen
+h1: 'Wir<span class="br"></span> finden<span class="br"></span> Lösungen'
 ---
 
 <strong class="c-contact__address-headline">Grashobber GmbH & Co. KG</strong>

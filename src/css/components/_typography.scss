@@ -10,7 +10,7 @@
   //hyphens: auto;
   @include typi('headline--default');
 
-  span {
+  span:not(.br-md):not(.br) {
     line-height: 1.4;
     padding-left: .15em;
     padding-right: .15em;
@@ -18,6 +18,16 @@
     display: inline;
     box-decoration-break: clone;
     background-color: rgba($color-white, .9);
+  }
+
+  span.br {
+    display: block;
+  }
+
+  span.br-md {
+    @include mappy-bp(md) {
+      display: block;
+    }
   }
 }
 
@@ -46,13 +56,13 @@
 .c-headline--inverted {
   color: $color-white;
 
-  span {
+  span:not(.br-md):not(.br) {
     background-color: rgba($color-content-ci, .85);
   }
 }
 
 .c-headline--curtailed {
-  max-width: rem(260px);
+  max-width: rem(300px);
 
   @include mappy-bp(sm) {
     max-width: rem(450px);

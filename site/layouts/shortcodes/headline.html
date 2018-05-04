@@ -1,3 +1,3 @@
 <h{{.Get "level"}} class="c-headline {{.Get "class"}}">
-  <span>{{ .Get "title" }}</span>
+  <span>{{ .Get "title" | markdownify }}</span>
 </h{{.Get "level"}}>
