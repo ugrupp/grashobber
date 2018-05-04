@@ -301,14 +301,14 @@ function buildSite(cb, options) {
 // ==============================
 gulp.task('build', callback =>
   runSequence(
-    ['set-prod-node-env', 'sass', 'js', 'svg', 'img', 'fonts', 'hugo-prod'],
+    ['set-prod-node-env', 'sass', 'js', 'svg', 'img', 'fonts', 'hugo'],
     callback
   )
 );
 
 gulp.task('build-preview', callback =>
   runSequence(
-    ['set-prod-node-env', 'sass', 'js', 'svg', 'img', 'fonts', 'hugo-prod-preview'],
+    ['set-prod-node-env', 'sass', 'js', 'svg', 'img', 'fonts', 'hugo-preview'],
     callback
   )
 );
