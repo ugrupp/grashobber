@@ -3,7 +3,8 @@
 // --------------------------------------------------
 
 .o-main__section--socialwall {
-  margin-top: rem(80px);
+  background-color: $color-white; // > parallax
+  padding-top: rem(80px);
 
   @include mappy-bp(sm) {
     padding-left: 0;

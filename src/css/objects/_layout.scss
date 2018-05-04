@@ -5,6 +5,8 @@
 .o-main {
   position: relative;
   z-index: index($z-index, main);
+
+  padding-top: $hero-height;
 }
 
 .o-main__section {

@@ -5,7 +5,11 @@
 .c-hero {
   width: 100%;
   height: $hero-height;
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
   z-index: index($z-index, hero);
 
   @include mappy-bp(sm) {
