@@ -2,6 +2,8 @@
 // Menu
 // --------------------------------------------------
 
+$menu-hover-opacity: .6;
+
 .c-menu {
   width: 100%;
   position: fixed;
@@ -59,7 +61,7 @@
 
   &:hover,
   &:focus {
-    opacity: .8;
+    opacity: $menu-hover-opacity;
   }
 
   svg {
@@ -107,7 +109,11 @@
     &:hover,
     &:focus {
       transform: translateX(rem(3px));
-      opacity: .8;
+      opacity: $menu-hover-opacity;
+    }
+
+    &.active {
+      opacity: $menu-hover-opacity;
     }
   }
 }
@@ -122,6 +128,12 @@
   /* stylelint-disable no-descending-specificity */
   a {
     display: inline-block;
+    transition: all $transition-time-default;
+
+    &:hover,
+    &:focus {
+      opacity: $menu-hover-opacity;
+    }
   }
 }
 
