@@ -24,7 +24,7 @@
     background-color: $color-white;
 
     @include mappy-bp(sm) {
-      width: calc(50% + #{rem($container-gutter / 2)});
+      width: 50%;
     }
   }
 }
