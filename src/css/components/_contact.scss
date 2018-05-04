@@ -35,6 +35,7 @@
 }
 
 .c-richtext .c-contact__address-headline {
+  @extend .c-headline--xs;
   display: inline;
   font-weight: $font-weight-regular;
 }
@@ -145,6 +146,7 @@
   background-color: rgba($color-white, .08);
 
   padding-top: rem(120px);
+  padding-bottom: rem(60px);
   margin-top: rem(-100px);
 
   @include mappy-bp(md) {
@@ -174,7 +176,6 @@
   & + & {
     margin-top: rem(40px);
   }
-
 }
 
 .c-contact-areas__name {

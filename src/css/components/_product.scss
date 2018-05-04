@@ -110,7 +110,7 @@ $product-bubble-size-lg: 300px;
     transition: all $transition-time-medium;
 
     &.lazyload {
-      filter: blur(20px);
+      filter: blur(30px);
     }
   }
 }

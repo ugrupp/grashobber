@@ -10,7 +10,7 @@ inverted: true
 h1: Wir finden Lösungen
 ---
 
-<strong class="c-contact__address-headline c-headline c-headline--xs">Grashobber GmbH & Co. KG</strong>
+<strong class="c-contact__address-headline">Grashobber GmbH & Co. KG</strong>
 
 Andreasweg 7  
 D-72401 Haigerloch

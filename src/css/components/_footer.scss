@@ -26,9 +26,15 @@
   }
 }
 
-.c-footer__col2 {
-  margin-top: rem(80px);
+.c-footer__col1 {
+  display: none;
 
+  @include mappy-bp(sm) {
+    display: block;
+  }
+}
+
+.c-footer__col2 {
   @include mappy-bp(sm) {
     margin-top: 0;
     margin-left: rem(80px);
@@ -54,6 +60,7 @@
 }
 
 .c-richtext .c-footer__address-headline {
+  @extend .c-headline--xs;
   display: inline;
   font-weight: $font-weight-regular;
 }
@@ -75,7 +82,7 @@
     width: rem(20px);
     height: rem(20px);
 
-    margin-bottom: rem(60px);
+    margin-bottom: rem(40px);
   }
 }
 

@@ -4,7 +4,7 @@
 
 .c-hero {
   width: 100%;
-  height: $hero-height;
+  height: rem($hero-height);
   position: fixed;
   left: 0;
   right: 0;
@@ -15,6 +15,10 @@
   @include mappy-bp(sm) {
     padding: rem($sidePadding);
     padding-bottom: 0;
+  }
+
+  @include mappy-bp(md) {
+    height: rem($hero-height-md);
   }
 }
 
@@ -43,6 +47,6 @@
   transition: all $transition-time-medium;
 
   &.lazyload {
-    filter: blur(20px);
+    filter: blur(30px);
   }
 }

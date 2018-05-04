@@ -18,7 +18,10 @@
   }
 
   strong {
-    font-weight: bold;
+    @extend .c-headline;
+    @extend .c-headline--xxs;
+    display: inline;
+    font-weight: $font-weight-regular;
   }
 
   p {
@@ -55,6 +58,7 @@
 }
 
 .c-richtext--inverted {
+  /* stylelint-disable no-descending-specificity */
   a {
     color: $color-white;
 

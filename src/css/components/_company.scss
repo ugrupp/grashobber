@@ -5,7 +5,7 @@ $company-section-height: 430px; // totally magic number, based on headline heigh
 .o-main__section--company {
   @include mappy-bp(md) {
     position: absolute;
-    top: $hero-height; // hero height
+    top: rem($hero-height-md); // hero height
     left: 0;
     right: 0;
 

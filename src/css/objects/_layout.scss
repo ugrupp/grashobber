@@ -6,7 +6,11 @@
   position: relative;
   z-index: index($z-index, main);
 
-  padding-top: $hero-height;
+  padding-top: rem($hero-height);
+
+  @include mappy-bp(md) {
+    padding-top: rem($hero-height-md);
+  }
 }
 
 .o-main__section {

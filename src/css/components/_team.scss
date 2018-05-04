@@ -76,6 +76,9 @@
 .c-team-member__phone,
 .c-team-member__mobile {
   strong {
-    font-weight: $font-weight-bold;
+    @extend .c-headline;
+    @extend .c-headline--xxs;
+    display: inline;
+    font-weight: $font-weight-regular;
   }
 }

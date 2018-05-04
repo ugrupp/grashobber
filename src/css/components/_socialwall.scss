@@ -31,6 +31,6 @@ $socialwall-img-height-md: 500px;
   transition: all $transition-time-medium;
 
   &.lazyload {
-    filter: blur(20px);
+    filter: blur(30px);
   }
 }
