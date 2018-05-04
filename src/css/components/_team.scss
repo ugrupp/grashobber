@@ -2,7 +2,8 @@
 // Team
 // --------------------------------------------------
 
-.c-team {
+.c-team,
+.c-team-member {
   color: $color-white;
   @include font-smoothing;
 
@@ -17,7 +18,8 @@
   }
 }
 
-.c-team__member {
+// Team member
+.c-team-member {
   display: flex;
   flex-direction: column;
 
@@ -37,7 +39,7 @@
   }
 }
 
-.c-team__content-wrapper {
+.c-team-member__content-wrapper {
   order: 20;
 
   @include mappy-bp(xs) {
@@ -45,7 +47,7 @@
   }
 }
 
-.c-team__image-wrapper {
+.c-team-member__image-wrapper {
   order: 10;
   margin-bottom: rem(10px);
 
@@ -56,7 +58,7 @@
   }
 }
 
-.c-team__image {
+.c-team-member__image {
   display: block;
   width: rem(114px);
   height: rem(114px);
@@ -67,12 +69,12 @@
   }
 }
 
-.c-team__positions {
+.c-team-member__positions {
   margin-bottom: 1em;
 }
 
-.c-team__phone,
-.c-team__mobile {
+.c-team-member__phone,
+.c-team-member__mobile {
   strong {
     font-weight: $font-weight-bold;
   }

@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-  {{/* Contact section */}}
+  {{/* Address/team section */}}
   <section class="o-main__section o-main__section--default o-main__section--{{.Type}}">
     <div class="c-contact">
       <div class="o-container o-container--no-right-pad">
@@ -27,16 +27,16 @@
                   <ul class="c-team__members">
                     {{ range $index, $teammember := .team }}
                       {{ if .team }}
-                        <li class="c-team__member">
+                        <li class="c-team-member">
                           {{/* Text */}}
-                          <div class="c-team__content-wrapper">
+                          <div class="c-team-member__content-wrapper">
                             {{/* Name */}}
-                            <h3 class="c-team__name c-headline c-headline--xs">{{ .name }}</h3>
+                            <h3 class="c-team-member__name c-headline c-headline--xs">{{ .name }}</h3>
 
                             {{/* Positions */}}
-                            <ul class="c-team__positions">
+                            <ul class="c-team-member__positions">
                               {{ range .positions }}
-                                <li class="c-team__position">
+                                <li class="c-team-member__position">
                                   {{.}}
                                 </li>
                               {{end}}
@@ -44,35 +44,35 @@
 
                             {{/* Phone */}}
                             {{ if .phone }}
-                              <div class="c-team__phone">
+                              <div class="c-team-member__phone">
                                 <strong>T</strong> {{ .phone }}
                               </div>
                             {{ end }}
 
                             {{/* Mobile */}}
                             {{ if .mobile }}
-                              <div class="c-team__mobile">
+                              <div class="c-team-member__mobile">
                                 <strong>M</strong> {{ .mobile }}
                               </div>
                             {{ end }}
 
                             {{/* Mail */}}
                             {{ if .email }}
-                              <div class="c-team__mail">
+                              <div class="c-team-member__mail">
                                 <a href="mailto:{{ .email }}">{{ .email }}</a>
                               </div>
                             {{ end }}
                           </div>
 
                           {{/* Image */}}
-                          <div class="c-team__image-wrapper">
+                          <div class="c-team-member__image-wrapper">
                             {{ with $.Resources.GetMatch .image }}
                               {{ $image := .Resize "144x" }}
 
                               <img
                                 alt="{{ $teammember.name }}"
                                 src="{{ $image.RelPermalink }}"
-                                class="c-team__image" />
+                                class="c-team-member__image" />
                             {{ end }}
                           </div>
                         </li>
@@ -83,6 +83,66 @@
               {{end}}
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* Areas section */}}
+  <section class="o-main__section o-main__section--contact-areas">
+    {{/* Map */}}
+    <div class="c-contact-map">
+      <div class="c-contact-map__aspect-box">
+        <div class="c-contact-map__aspect-target">
+          <div class="c-contact-map__bg" style='background-image: url({{ $.Scratch.Get "textureHeaderImage" }})'></div>
+          <div class="c-contact-map__map">
+            {{ partial "util/svg" (dict "svg" "karte") }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-contact-areas">
+      <div class="o-container o-container--no-right-pad">
+        <div class="c-contact-areas__box">
+          <ul class="c-contact-areas__areas">
+            {{ range $index, $area := .Site.Data.contact.areas }}
+              <li class="c-contact-areas__area">
+                <h3 class="c-contact-areas__name c-headline c-headline--xxs">{{ .name }}</h3>
+                {{/* Render team member */}}
+                {{ with index $.Site.Data.contact.team .teamMemberIndex }}
+                  <div class="c-team-member">
+                    {{/* Text */}}
+                    <div class="c-team-member__content-wrapper">
+                      {{/* Name */}}
+                      <h4 class="c-team-member__name c-headline c-headline--xs">{{ .name }}</h4>
+
+                      {{/* Phone */}}
+                      {{ if .phone }}
+                        <div class="c-team-member__phone">
+                          <strong>T</strong> {{ .phone }}
+                        </div>
+                      {{ end }}
+
+                      {{/* Mobile */}}
+                      {{ if .mobile }}
+                        <div class="c-team-member__mobile">
+                          <strong>M</strong> {{ .mobile }}
+                        </div>
+                      {{ end }}
+
+                      {{/* Mail */}}
+                      {{ if .email }}
+                        <div class="c-team-member__mail">
+                          <a href="mailto:{{ .email }}">{{ .email }}</a>
+                        </div>
+                      {{ end }}
+                    </div>
+                  </div>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
         </div>
       </div>
     </div>

@@ -29,6 +29,11 @@
   hyphens: none;
 }
 
+.c-headline--xxs {
+  @include typi('headline--xxs');
+  hyphens: none;
+}
+
 .c-headline--richtext {
   @include typi('headline--richtext');
 }
