@@ -40,6 +40,11 @@
 .c-newsletter__headline {
   margin-left: rem($container-gutter + $box-default-spacing);
   margin-right: rem($container-gutter + $box-default-spacing);
+
+  @include mappy-bp(md) {
+    margin-left: rem($box-default-spacing);
+    margin-right: rem($box-default-spacing);
+  }
 }
 
 // Form

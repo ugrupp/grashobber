@@ -9,6 +9,11 @@
   right: 0;
   z-index: index($z-index, topbar);
 
+  @include mappy-bp(sm) {
+    padding-left: $sidePadding;
+    padding-right: $sidePadding;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -19,7 +24,7 @@
     background-color: $color-white;
 
     @include mappy-bp(sm) {
-      width: 50%;
+      width: calc(50% + #{rem($container-gutter / 2)});
     }
   }
 }
