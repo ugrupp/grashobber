@@ -22,7 +22,10 @@
         <div class="o-2col-newsletter__two">
           {{/* Form */}}
           {{ with $bundle.Resources.GetMatch "newsletter.md" }}
-            <form class="c-newsletter__form" action="https://formspree.io/info@grashobber.de" method="POST">
+            <form class="c-newsletter__form"
+                  action="//grashobber.us13.list-manage.com/subscribe/post?u=49c46a9584d457600850026d9&amp;id=e49bc53de5"
+                  method="post"
+                  >
               {{ with $bundle.Resources.GetMatch "newsletter.md" }}
                 {{/* Intro */}}
                 <div class="c-richtext">
@@ -31,19 +34,16 @@
 
                 {{/* Form elements */}}
                 <fieldset class="c-fieldset c-fieldset--inverted">
-                  <input class="c-fieldset__input" type="email" name="email" required placeholder="E-Mail *">
-                  <input class="c-fieldset__input" type="text" name="firstname" required placeholder="Vorname *">
-                  <input class="c-fieldset__input" type="text" name="lastname" required placeholder="Nachname *">
-                  <input class="c-fieldset__input" type="text" name="company" placeholder="Firma">
+                  <input class="c-fieldset__input" type="email" name="EMAIL" required placeholder="E-Mail *">
+                  <input class="c-fieldset__input" type="text" name="VORNAME" required placeholder="Vorname *">
+                  <input class="c-fieldset__input" type="text" name="NACHNAME" required placeholder="Nachname *">
+                  <input class="c-fieldset__input" type="text" name="FIRMA" placeholder="Firma">
                 </fieldset>
 
-                <input type="hidden" name="_subject" value="Neue Newsletter-Anmeldung auf grashobber.de" />
-                <input type="hidden" name="_next" value="http://www.grashobber.de/" />
-                <input type="hidden" name="_language" value="de" />
-                <input type="text" name="_gotcha" style="display:none" />
+                <input type="text" name="b_49c46a9584d457600850026d9_e49bc53de5" tabindex="-1" value="" style="display:none">
 
                 {{/* Submit */}}
-                <button type="submit" class="c-button c-button c-button--inverted">
+                <button type="submit" name="subscribe" class="c-button c-button c-button--inverted">
                   <span>{{.Params.buttontext}}</span>
                   {{ partial "util/svg" (dict "svg" "pfeil-gruen") }}
                 </button>
