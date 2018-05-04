@@ -76,3 +76,17 @@
     width: 50%;
   }
 }
+
+// special special contact
+.o-main__section--contact {
+  .o-2col__one {
+    bottom: calc(100% - #{rem(70px + 280px)});
+  }
+
+  .c-box--default {
+    @include mappy-bp(max md) {
+      padding-top: rem(70px + 280px + 60px);
+    }
+  }
+}
+
