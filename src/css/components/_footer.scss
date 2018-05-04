@@ -45,6 +45,7 @@
 
     &:hover,
     &:focus {
+      opacity: 1;
       color: $color-content-ci;
     }
   }
@@ -119,6 +120,7 @@
 
     &:hover,
     &:focus {
+      opacity: 1;
       color: $color-content-ci;
     }
   }

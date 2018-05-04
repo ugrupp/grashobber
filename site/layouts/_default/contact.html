@@ -1,0 +1,91 @@
+{{ define "main" }}
+
+  {{/* Contact section */}}
+  <section class="o-main__section o-main__section--default o-main__section--{{.Type}}">
+    <div class="c-contact">
+      <div class="o-container o-container--no-right-pad">
+        <div class="o-2col" data-reveal>
+          {{/* Address column */}}
+          <div class="o-2col__one">
+            <h1 class="c-headline c-headline--ci c-headline--curtailed">
+              <span>{{.Params.h1}}</span>
+            </h1>
+
+            <address class="c-contact__address c-richtext c-richtext--inverted">
+              {{ .Content }}
+            </address>
+          </div>
+
+          {{/* Contact column */}}
+          <div class="o-2col__two">
+            <div class="c-box c-box--default c-box--inverted">
+              {{ with .Site.Data.contact }}
+                <h2 class="c-headline c-headline--inverted">{{.title}}</h2>
+
+                {{/* Teammembers */}}
+                <div class="c-team">
+                  <ul class="c-team__members">
+                    {{ range $index, $teammember := .team }}
+                      {{ if .team }}
+                        <li class="c-team__member">
+                          {{/* Text */}}
+                          <div class="c-team__content-wrapper">
+                            {{/* Name */}}
+                            <h3 class="c-team__name c-headline c-headline--xs">{{ .name }}</h3>
+
+                            {{/* Positions */}}
+                            <ul class="c-team__positions">
+                              {{ range .positions }}
+                                <li class="c-team__position">
+                                  {{.}}
+                                </li>
+                              {{end}}
+                            </ul>
+
+                            {{/* Phone */}}
+                            {{ if .phone }}
+                              <div class="c-team__phone">
+                                <strong>T</strong> {{ .phone }}
+                              </div>
+                            {{ end }}
+
+                            {{/* Mobile */}}
+                            {{ if .mobile }}
+                              <div class="c-team__mobile">
+                                <strong>M</strong> {{ .mobile }}
+                              </div>
+                            {{ end }}
+
+                            {{/* Mail */}}
+                            {{ if .email }}
+                              <div class="c-team__mail">
+                                <a href="mailto:{{ .email }}">{{ .email }}</a>
+                              </div>
+                            {{ end }}
+                          </div>
+
+                          {{/* Image */}}
+                          <div class="c-team__image-wrapper">
+                            {{ with $.Resources.GetMatch .image }}
+                              {{ $image := .Resize "144x" }}
+
+                              <img
+                                alt="{{ $teammember.name }}"
+                                src="{{ $image.RelPermalink }}"
+                                class="c-team__image" />
+                            {{ end }}
+                          </div>
+                        </li>
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+                </div>
+              {{end}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+

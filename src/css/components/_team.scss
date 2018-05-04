@@ -1,0 +1,79 @@
+//
+// Team
+// --------------------------------------------------
+
+.c-team {
+  color: $color-white;
+  @include font-smoothing;
+
+  a {
+    color: inherit;
+    transition: all $transition-time-default;
+
+    &:hover,
+    &:focus {
+      opacity: .8;
+    }
+  }
+}
+
+.c-team__member {
+  display: flex;
+  flex-direction: column;
+
+  @include mappy-bp(xs) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: rem(430px);
+  }
+
+  & + & {
+    margin-top: rem(30px);
+
+    @include mappy-bp(md) {
+      margin-top: rem(40px);
+    }
+  }
+}
+
+.c-team__content-wrapper {
+  order: 20;
+
+  @include mappy-bp(xs) {
+    order: 10;
+  }
+}
+
+.c-team__image-wrapper {
+  order: 10;
+  margin-bottom: rem(10px);
+
+  @include mappy-bp(xs) {
+    margin-bottom: 0;
+    margin-left: rem(20px);
+    order: 20;
+  }
+}
+
+.c-team__image {
+  display: block;
+  width: rem(114px);
+  height: rem(114px);
+
+  @include mappy-bp(sm) {
+    width: rem(144px);
+    height: rem(144px);
+  }
+}
+
+.c-team__positions {
+  margin-bottom: 1em;
+}
+
+.c-team__phone,
+.c-team__mobile {
+  strong {
+    font-weight: $font-weight-bold;
+  }
+}

@@ -1,0 +1,53 @@
+//
+// Contact
+// --------------------------------------------------
+
+.o-main__section--contact {
+  color: $color-white;
+  @include font-smoothing;
+
+  // based on default section
+  &::after {
+    content: '';
+    background-color: $color-green-overlayed;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    top: rem(100px);
+
+    @include mappy-bp(md) {
+      top: rem(120px);
+    }
+  }
+}
+
+.c-contact {
+  .c-headline + .c-team,
+  .c-headline + .c-contact__address {
+    margin-top: rem(30px);
+
+    @include mappy-bp(md) {
+      margin-top: rem(60px);
+    }
+  }
+}
+
+.c-richtext .c-contact__address-headline {
+  display: inline;
+  font-weight: $font-weight-regular;
+}
+
+
+.c-richtext.c-contact__address {
+  p {
+    &:not(:last-child) {
+      margin-bottom: .5em;
+    }
+
+    &:not(:first-child) {
+      margin-top: .5em;
+    }
+  }
+}

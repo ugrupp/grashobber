@@ -38,6 +38,12 @@
 
   a {
     color: $color-content-ci;
+    transition: all $transition-time-default;
+
+    &:hover,
+    &:focus {
+      opacity: .8;
+    }
   }
 
   h1,
@@ -45,5 +51,16 @@
   h3 {
     @extend .c-headline;
     @extend .c-headline--richtext;
+  }
+}
+
+.c-richtext--inverted {
+  a {
+    color: $color-white;
+
+    &:hover,
+    &:focus {
+      opacity: .8;
+    }
   }
 }

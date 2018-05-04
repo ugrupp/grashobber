@@ -1,0 +1,89 @@
+title = "Auch für Sie."
+
+# List of teammembers
+[[team]]
+name = "Heiko Remmel"
+positions = [
+  "Geschäftsführer",
+  "Vertrieb",
+]
+image = "heikoremmel.png"
+mobile = "+49 172 / 6964010"
+email = "heiko.remmel@grashobber.de"
+team = true
+
+[[team]]
+name = "Tanja Remmel"
+positions = [
+  "Geschäftsführerin",
+  "Verwaltung/Marketing",
+]
+image = "tanjaremmel.png"
+phone = "+49 7474 / 918635"
+email = "tanja.remmel@grashobber.de"
+team = true
+
+[[team]]
+name = "Thorsten Cramer"
+positions = [
+  "Vertriebsaußendienst",
+]
+image = "thorstencramer.png"
+mobile = "+49 171 / 9360160"
+email = "thorsten.cramer@grashobber.de"
+team = true
+
+[[team]]
+name = "Raffaela Gianfelice"
+positions = [
+  "Vertriebsaußendienst",
+]
+image = "raffaelagianfelice.png"
+mobile = "+49 171 / 9496734"
+email = "raffaela.gianfelice@grashobber.de"
+team = true
+
+[[team]]
+name = "Maria Harke"
+positions = [
+  "Vertriebsinnendienst",
+]
+image = "mariaharke.png"
+phone = "+49 7474 / 918635"
+email = "maria.harke@grashobber.de"
+team = true
+
+[[team]]
+name = "Marion Zeiler"
+positions = [
+  "Vertriebsinnendienst",
+]
+image = "marionzeiler.png"
+phone = "+49 7474 / 918635"
+email = "marion.zeiler@grashobber.de"
+team = true
+
+[[team]]
+name = "Katrin Ifländer"
+phone = "+41 58 / 3569075"
+email = "k.iflaender@interstein.com"
+team = false
+
+
+# List of areas with responsible persons
+[[areas]]
+name = "Gebiet 1 + Gebiet 4 + Schweiz"
+teamMemberIndex = 0
+
+[[areas]]
+name = "Gebiet 2 + Österreich"
+teamMemberIndex = 2
+
+[[areas]]
+name = "Gebiet 3"
+teamMemberIndex = 3
+
+[[areas]]
+name = "Schweiz"
+subline = "Kooperationspartner interstein"
+teamMemberIndex = 6
