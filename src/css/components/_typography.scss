@@ -11,12 +11,13 @@
   @include typi('headline--default');
 
   span {
-    line-height: 1.35;
+    line-height: 1.4;
     padding-left: .15em;
     padding-right: .15em;
+    padding-top: .09em; // totally magic number
     display: inline;
     box-decoration-break: clone;
-    background-color: $color-white;
+    background-color: rgba($color-white, .9);
   }
 }
 
