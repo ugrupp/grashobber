@@ -44,7 +44,8 @@ $phytosanitary-bg-color: $color-green-light;
   transform: scale(1.1);
   transition: all $transition-time-medium;
 
-  &.lazyload {
+  &.lazyload,
+  &.lazyloading {
     filter: blur(30px);
   }
 }

@@ -109,7 +109,8 @@ $product-bubble-size-lg: 300px;
     object-fit: cover;
     transition: all $transition-time-medium;
 
-    &.lazyload {
+    &.lazyload,
+    &.lazyloading {
       filter: blur(30px);
     }
   }
