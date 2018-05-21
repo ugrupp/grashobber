@@ -11,6 +11,7 @@ import 'svgxuse';
 import 'babel-polyfill'; // eslint-disable-line import/no-unresolved
 
 // module imports
+import './modules/object-fit-images';
 import './modules/fontfaceobserver';
 import './modules/topbar';
 import './modules/reveal-animations';

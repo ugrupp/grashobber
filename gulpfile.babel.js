@@ -16,6 +16,7 @@ import runSequence from 'run-sequence';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 import notifier from 'node-notifier';
+import postCssObjectFitImages from 'postcss-object-fit-images';
 
 // Setup & Configuration
 // ==============================
@@ -109,6 +110,7 @@ var postCSSPostProcessors = [
   cssnano({
     preset: 'default',
   }),
+  postCssObjectFitImages,
 ];
 
 gulp.task('sass', ['stylelint'], function() {
