@@ -10,7 +10,7 @@ resources:
 - src: aktionen-aktuelles/GKJ_Rasen_04_17_grashobber_web.pdf
   title: 'Fachartikel: Förderung der biologischenAktivität und des Filzabbaus im Pflegehorizont'
 
-- src: produktinformationen/grashobber_Aktionsblatt_Messgeräte_Stelzner.pdf
+- src: produktinformationen/grashobber_Aktionsblatt_Messgeraete_Stelzner.pdf
   title: 'Jahresaktion TDR'
 
 - src: sicherheitsdatenblaetter/sea-nymph/MSDS_6011001_SN_Topfine_V1.pdf
