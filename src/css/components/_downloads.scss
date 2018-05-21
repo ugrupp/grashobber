@@ -46,6 +46,7 @@
     }
 
     svg {
+      flex-shrink: 0;
       height: rem(32px);
       width: rem(32px);
     }
