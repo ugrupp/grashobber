@@ -1,0 +1,73 @@
+{{ define "main" }}
+  {{/* Content section */}}
+  <section class="o-main__section o-main__section--default o-main__section--plain o-main__section--{{.Type}}">
+    <div class="c-plain">
+      <div class="o-container">
+        {{ if .Params.h1 }}
+          <div class="c-plain__headline-alpha-wrapper">
+            <h1 class="c-plain__headline-alpha c-headline c-headline--ci c-headline--sm c-headline--curtailed">
+              {{.Params.h1 | markdownify}}
+            </h1>
+          </div>
+        {{ else }}
+          <h1 class="u-invisible">{{ .Title }}</h1>
+        {{ end }}
+
+        <div class="o-2col">
+          {{/* Left column */}}
+          <div class="o-2col__one">
+            {{ with .Resources.GetMatch "leftcol.md" }}
+              {{ if .Params.headline }}
+                <div class="c-plain__headline-beta-wrapper">
+                  <h2 class="c-plain__headline-beta c-headline c-headline--ci c-headline--sm">
+                    {{.Params.headline | markdownify}}
+                  </h2>
+                </div>
+              {{ end }}
+
+              <div class="c-richtext">
+                {{ .Content }}
+              </div>
+            {{ end }}
+          </div>
+
+          {{/* Right column */}}
+          <div class="o-2col__two">
+            {{ with .Resources.GetMatch "rightcol.md" }}
+              {{ if .Params.headline }}
+                <div class="c-plain__headline-alpha-wrapper">
+                  <h2 class="c-plain__headline-beta c-headline c-headline--ci c-headline--sm">
+                    {{.Params.headline | markdownify}}
+                  </h2>
+                </div>
+              {{ end }}
+
+              <div class="c-richtext">
+                {{ .Content }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/* Image section */}}
+  <section class="c-plain-image">
+    {{ with .Resources.GetMatch "header.jpg" }}
+      {{ $imagePlaceholder := .Resize "100x" }}
+      {{ $imageSmall := .Resize "500x" }}
+      {{ $imageMedium := .Resize "1000x" }}
+      {{ $imageBig := .Resize "2000x" }}
+
+      {{/* Render the image */}}
+      <img
+        alt=""
+        data-srcset="{{ $imageSmall.RelPermalink }} 500w, {{ $imageMedium.RelPermalink }} 1000w, {{ $imageBig.RelPermalink }} 2000w"
+        data-src="{{ $imageMedium.RelPermalink }}"
+        src="{{ $imagePlaceholder.RelPermalink }}"
+        class="c-plain-image__img lazyload" />
+    {{ end }}
+  </section>
+{{ end }}
+

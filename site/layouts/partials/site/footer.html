@@ -6,7 +6,7 @@
         <div class="c-footer__col1">
           {{/* Address */}}
           <address class="c-footer__address c-richtext">
-            <strong class="c-footer__address-headline">Grashobber GmbH &amp; Co. KG</strong><br />
+            <strong class="c-footer__address-headline">grashobber GmbH &amp; Co. KG</strong><br />
             Andreasweg 7<br />
             D-72401 Haigerloch<br />
             <strong>T</strong> +49 7474 / 918635<br />
@@ -28,9 +28,9 @@
 
             {{/* Meta menu */}}
             <ul class="c-footer__nav-list">
-              <li><a href="#">Impressum</a></li>
-              <li><a href="#">Datenschutz</a></li>
-              <li><a href="#">AGBs</a></li>
+              <li><a href="{{ ref . "impressum/index.md" }}">Impressum</a></li>
+              <li><a href="{{ ref . "datenschutz/index.md" }}">Datenschutz</a></li>
+              <li><a href="{{ ref . "agb/index.md" }}">AGB</a></li>
             </ul>
           </nav>
         </div>

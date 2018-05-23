@@ -1,0 +1,122 @@
+//
+// Plain layout (white)
+// --------------------------------------------------
+
+.o-main__section--plain {
+  margin-top: rem(-100px);
+
+  @include mappy-bp(sm) {
+    margin-top: rem(-220px);
+  }
+
+  // based on default section
+  &::after {
+    content: '';
+    background-color: $color-gray-f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    top: rem(100px);
+
+    @include mappy-bp(sm) {
+      left: rem($sidePadding);
+      right: rem($sidePadding);
+      top: rem(220px);
+    }
+  }
+
+  &::before {
+    display: none;
+    content: '';
+    background-color: $color-gray-overlay;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    bottom: rem(-100px);
+
+    @include mappy-bp(sm) {
+      display: block;
+      left: rem($sidePadding);
+      right: rem($sidePadding);
+    }
+  }
+
+  // cols in plain sections
+  .o-2col__one {
+    position: static;
+    left: auto;
+    right: auto;
+  }
+
+  .o-2col__two {
+    margin-top: rem(60px);
+
+    @include mappy-bp(md) {
+      margin-top: 0;
+    }
+  }
+}
+
+.c-plain {
+  padding-bottom: rem(100px);
+}
+
+.c-plain__headline-alpha-wrapper,
+.c-plain__headline-beta-wrapper {
+  margin-bottom: 30px;
+
+  @include mappy-bp(md) {
+    margin-bottom: 0;
+    transform: translateY(rem(-100px));
+  }
+}
+
+.c-richtext .c-plain__richtext-headline {
+  @extend .c-headline--xs;
+  font-weight: $font-weight-regular;
+
+  &:not(:first-child) {
+    margin-top: 2em;
+  }
+}
+
+.c-richtext .c-plain__richtext-address {
+  p {
+    &:not(:last-child) {
+      margin-bottom: .5em;
+    }
+
+    &:not(:first-child) {
+      margin-top: .5em;
+    }
+  }
+}
+
+// Decor Image
+.c-plain-image {
+  height: rem(300px);
+  overflow: hidden; // for filter
+  position: relative;
+  z-index: index($z-index, content-minor);
+
+  @include mappy-bp(md) {
+    height: rem(480px);
+  }
+}
+
+.c-plain-image__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: all $transition-time-medium;
+
+  &.lazyload,
+  &.lazyloading {
+    filter: blur(30px);
+  }
+}

@@ -22,16 +22,25 @@
   }
 }
 
-.c-hero--inverted::before {
+.c-hero--inverted::before,
+.c-hero--white::before {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: $color-ci-overlay;
   z-index: 10; // > image
 }
+
+.c-hero--inverted::before {
+  background-color: $color-ci-overlay;
+}
+
+.c-hero--white::before {
+  background-color: $color-white-overlay;
+}
+
 
 .c-hero__img-wrapper {
   height: 100%;

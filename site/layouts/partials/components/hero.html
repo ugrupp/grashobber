@@ -1,4 +1,4 @@
-<div class="c-hero{{ if .Params.inverted }} c-hero--inverted{{end}}">
+<div class="c-hero{{ if .Params.inverted }} c-hero--inverted{{end}}{{ if .Params.white }} c-hero--white{{end}}">
   <div class="c-hero__img-wrapper">
     {{ with .Resources.GetMatch "header.jpg" }}
       {{ $imagePlaceholder := .Resize "100x" }}
