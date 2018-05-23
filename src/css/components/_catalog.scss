@@ -116,6 +116,11 @@
   }
 }
 
+.c-catalog-order__dsgvo {
+  opacity: .5;
+  margin-top: rem(30px);
+}
+
 // 2 col layout for catalog section
 .o-2col-catalog {
   @include mappy-bp(md) {

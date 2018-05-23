@@ -68,6 +68,11 @@
                   <input class="c-fieldset__input" type="email" name="email" required placeholder="E-Mail">
                 </fieldset>
 
+                {{/* DSGVO hint */}}
+                <div class="c-catalog-order__dsgvo c-richtext c-richtext--sm">
+                  {{.Params.dsgvo | markdownify}}
+                </div>
+
                 <input type="hidden" name="_subject" value="Neue Katalogbestellung auf grashobber.de" />
                 <input type="hidden" name="_next" value="http://www.grashobber.de/" />
                 <input type="hidden" name="_language" value="de" />

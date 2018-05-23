@@ -71,6 +71,10 @@
   }
 }
 
+.c-richtext--sm {
+  @include typi(sm);
+}
+
 .c-richtext--inverted {
   /* stylelint-disable no-descending-specificity */
   a {

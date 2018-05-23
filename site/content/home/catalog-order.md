@@ -1,5 +1,6 @@
 ---
 buttontext: Postbote losschicken
+dsgvo: "Wir legen großen Wert auf den Schutz Ihrer Daten. Hier finden Sie unsere [Datenschutzerklärung](/datenschutz/)."
 ---
 
 ## Sie wollen das gute Stück lieber in den Händen halten?
