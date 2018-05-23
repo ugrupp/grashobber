@@ -27,7 +27,7 @@
                   <ul class="c-team__members">
                     {{ range $index, $teammember := .team }}
                       {{ if .team }}
-                        <li class="c-team-member">
+                        <li class="c-team-member" data-reveal>
                           {{/* Text */}}
                           <div class="c-team-member__content-wrapper">
                             {{/* Name */}}
@@ -94,8 +94,8 @@
     <div class="c-contact-map">
       <div class="c-contact-map__aspect-box">
         <div class="c-contact-map__aspect-target">
-          <div class="c-contact-map__bg" style='background-image: url({{ $.Scratch.Get "textureHeaderImage" }})'></div>
-          <div class="c-contact-map__map">
+          <div data-reveal class="c-contact-map__bg" style='background-image: url({{ $.Scratch.Get "textureHeaderImage" }})'></div>
+          <div data-reveal class="c-contact-map__map">
             {{ partial "util/svg" (dict "svg" "karte") }}
           </div>
         </div>
