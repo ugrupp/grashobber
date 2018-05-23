@@ -48,35 +48,16 @@
 }
 
 // Form
-.c-newsletter__form {
+.c-newsletter__social {
   padding-left: rem($container-gutter + $box-default-spacing);
   padding-right: rem($container-gutter + $box-default-spacing);
 
   @include mappy-bp(md) {
-    padding-left: rem($box-default-spacing-md);
-    padding-right: rem($box-default-spacing-md);
-  }
-
-  @include mappy-bp(xl) {
-    padding-left: rem($box-default-spacing-xl);
-    padding-right: rem($box-default-spacing-xl);
-  }
-
-  // Component spacing
-  .c-fieldset {
-    margin-top: rem(30px);
-
-    @include mappy-bp(md) {
-      margin-top: rem(40px);
-    }
-  }
-
-  .c-button {
-    margin-top: rem(40px);
-
-    @include mappy-bp(md) {
-      margin-top: rem(60px);
-    }
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

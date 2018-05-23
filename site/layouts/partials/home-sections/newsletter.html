@@ -20,36 +20,9 @@
         </div>
 
         <div class="o-2col-newsletter__two">
-          {{/* Form */}}
-          {{ with $bundle.Resources.GetMatch "newsletter.md" }}
-            <form class="c-newsletter__form"
-                  action="//grashobber.us13.list-manage.com/subscribe/post?u=49c46a9584d457600850026d9&amp;id=e49bc53de5"
-                  method="post"
-                  >
-              {{ with $bundle.Resources.GetMatch "newsletter.md" }}
-                {{/* Intro */}}
-                <div class="c-richtext">
-                  {{ .Content }}
-                </div>
-
-                {{/* Form elements */}}
-                <fieldset class="c-fieldset c-fieldset--inverted">
-                  <input class="c-fieldset__input" type="email" name="EMAIL" required placeholder="E-Mail *">
-                  <input class="c-fieldset__input" type="text" name="VORNAME" required placeholder="Vorname *">
-                  <input class="c-fieldset__input" type="text" name="NACHNAME" required placeholder="Nachname *">
-                  <input class="c-fieldset__input" type="text" name="FIRMA" placeholder="Firma">
-                </fieldset>
-
-                <input type="text" name="b_49c46a9584d457600850026d9_e49bc53de5" tabindex="-1" value="" style="display:none">
-
-                {{/* Submit */}}
-                <button type="submit" name="subscribe" class="c-button c-button c-button--inverted">
-                  <span>{{.Params.buttontext}}</span>
-                  {{ partial "util/svg" (dict "svg" "pfeil-gruen") }}
-                </button>
-              {{ end }}
-            </form>
-          {{ end }}
+          <div class="c-newsletter__social">
+            {{ partial "components/socialicons" (dict "context" .) }}
+          </div>
         </div>
       </div>
     </div>

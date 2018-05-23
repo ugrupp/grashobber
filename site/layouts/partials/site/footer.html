@@ -18,14 +18,6 @@
 
         <div class="c-footer__col2">
           <nav class="c-footer__nav">
-            {{/* Social menu */}}
-            <div class="c-footer__social">
-              <a href="{{.Site.Params.facebookURL}}" target="_blank" class="c-footer__social-facebook">
-                {{ partial "util/svg" (dict "svg" "facebook-grau") }}
-                <span class="u-invisible">Facebook</span>
-              </a>
-            </div>
-
             {{/* Meta menu */}}
             <ul class="c-footer__nav-list">
               <li><a href="{{ ref . "impressum/index.md" }}">Impressum</a></li>

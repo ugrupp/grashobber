@@ -104,31 +104,7 @@
   }
 }
 
-.c-footer__social-facebook {
-  display: inline-block;
-  color: inherit;
-  transition: all $transition-time-default;
-
-  &:hover,
-  &:focus {
-    color: $color-content-ci;
-  }
-
-  svg {
-    height: rem(20px);
-    width: rem(90px);
-  }
-}
-
-.c-footer__nav {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .c-footer__nav-list {
-  margin-top: auto;
-
   /* stylelint-disable no-descending-specificity */
   a {
     color: inherit;

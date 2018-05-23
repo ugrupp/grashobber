@@ -1,0 +1,32 @@
+<ul class="c-social-icons{{if .stacked}} c-social-icons--stacked{{end}}">
+  <li class="c-social-icons__item">
+    <a class="c-social-icons__link" href="{{.context.Site.Params.facebookurl}}" target="_blank">
+      {{ if .inverted }}
+        {{ partial "util/svg" (dict "svg" "facebook-gruen") }}
+      {{ else }}
+        {{ partial "util/svg" (dict "svg" "facebook") }}
+      {{ end }}
+      <span>Facebook</span>
+    </a>
+  </li>
+  <li class="c-social-icons__item">
+    <a class="c-social-icons__link" href="{{.context.Site.Params.twitterurl}}" target="_blank">
+      {{ if .inverted }}
+        {{ partial "util/svg" (dict "svg" "twitter-gruen") }}
+      {{ else }}
+        {{ partial "util/svg" (dict "svg" "twitter") }}
+      {{ end }}
+      <span>Twitter</span>
+    </a>
+  </li>
+  <li class="c-social-icons__item">
+    <a class="c-social-icons__link" href="{{.context.Site.Params.instagramurl}}" target="_blank">
+      {{ if .inverted }}
+        {{ partial "util/svg" (dict "svg" "instagram-gruen") }}
+      {{ else }}
+        {{ partial "util/svg" (dict "svg" "instagram") }}
+      {{ end }}
+      <span>Instagram</span>
+    </a>
+  </li>
+</ul>

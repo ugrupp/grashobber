@@ -119,27 +119,11 @@ $menu-hover-opacity: .6;
 }
 
 .c-menu__social {
-  margin-top: rem(50px);
+  padding-top: rem(50px);
+  padding-bottom: rem(50px);
 
   @include mappy-bp(sm) {
-    margin-top: rem(100px);
-  }
-
-  /* stylelint-disable no-descending-specificity */
-  a {
-    display: inline-block;
-    transition: all $transition-time-default;
-
-    &:hover,
-    &:focus {
-      opacity: $menu-hover-opacity;
-    }
-  }
-}
-
-.c-menu__social-facebook {
-  svg {
-    height: rem(20px);
-    width: rem(90px);
+    padding-top: rem(100px);
+    padding-bottom: rem(100px);
   }
 }

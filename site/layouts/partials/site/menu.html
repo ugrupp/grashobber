@@ -1,7 +1,7 @@
 {{ if .Params.inverted }}
-  {{ .Scratch.Set "menuElements" (dict "classes" "c-menu--inverted" "menu" "schliessen" "facebook" "facebook-gruen") }}
+  {{ .Scratch.Set "menuElements" (dict "classes" "c-menu--inverted" "menu" "schliessen") }}
 {{ else }}
-  {{ .Scratch.Set "menuElements" (dict "classes" "" "menu" "schliessen-weiss" "facebook" "facebook-weiss") }}
+  {{ .Scratch.Set "menuElements" (dict "classes" "" "menu" "schliessen-weiss") }}
 {{ end }}
 
 <div class='c-menu {{ (.Scratch.Get "menuElements").classes }}' id="menu" data-menu>
@@ -29,13 +29,8 @@
 
 
     {{/* Social menu */}}
-    <ul class="c-menu__social">
-      <li>
-        <a href="{{.Site.Params.facebookURL}}" target="_blank" class="c-menu__social-facebook">
-          {{ partial "util/svg" (dict "svg" (.Scratch.Get "menuElements").facebook) }}
-          <span class="u-invisible">Facebook</span>
-        </a>
-      </li>
-    </ul>
+    <div class="c-menu__social">
+      {{ partial "components/socialicons" (dict "context" . "inverted" .Params.inverted "stacked" 1) }}
+    </div>
   </nav>
 </div>
