@@ -38,4 +38,10 @@ $socialwall-img-height-md: 500px;
 
 .c-socialwall__wall {
   padding-top: rem(50px);
+  padding-left: rem($sidePadding);
+  padding-right: rem($sidePadding);
+
+  @include mappy-bp(sm) {
+    padding-right: 0;
+  }
 }
