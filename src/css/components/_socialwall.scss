@@ -66,6 +66,11 @@ $socialwall-img-height-md: 500px;
 .c-socialwall__wall {
   padding-top: rem(50px);
   padding-bottom: rem(50px);
+
+  @include mappy-bp(md) {
+    padding-left: rem($container-gutter);
+    padding-right: rem($container-gutter);
+  }
 }
 
 .c-socialwall__wall .o-container {
@@ -74,14 +79,19 @@ $socialwall-img-height-md: 500px;
   }
 
   @include mappy-bp(md) {
-    padding-left: $box-default-spacing;
-    padding-right: $box-default-spacing;
+    padding-left: rem($box-default-spacing);
+    padding-right: rem($box-default-spacing);
   }
 }
 
 .c-socialwall__wall-inner {
-  margin-left: rem($box-default-spacing - 12px); // 12px = feed side padding
-  margin-right: rem($box-default-spacing - 12px);
+  margin-left: rem(-12px); // 12px = feed side padding
+  margin-right: rem(-12px);
+
+  @include mappy-bp(sm) {
+    margin-left: rem($box-default-spacing - 12px); // 12px = feed side padding
+    margin-right: rem($box-default-spacing - 12px);
+  }
 }
 
 // widget overrides
