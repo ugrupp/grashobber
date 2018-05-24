@@ -11,12 +11,14 @@
   }
 }
 
+// Image
 $socialwall-img-height: 400px;
 $socialwall-img-height-md: 500px;
 
 .c-socialwall__img-wrapper {
   height: rem($socialwall-img-height);
   overflow: hidden; // for filter
+  position: relative;
 
   @include mappy-bp(md) {
     height: rem($socialwall-img-height-md);
@@ -36,14 +38,51 @@ $socialwall-img-height-md: 500px;
   }
 }
 
-.c-socialwall__wall {
-  padding: rem(50px) rem($sidePadding);
+// Headline
+.c-socialwall__headline-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: rem(40px);
+  z-index: 10; // > image
 
   @include mappy-bp(sm) {
+    left: rem($sidePadding);
+  }
+
+  @include mappy-bp(md) {
+    padding-left: 0;
     padding-right: 0;
+    bottom: rem(80px);
   }
 }
 
+.c-socialwall__headline {
+  margin-left: rem($box-default-spacing);
+  margin-right: rem($box-default-spacing);
+}
+
+// wall
+.c-socialwall__wall {
+  padding-top: rem(50px);
+  padding-bottom: rem(50px);
+}
+
+.c-socialwall__wall .o-container {
+  @include mappy-bp(sm) {
+    padding-left: rem($container-gutter + $sidePadding);
+  }
+
+  @include mappy-bp(md) {
+    padding-left: $box-default-spacing;
+    padding-right: $box-default-spacing;
+  }
+}
+
+.c-socialwall__wall-inner {
+  margin-left: rem($box-default-spacing - 12px); // 12px = feed side padding
+  margin-right: rem($box-default-spacing - 12px);
+}
 
 // widget overrides
 .c-socialwall {
