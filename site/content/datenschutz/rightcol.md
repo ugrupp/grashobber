@@ -1,6 +1,9 @@
 <h3 class="c-plain__richtext-headline">Social Wall – Social Media Plugins</h3>
 
-Auf unserer Webseite werden Inhalte von unseren Social Media Kanälen angezeigt (Social Wall). Dafür nutzen wir das Plugin „Juicer“. Anbieter von diesem ist Juicer.IO, 1515 7th street, #424, Santa Monica, CA, 90401, hello@juicer.io. Für diesen Dienst werden Daten aus verschiedenen Social Media Plattformen ausgelesen und auf der Webseite anzeigt und verlinkt. Hier finden Sie die Privacy policy von Juicer: https://www.juicer.io/privacy
+Auf unserer Webseite werden Inhalte von unseren Social Media Kanälen angezeigt (Social Wall). Dafür nutzen wir das Plugin „Curator“.
+Anbieter von diesem ist die Curator Group Pty Ltd, 53619769112, 69 Ruthven Street, Bondi Junction, New South Wales, 2022 Australia
+Für diesen Dienst werden Daten aus verschiedenen Social Media Plattformen ausgelesen und auf der Webseite anzeigt und verlinkt. 
+Hier finden Sie die Privacy policy von Curator: https://curator.io/privacy-policy/
 
 Auf unserer Website werden somit sogenannte Social Plugins („Plugins“) der sozialen Netzwerke Facebook und LinkedIn und der Mikroblogging-Dienste Twitter und Instagram verwendet. Diese Dienste werden von den Unternehmen Facebook Inc., LinkedIn Corporation, Twitter Inc. und Instagram LLC. angeboten („Anbieter“).  
 Facebook wird betrieben von der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA (“Facebook”). Eine Übersicht über die Plugins von Facebook und deren Aussehen finden Sie hier: https://developers.facebook.com/docs/plugins  
