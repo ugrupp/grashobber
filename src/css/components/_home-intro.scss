@@ -22,6 +22,8 @@
 .c-home-intro__box {
   margin-top: -71px; // +1px to reset the 1px padding-top
 
+  overflow: hidden; // for scaled bg image
+
   position: relative;
   padding: rem($box-default-spacing);
   padding-right: rem($container-gutter + $box-default-spacing);
@@ -68,9 +70,13 @@
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-size: cover;
-  background-position: left bottom;
   z-index: 10; // < content, < color
+
+  // super special adjustments for intro box
+  background-size: cover;
+  background-position: right bottom;
+  transform: scale(2);
+  transform-origin: right bottom;
 }
 
 .c-home-intro__content {
