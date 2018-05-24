@@ -43,3 +43,23 @@ $socialwall-img-height-md: 500px;
     padding-right: 0;
   }
 }
+
+
+// widget overrides
+.c-socialwall {
+  .crt-grid-post-v2 .crt-post-fullname,
+  .crt-post-v2 .crt-post-fullname {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .crt-post-v2 .crt-post-content-text {
+    line-height: inherit;
+    text-align: left;
+  }
+}
+
+.crt-popup-wrapper .crt-popup .crt-popup-header .crt-post-name {
+  white-space: normal !important;
+}
+
