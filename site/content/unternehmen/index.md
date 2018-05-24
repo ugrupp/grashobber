@@ -1,5 +1,6 @@
 ---
 title: Unternehmen
+subtitle: Wir finden Lösungen in der nachhaltige Rasenpflege. Auch für Sie.
 description: "Bei uns bekommen Sie das Komplettpaket: fundierte Beratung, weitreichendes Fachwissen, Analysemöglichkeiten und stimmige Produktlösungen."
 layout: company
 type: company

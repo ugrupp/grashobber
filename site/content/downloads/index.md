@@ -1,5 +1,6 @@
 ---
 title: Downloads
+subtitle: Informationen, Formelles und mehr
 description: Hier finden Sie Informationen zu aktuellen Themen und die Sicherheitsdatenblätter zu unserem Produktlösungen.
 layout: downloads
 type: downloads

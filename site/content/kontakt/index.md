@@ -1,5 +1,6 @@
 ---
 title: Kontakt
+subtitle: Ihr Spezialist für die nachhaltige Rasenpflege
 description: Wir nehmen uns Zeit für Sie. Sprechen Sie uns an. Wir sind gerne für Sie da.
 layout: contact
 type: contact

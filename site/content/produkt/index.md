@@ -1,5 +1,6 @@
 ---
 title: Produktlösungen
+subtitle: Produktlösungen für nachhaltige Rasenpflege und den integrierten Pflanzenschutz
 description: Unsere Produktlösungen unterstützen eine Pflege, die ohne hohe Stickstoffgaben und mit wenig Pflanzenschutz auskommt und damit auch den integrierten Pflanzenschutz.
 layout: product
 type: product
