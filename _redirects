@@ -1,5 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://grashobber.netlify.com/* http://grashobber.de/:splat 301!
-
-# redirect old flipbox path
-/flipbox http://flipbox.grashobber.de 301
