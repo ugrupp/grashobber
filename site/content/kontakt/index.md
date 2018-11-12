@@ -8,6 +8,7 @@ menu:
   main:
     weight: 50
 inverted: true
+fiftypercenthack: true
 h1: 'Wir<span class="br"></span> finden<span class="br"></span> Lösungen'
 ---
 

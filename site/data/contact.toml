@@ -34,13 +34,13 @@ email = "thorsten.cramer@grashobber.de"
 team = true
 
 [[team]]
-name = "Raffaela Gianfelice"
+name = "Kristian Holik"
 positions = [
   "Vertriebsaußendienst",
 ]
-image = "raffaelagianfelice.png"
+image = "kristianholik.png"
 mobile = "+49 171 / 9496734"
-email = "raffaela.gianfelice@grashobber.de"
+email = "kristian.holik@grashobber.de"
 team = true
 
 [[team]]

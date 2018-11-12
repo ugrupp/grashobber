@@ -4,6 +4,7 @@ subtitle: Produktlösungen für nachhaltige Rasenpflege und den integrierten Pfl
 description: Unsere Produktlösungen unterstützen eine Pflege, die ohne hohe Stickstoffgaben und mit wenig Pflanzenschutz auskommt und damit auch den integrierten Pflanzenschutz.
 layout: product
 type: product
+fiftypercenthack: true
 menu:
   main:
     weight: 30

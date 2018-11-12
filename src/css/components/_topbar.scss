@@ -29,6 +29,12 @@
   }
 }
 
+.c-topbar--fiftypercenthack::after {
+  @include mappy-bp(sm) {
+    width: calc(50% + #{$container-gutter / 2});
+  }
+}
+
 .c-topbar--inverted::after {
   background-color: $color-green-overlayed;
 }
