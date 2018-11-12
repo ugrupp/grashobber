@@ -13,6 +13,8 @@ resources:
 
 - src: produktinformationen/grashobber_Aktionsblatt_Messgeraete_Stelzner.pdf
   title: 'Jahresaktion TDR'
+- src: produktinformationen/grashobber_TurfBreeze_Faltblatt.pdf
+  title: 'TurfBreeze Faltblatt'
 
 - src: sicherheitsdatenblaetter/sea-nymph/MSDS_6011001_SN_Topfine_V1.pdf
   title: 6011001_Sea Nymph TopFine

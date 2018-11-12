@@ -37,7 +37,7 @@ const browserSync = BrowserSync.create();
 var config = {};
 
 // base
-config.siteName = 'Hugo Boilerplate';
+config.siteName = 'grashobber';
 config.serverDir = './dist/'
 
 // source
