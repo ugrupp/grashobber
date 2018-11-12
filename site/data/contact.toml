@@ -72,7 +72,7 @@ team = false
 
 # List of areas with responsible persons
 [[areas]]
-name = "Gebiet 1 + Gebiet 4 + Schweiz"
+name = "Gebiet 1 + Gebiet 4 + Gebiet 5 + Schweiz"
 teamMemberIndex = 0
 
 [[areas]]
