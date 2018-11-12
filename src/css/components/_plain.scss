@@ -76,9 +76,12 @@
     }
 
     a {
+      color: inherit;
+      text-decoration: underline;
+
       &:hover,
       &:focus {
-        text-decoration: underline;
+        color: $color-content-ci;
       }
     }
   }
