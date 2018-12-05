@@ -13,7 +13,7 @@ resources:
   title: 'Fachartikel: Förderung der biologischenAktivität und des Filzabbaus im Pflegehorizont'
 
 - src: produktinformationen/grashobber_Aktionsblatt_Messgeraete_Stelzner.pdf
-  title: 'Jahresaktion TDR'
+  title: 'Aktion TDR'
 - src: produktinformationen/grashobber_TurfBreeze_Faltblatt.pdf
   title: 'TurfBreeze Faltblatt'
 
