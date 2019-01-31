@@ -132,6 +132,11 @@ resources:
   title: 6524110_Universal Liquid Meeresalge 12-0-12 +1%MgO +1%Fe
 - src: sicherheitsdatenblaetter/grashobber/MSDS_6524120_UniversalLiquid_16-2-8_V1.pdf
   title: 6524120_Universal Liquid 16-2-8 +TE
+
+- src: hygienemanagement/MSDS_HygienePlus.pdf
+  title: Hygiene Plus
+- src: hygienemanagement/MSDS_MennoFlorades.pdf
+  title: EG-SDB MENNO Florades
   
 - params:
     icon: pdf
