@@ -44,6 +44,16 @@ email = "kristian.holik@grashobber.de"
 team = true
 
 [[team]]
+name = "Martin Hocke"
+positions = [
+  "Vertriebsaußendienst",
+]
+image = "martinhocke.png"
+mobile = "+49 151 / 18525875"
+email = "martin.hocke@grashobber.de"
+team = true
+
+[[team]]
 name = "Maria Harke"
 positions = [
   "Vertriebsinnendienst",
@@ -72,7 +82,7 @@ team = false
 
 # List of areas with responsible persons
 [[areas]]
-name = "Gebiet 1 + Gebiet 4 + Gebiet 5 + Schweiz"
+name = "Gebiet 1 + Gebiet 5 + Schweiz"
 teamMemberIndex = 0
 
 [[areas]]
@@ -84,6 +94,10 @@ name = "Gebiet 3"
 teamMemberIndex = 3
 
 [[areas]]
+name = "Gebiet 4"
+teamMemberIndex = 4
+
+[[areas]]
 name = "Schweiz"
 subline = "Kooperationspartner interstein"
-teamMemberIndex = 6
+teamMemberIndex = 7
