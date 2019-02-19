@@ -2,6 +2,8 @@
 
 **Website for grashobber GmbH & Co. KG. http://grashobber.de/**
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e506b0b-b6b3-41f1-a94f-fe205bf442c2/deploy-status)](https://app.netlify.com/sites/grashobber/deploys)
+
 This website is based on [Hugo](https://gohugo.io/) as a static site generator and [Gulp](https://gulpjs.com/) + [Webpack](https://webpack.js.org/) as the asset pipeline tools. Originally it's a heavily modified fork of [victor-hugo](https://github.com/netlify/victor-hugo).
 
 This project is released under the [GPL-3.0](LICENSE). Please make sure you understand its implications and guarantees.
