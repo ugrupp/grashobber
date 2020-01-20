@@ -30,5 +30,5 @@ Umsatzsteuer-Identifikationsnummer: DE277489248
 
 <h3 class="c-plain__richtext-headline">Konzept, Design &amp; Programmierung</h3>
 
-creative linx, büro für gestaltung  
-[www.creativelinx.de](https://www.creativelinx.de)
+Format → Büro für Gestaltung  
+[www.formatformat.de](https://www.formatformat.de)
