@@ -22,8 +22,6 @@
 .c-home-intro__box {
   margin-top: -71px; // +1px to reset the 1px padding-top
 
-  overflow: hidden; // for scaled bg image
-
   position: relative;
   padding: rem($box-default-spacing);
   padding-right: rem($container-gutter + $box-default-spacing);
@@ -62,6 +60,7 @@
   }
 }
 
+// BG
 .c-home-intro__bg {
   position: absolute;
   top: 0;
@@ -75,10 +74,45 @@
   // super special adjustments for intro box
   background-size: cover;
   background-position: right bottom;
-  transform: scale(2);
   transform-origin: right bottom;
 }
 
+// Scroller
+.c-home-intro__scroller {
+  position: absolute;
+  top: 0;
+  left: rem($box-default-spacing);
+  z-index: 18; // < content, > color
+  transform: translateY(-75%);
+  transition: transform $transition-time-default;
+
+  @include mappy-bp(xs) {
+    transform: translateY(-50%);
+  }
+
+  @include mappy-bp(md) {
+    left: rem($box-default-spacing-md);
+  }
+
+  @include mappy-bp(xl) {
+    left: rem($box-default-spacing-xl);
+  }
+
+  &:hover,
+  &:focus {
+    @include mappy-bp(md) {
+      transform: translateY(-40%);
+    }
+  }
+
+  svg {
+    display: block;
+    height: rem(37px);
+    width: rem(37px);
+  }
+}
+
+// Content
 .c-home-intro__content {
   position: relative;
   z-index: 20; // > bg, > color

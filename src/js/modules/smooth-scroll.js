@@ -6,3 +6,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     easing: 'easeOutQuad',
   });
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  new SmoothScroll('[data-scroll-content]', {
+    speed: 750,
+    easing: 'easeOutQuad',
+    offset: 40, // = page padding on xl
+  });
+});
