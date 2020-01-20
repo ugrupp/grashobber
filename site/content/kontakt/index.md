@@ -9,7 +9,7 @@ menu:
     weight: 50
 inverted: true
 fiftypercenthack: true
-h1: 'Wir<span class="br"></span> finden<span class="br"></span> Lösungen'
+h1: '<span>Wir</span> <span class="br"></span> <span>finden</span> <span class="br"></span> <span>Lösungen</span>'
 ---
 
 <strong class="c-contact__address-headline">grashobber GmbH & Co. KG</strong>
