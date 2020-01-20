@@ -28,42 +28,6 @@
               </div>
             </div>
           </div>
-
-          {{/* Lower */}}
-          <div class="c-downloads__section">
-            <h2 class="c-downloads__headline c-headline c-headline--ci c-headline--sm">Sicherheitsdatenblätter</h2>
-            <div class="o-2col-downloads">
-              <div class="o-2col-downloads__one">
-                <h3 class="c-downloads__subheadline c-headline c-headline--richtext">Sea Nymph</h3>
-                <ul class="c-downloads__list">
-                  {{ range .Resources.Match "sicherheitsdatenblaetter/sea-nymph/*" }}
-                    {{ partial "components/downloads__item" . }}
-                  {{end}}
-                </ul>
-              </div>
-
-              <div class="o-2col-downloads__two">
-                <h3 class="c-downloads__subheadline c-headline c-headline--richtext">grashobber</h3>
-                <ul class="c-downloads__list">
-                  {{ range .Resources.Match "sicherheitsdatenblaetter/grashobber/*" }}
-                    {{ partial "components/downloads__item" . }}
-                  {{end}}
-                </ul>
-
-                <div class="c-richtext c-downloads__text-item">
-                  <h3 class="c-downloads__subheadline c-headline c-headline--richtext">Lebosol</h3>
-                  <p>Die Sicherheitsdatenblätter unseres Partners Lebosol senden wir Ihnen gerne auf Anfrage zu.</p>
-                </div>
-
-                <h3 class="c-downloads__subheadline c-headline c-headline--richtext">Hygienemanagement</h3>
-                <ul class="c-downloads__list">
-                  {{ range .Resources.Match "hygienemanagement/*" }}
-                    {{ partial "components/downloads__item" . }}
-                  {{end}}
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
