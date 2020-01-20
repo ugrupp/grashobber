@@ -1,0 +1,16 @@
+//
+// Cookie Consent
+// --------------------------------------------------
+
+@import 'cookieconsent/build/cookieconsent.min.css';
+
+.cc-window {
+  font-family: inherit;
+  @include font-smoothing;
+}
+
+.cc-link {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}

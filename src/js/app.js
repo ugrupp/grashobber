@@ -16,6 +16,7 @@ import './modules/fontfaceobserver';
 import './modules/topbar';
 import './modules/reveal-animations';
 import './modules/smooth-scroll';
+import './modules/cookieconsent';
 import Menu from './modules/menu';
 
 // init modules
