@@ -24,6 +24,7 @@
 
   position: relative;
   padding: rem($box-default-spacing);
+  padding-top: rem($box-default-spacing * 2);
   padding-right: rem($container-gutter + $box-default-spacing);
 
   @include mappy-bp(xs) {
@@ -83,12 +84,8 @@
   top: 0;
   left: rem($box-default-spacing);
   z-index: 18; // < content, > color
-  transform: translateY(-75%);
+  transform: translateY(-50%);
   transition: transform $transition-time-default;
-
-  @include mappy-bp(xs) {
-    transform: translateY(-50%);
-  }
 
   @include mappy-bp(md) {
     left: rem($box-default-spacing-md);
