@@ -16,15 +16,27 @@
                     {{ partial "components/downloads__item" . }}
                   {{end}}
                 </ul>
-              </div>
 
-              <div class="o-2col-downloads__two">
                 <h2 class="c-downloads__headline c-headline c-headline--ci c-headline--sm">Produktinformationen</h2>
                 <ul class="c-downloads__list">
                   {{ range .Resources.Match "produktinformationen/*" }}
                     {{ partial "components/downloads__item" . }}
                   {{end}}
                 </ul>
+              </div>
+
+              <div class="o-2col-downloads__two">
+                {{ with .Resources.GetMatch "col2.md" }}
+                  {{ if .Params.headline }}
+                    <h2 class="c-downloads__headline c-headline c-headline--ci c-headline--sm">
+                      {{.Params.headline | markdownify}}
+                    </h2>
+                  {{ end }}
+
+                  <div class="c-richtext">
+                    {{ .Content }}
+                  </div>
+                {{ end }}
               </div>
             </div>
           </div>
