@@ -10,7 +10,9 @@ menu:
     weight: 30
 ---
 {{% col1 %}}
-{{< headline class="c-headline--inverted" level="1" title="Unsere Produktlösungen.<span class='br'></span> Eine runde Sache." >}}
+<h1 class="c-headline c-headline--inverted">
+  <span>Unsere Produktlösungen.</span> <span class='br'></span><span>Eine runde Sache.</span>
+</h1>
 {{% /col1 %}}
 
 {{% col2 %}}
