@@ -29,20 +29,21 @@
               <div class="c-catalog">
                 <div class="c-catalog__aspect-box">
                   <div class="c-catalog__aspect-target">
-                    <div class="c-catalog__bg" style='background-image: url({{ $.Scratch.Get "textureHeaderImage" }})'></div>
+                    {{/* Catalog image */}}
+                    {{ with $bundle.Resources.GetMatch "hygienemanagement.jpg" }}
+                      {{ $imagePlaceholder := .Resize "100x" }}
+                      {{ $imageSmall := .Resize "400x" }}
+                      {{ $imageMedium := .Resize "600x" }}
 
-                    <div class="c-catalog__content">
-                      {{/* Logo */}}
-                      <div class="c-catalog__logo">
-                        {{ partial "util/svg" (dict "svg" "logo-weiss") }}
+                      <div class="c-catalog__img-wrapper">
+                        <img
+                          alt='Hygienemanagement'
+                          data-srcset="{{ $imageSmall.RelPermalink }} 400w, {{ $imageMedium.RelPermalink }} 600w"
+                          data-src="{{ $imageMedium.RelPermalink }}"
+                          src="{{ $imagePlaceholder.RelPermalink }}"
+                          class="c-catalog__img lazyload" />
                       </div>
-
-                      {{/* Title */}}
-                      <div class="c-catalog__title">
-                        {{ partial "util/svg" (dict "svg" "derneue") }}
-                        <span class="u-invisible">Der Neue</span>
-                      </div>
-                    </div>
+                    {{ end }}
                   </div>
                 </div>
               </div>
@@ -62,6 +63,27 @@
 
                 {{/* Form elements */}}
                 <fieldset class="c-fieldset">
+                  <div class="c-fieldset__checkbox-wrapper">
+                    <input class="c-fieldset__checkbox" checked type="checkbox" name="ordered-catalogs" value="DER NEUE / Gesamtkatalog" id="media-der-neue">
+                    <label class="c-fieldset__checkbox-label" for="media-der-neue">
+                      <span>DER NEUE / Gesamtkatalog</span>
+                    </label>
+                  </div>
+
+                  <div class="c-fieldset__checkbox-wrapper">
+                    <input class="c-fieldset__checkbox" checked type="checkbox" name="ordered-catalogs" value="Broschüre Hygienemanagement" id="media-hygienemanagement">
+                    <label class="c-fieldset__checkbox-label" for="media-hygienemanagement">
+                      <span>Broschüre Hygienemanagement</span>
+                    </label>
+                  </div>
+
+                  <div class="c-fieldset__checkbox-wrapper">
+                    <input class="c-fieldset__checkbox" checked type="checkbox" name="ordered-catalogs" value="DER KLEINE / Produktlösungen für Sportstätten Frühjahr 2020" id="media-der-kleine">
+                    <label class="c-fieldset__checkbox-label" for="media-der-kleine">
+                      <span>DER KLEINE / Produktlösungen für Sportstätten Frühjahr 2020</span>
+                    </label>
+                  </div>
+
                   <input class="c-fieldset__input" type="text" name="name" required placeholder="Name">
                   <input class="c-fieldset__input" type="text" name="company" required placeholder="Firma">
                   <input class="c-fieldset__input" type="text" name="street" required placeholder="Straße, Hausnummer">

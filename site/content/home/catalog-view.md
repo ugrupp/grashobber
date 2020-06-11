@@ -2,6 +2,8 @@
 buttontext: Viel Spaß beim blättern
 ---
 
-## Druckfrisch und umfassend
+## Warum auch der Rasen Schutz braucht
 
-Er ist fertig ‒ unser neuer Produktkatalog. Vielseitig, informativ, umfangreich, gut aussehend und neu strukturiert. Wir finden man sieht ihm die Freude, die wir bei seiner Entwicklung hatten, auch an. Was meinen Sie?
+Nicht nur wir Menschen haben mit Krankheitserregern zu kämpfen – auch der Rasen kann durch sie Schaden nehmen.
+
+Dabei wirken wir Menschen zudem als effektivster Übertragungshelfer. Was Sie tun können? Das erfahren Sie in unserer frischen Broschüre Hygienemanagement.

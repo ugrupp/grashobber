@@ -120,11 +120,7 @@ table {
   border-spacing: 0;
 }
 
-input,
-label,
-select,
-button,
-textarea {
+button {
   margin: 0;
   border: 0;
   padding: 0;
@@ -137,6 +133,3 @@ textarea {
   border-radius: 0;
 }
 
-input:focus {
-  outline: 0;
-}

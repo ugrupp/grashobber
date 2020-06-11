@@ -178,7 +178,7 @@ $catalog-bottom-padding: 5%;
 }
 
 .c-catalog__aspect-box {
-  padding-bottom: (707.14 / 500) * 100%;
+  padding-bottom: (1980 / 1400) * 100%;
   height: 0;
   width: 100%;
   position: relative;
@@ -193,51 +193,29 @@ $catalog-bottom-padding: 5%;
   height: 100%;
   width: 100%;
 
-  background-color: $color-white;
+  background-color: $color-content-ci;
   color: $color-white;
   @include font-smoothing;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, .5);
 }
 
-.c-catalog__bg {
-  position: absolute;
-  left: $catalog-side-padding;
-  right: $catalog-side-padding;
-  bottom: $catalog-bottom-padding;
-  top: $catalog-top-padding;
-  background-size: cover;
-  background-position: left bottom; // totally based on the home background image
-}
-
-.c-catalog__content {
-  position: relative;
-  z-index: 10; // > bg
+.c-catalog__img-wrapper {
   height: 100%;
-  background-color: rgba($color-content-ci, .95);
+  width: 100%;
+  overflow: hidden; // for filter
+  position: relative;
 }
 
-.c-catalog__logo {
-  height: $catalog-top-padding;
-  padding-left: $catalog-side-padding;
-  padding-right: $catalog-side-padding;
-  display: flex;
-  align-items: center;
+.c-catalog__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all $transition-time-medium;
 
-  svg {
-    height: 33.3333%;
+  &.lazyload,
+  &.lazyloading {
+    filter: blur(30px);
   }
 }
 
-.c-catalog__title {
-  position: absolute;
-  top: $catalog-top-padding;
-  left: $catalog-side-padding - 1.5%;
-  right: $catalog-side-padding - 1.5%;
-  bottom: $catalog-bottom-padding - 1.5%;
-  opacity: .95;
-
-  svg {
-    width: 100%;
-    height: 100%;
-  }
-}
