@@ -48,6 +48,10 @@ gulp build-preview
 
 See [gulpfile.js](gulpfile.js) for all tasks.
 
+### Deployment
+
+Pushes to the `staging` branch are automatically deployed to [staging--grashobber.netlify.app](https://staging--grashobber.netlify.app/)
+
 ## Structure
 
 ```

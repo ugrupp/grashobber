@@ -29,6 +29,7 @@ $socialwall-img-height-md: 500px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1.1);
   transition: all $transition-time-medium;
 
   &.lazyload,
