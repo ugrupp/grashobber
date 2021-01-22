@@ -54,6 +54,26 @@ email = "martin.hocke@grashobber.de"
 team = true
 
 [[team]]
+name = "Karsten Meyer"
+positions = [
+  "Vertriebsaußendienst",
+]
+image = "karstenmeyer.png"
+mobile = "+49 151 / 22189053"
+email = "karsten.meyer@grashobber.de"
+team = true
+
+[[team]]
+name = "Martina Kodera"
+positions = [
+  "Fachlicher Vertriebsinnendienst",
+]
+image = "martinakodera.png"
+mobile = "+49 7474 / 918635"
+email = "martina.kodera@grashobber.de"
+team = true
+
+[[team]]
 name = "Maria Harke"
 positions = [
   "Vertriebsinnendienst",
