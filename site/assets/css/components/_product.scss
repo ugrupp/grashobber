@@ -26,8 +26,8 @@
 $product-grid-gutter: 80px;
 
 .c-product__grid {
-  margin-left: rem(-$product-grid-gutter * 0.5);
-  margin-right: rem(-$product-grid-gutter * 0.5);
+  margin-left: rem(-$product-grid-gutter * .5);
+  margin-right: rem(-$product-grid-gutter * .5);
   transform: translateY(rem(-30px));
 
   @include mappy-bp(sm) {
@@ -37,16 +37,16 @@ $product-grid-gutter: 80px;
 }
 
 .c-product__item {
-  padding-left: rem($product-grid-gutter * 0.5);
-  padding-right: rem($product-grid-gutter * 0.5);
-  padding-bottom: rem($product-grid-gutter * 0.5);
+  padding-left: rem($product-grid-gutter * .5);
+  padding-right: rem($product-grid-gutter * .5);
+  padding-bottom: rem($product-grid-gutter * .5);
   width: 100%;
 
   display: flex;
   justify-content: center;
 
   @include mappy-bp(sm) {
-    width: 100 * 0.5 * 1%;
+    width: 100 * .5 * 1%;
   }
 
   @include mappy-bp(md) {
@@ -88,18 +88,6 @@ $product-bubble-size-lg: 300px;
   @include mappy-bp(lg) {
     width: rem($product-bubble-size-lg);
     height: rem($product-bubble-size-lg);
-  }
-
-  &::after {
-    content: '';
-    background-color: rgba($color-green-muted, .8);
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    border-radius: 50%;
-    z-index: 10;
   }
 
   img {

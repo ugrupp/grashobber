@@ -23,7 +23,6 @@ $company-section-height: 430px; // totally magic number, based on headline heigh
   }
 }
 
-//
 // Bulletboxes
 // --------------------------------------------------
 
@@ -101,9 +100,9 @@ $bulletbox-side-spacing: 100px;
 
   // track
   &::after {
-    content: '';
+    content: "";
     position: absolute;
-    left: rem(floor(($bulletbox-width + 30px) * 0.5));
+    left: rem(floor(($bulletbox-width + 30px) * .5));
     top: 0;
     bottom: 0;
     width: 1px;
@@ -111,7 +110,7 @@ $bulletbox-side-spacing: 100px;
 
     @include mappy-bp(sm) {
       background-color: $color-white;
-      left: rem(floor($bulletbox-width-sm * 0.5));
+      left: rem(floor($bulletbox-width-sm * .5));
     }
   }
 
@@ -194,7 +193,7 @@ $bulletbox-side-spacing: 100px;
 
     // bottom border
     &::after {
-      content: '';
+      content: "";
       background-color: $color-white;
       height: 1px;
       position: absolute;
@@ -232,6 +231,6 @@ $bulletbox-side-spacing: 100px;
 
 .c-bulletbox__headline {
   white-space: nowrap;
-  @include typi('bulletbox');
+  @include typi("bulletbox");
   transform-origin: center center;
 }

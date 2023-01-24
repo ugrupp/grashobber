@@ -14,7 +14,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -30,7 +30,7 @@
 
 .c-topbar--fiftypercenthack::after {
   @include mappy-bp(sm) {
-    width: calc(50% + #{$container-gutter * 0.5});
+    width: calc(50% + #{$container-gutter * .5});
   }
 }
 

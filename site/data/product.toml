@@ -57,13 +57,6 @@ content = """
 """
 
 [[items]]
-title = "Bodenbefestigung"
-image = "bodenbefestigung.png"
-content = """
-- Ecoraster
-"""
-
-[[items]]
 title = "Hygienemanagement"
 image = "hygienemanagement.png"
 content = """
@@ -81,4 +74,32 @@ content = """
 - Lupen und Mikroskope
 - Bodenmesstechnik
 - Beratungskoffer
+"""
+
+[[items]]
+title = "Draintalent"
+image = "draintalent.png"
+content = """
+Innovatives System für Unterflurbewässerung
+"""
+
+[[items]]
+title = "INFINICUT-Mäher"
+image = "infinicut.png"
+content = """
+Mähtechnik der neusten Generation
+"""
+
+[[items]]
+title = "STAND-ON-Düngerstreuer"
+image = "stand-on-streuer.png"
+content = """
+Spart Zeit und Kosten
+"""
+
+[[items]]
+title = "Werkzeuge"
+image = "rasengabel.png"
+content = """
+Rasengabel
 """

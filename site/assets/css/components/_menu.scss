@@ -45,7 +45,7 @@ $menu-hover-opacity: .6;
 // manipulated container for menu (half)
 .c-menu__container {
   @include mappy-bp(sm) {
-    max-width: rem($container-width-default * 0.5);
+    max-width: rem($container-width-default * .5);
     margin-left: 0;
   }
 }
@@ -88,7 +88,7 @@ $menu-hover-opacity: .6;
 
 .c-menu__main {
   @include font-ci;
-  @include typi('menu');
+  @include typi("menu");
   text-transform: uppercase;
 
   li + li {
