@@ -1,9 +1,7 @@
 ---
-buttontext: Viel Spaß beim blättern
+buttontext: Viel Spaß beim Stöbern und Blättern
 ---
 
-## Warum auch der Rasen Schutz braucht
+## Das ist unser Spielfeld
 
-Nicht nur wir Menschen haben mit Krankheitserregern zu kämpfen – auch der Rasen kann durch sie Schaden nehmen.
-
-Dabei wirken wir Menschen zudem als effektivster Übertragungshelfer. Was Sie tun können? Das erfahren Sie in unserer frischen Broschüre Hygienemanagement.
+Hier finden Sie eine Übersicht über unsere Produktlösungen und Aktionsfelder.

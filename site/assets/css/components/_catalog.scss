@@ -41,7 +41,7 @@
 .c-catalog-view__box {
   background-color: $color-white;
   padding: rem($box-default-spacing);
-  max-width: rem(280px);
+  max-width: rem(295px);
   position: relative;
   z-index: 20; // > catalog
 
@@ -83,8 +83,8 @@
   }
 }
 
-// Order
-.c-catalog-order {
+// Info
+.c-catalog-info {
   background-color: $color-white;
   padding: rem($container-gutter + $box-default-spacing);
   padding-bottom: 0;
@@ -98,28 +98,6 @@
     padding: rem($box-default-spacing-xl);
     padding-bottom: 0;
   }
-
-  // Component spacing
-  .c-fieldset {
-    margin-top: rem(30px);
-
-    @include mappy-bp(md) {
-      margin-top: rem(40px);
-    }
-  }
-
-  .c-button {
-    margin-top: rem(40px);
-
-    @include mappy-bp(md) {
-      margin-top: rem(60px);
-    }
-  }
-}
-
-.c-catalog-order__dsgvo {
-  opacity: .5;
-  margin-top: rem(30px);
 }
 
 // 2 col layout for catalog section
@@ -149,7 +127,7 @@
 
 // Headline style
 .c-catalog-view,
-.c-catalog-order {
+.c-catalog-info {
   .c-richtext {
     h1,
     h2,

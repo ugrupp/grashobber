@@ -17,7 +17,7 @@
                   {{ .Content }}
                 </div>
 
-                <a href="http://hygienemanagement.grashobber.de" target="_blank" class="c-button c-button">
+                <a href="http://unser-spielfeld.grashobber.de" target="_blank" class="c-button c-button">
                   <span>{{.Params.buttontext}}</span>
                   {{ partial "util/svg" (dict "svg" "pfeil-weiss") }}
                 </a>
@@ -30,14 +30,14 @@
                 <div class="c-catalog__aspect-box">
                   <div class="c-catalog__aspect-target">
                     {{/* Catalog image */}}
-                    {{ with $bundle.Resources.GetMatch "hygienemanagement.jpg" }}
+                    {{ with $bundle.Resources.GetMatch "unser_spielfeld.jpg" }}
                       {{ $imagePlaceholder := .Resize "100x" }}
                       {{ $imageSmall := .Resize "400x" }}
                       {{ $imageMedium := .Resize "600x" }}
 
                       <div class="c-catalog__img-wrapper">
                         <img
-                          alt='Hygienemanagement'
+                          alt='Unser Spielfeld'
                           data-srcset="{{ $imageSmall.RelPermalink }} 400w, {{ $imageMedium.RelPermalink }} 600w"
                           data-src="{{ $imageMedium.RelPermalink }}"
                           src="{{ $imagePlaceholder.RelPermalink }}"
@@ -52,63 +52,14 @@
         </div>
 
         <div class="o-2col-catalog__two" data-reveal>
-          {{/* Catalog order */}}
-          <div class="c-catalog-order">
-            <form class="c-catalog-order__form" action="https://formspree.io/info@grashobber.de" method="POST">
-              {{ with $bundle.Resources.GetMatch "catalog-order.md" }}
-                {{/* Intro */}}
-                <div class="c-richtext">
-                  {{ .Content }}
-                </div>
-
-                {{/* Form elements */}}
-                <fieldset class="c-fieldset">
-                  <div class="c-fieldset__checkbox-wrapper">
-                    <input class="c-fieldset__checkbox" data-checkbox-group="ordered-catalogs" type="checkbox" name="ordered-catalogs" value="DER DICKE / Gesamtkatalog" id="media-der-dicke">
-                    <label class="c-fieldset__checkbox-label" for="media-der-dicke">
-                      <span>DER DICKE / Gesamtkatalog</span>
-                    </label>
-                  </div>
-
-                  <div class="c-fieldset__checkbox-wrapper">
-                    <input class="c-fieldset__checkbox" data-checkbox-group="ordered-catalogs" type="checkbox" name="ordered-catalogs" value="Broschüre Hygienemanagement" id="media-hygienemanagement">
-                    <label class="c-fieldset__checkbox-label" for="media-hygienemanagement">
-                      <span>Broschüre Hygienemanagement</span>
-                    </label>
-                  </div>
-
-                  <div class="c-fieldset__checkbox-wrapper">
-                    <input class="c-fieldset__checkbox" data-checkbox-group="ordered-catalogs" type="checkbox" name="ordered-catalogs" value="DER KLEINE / Produktlösungen für Sportstätten Herbst 2021" id="media-der-kleine">
-                    <label class="c-fieldset__checkbox-label" for="media-der-kleine">
-                      <span>DER KLEINE / Produktlösungen für Sportstätten Herbst 2021</span>
-                    </label>
-                  </div>
-
-                  <input class="c-fieldset__input" type="text" name="name" required placeholder="Name">
-                  <input class="c-fieldset__input" type="text" name="company" required placeholder="Firma">
-                  <input class="c-fieldset__input" type="text" name="street" required placeholder="Straße, Hausnummer">
-                  <input class="c-fieldset__input" type="text" name="city" required placeholder="Postleitzahl, Ort">
-                  <input class="c-fieldset__input" type="email" name="email" required placeholder="E-Mail">
-                </fieldset>
-
-                {{/* DSGVO hint */}}
-                <div class="c-catalog-order__dsgvo c-richtext c-richtext--sm">
-                  {{.Params.dsgvo | markdownify}}
-                </div>
-
-                <input type="hidden" name="_subject" value="Neue Katalogbestellung auf grashobber.de" />
-                <input type="hidden" name="_next" value="http://www.grashobber.de/" />
-                <input type="hidden" name="_language" value="de" />
-                <input type="text" name="_gotcha" style="display:none" />
-
-                {{/* Submit */}}
-                <button type="submit" class="c-button c-button">
-                  <span>{{.Params.buttontext}}</span>
-                  {{ partial "util/svg" (dict "svg" "pfeil-weiss") }}
-                </button>
-              {{ end }}
-            </form>
-          </div>
+          {{/* Info box */}}
+          <div class="c-catalog-info">
+            {{ with $bundle.Resources.GetMatch "info.md" }}
+              <div class="c-richtext c-richtext--strong-light">
+                {{ .Content }}
+              </div>
+            {{ end }}
+        </div>
         </div>
       </div>
     </div>
