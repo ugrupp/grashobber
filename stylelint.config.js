@@ -12,6 +12,7 @@ module.exports = {
     "media-feature-name-no-vendor-prefix": true,
     "property-no-vendor-prefix": true,
     "selector-no-vendor-prefix": true,
+    "selector-class-pattern": "never",
     "value-no-vendor-prefix": true,
     "number-leading-zero": "never",
     "at-rule-empty-line-before": ["always", {

@@ -4,3 +4,7 @@ https://grashobber.netlify.com/* https://grashobber.de/:splat 301!
 
 # redirect old flipbox path
 /flipbox http://flipbox.grashobber.de 301
+
+# old URL redirects
+/unternehmen /mission
+/produkt /loesungen

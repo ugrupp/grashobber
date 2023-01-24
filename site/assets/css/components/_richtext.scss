@@ -16,11 +16,15 @@
     }
   }
 
-  strong {
+  &:not(.c-richtext--strong-light) strong {
     @extend .c-headline;
     @extend .c-headline--xxs;
     display: inline;
     font-weight: $font-weight-regular;
+  }
+
+  &.c-richtext--strong-light strong {
+    color: $color-content-ci;
   }
 
   p {
