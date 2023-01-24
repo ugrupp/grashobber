@@ -1,5 +1,5 @@
 baseurl = "/"
-defaultContentLanguage = "de-DE"
+defaultContentLanguage = "de"
 title = "grashobber GmbH & Co. KG"
 
 # RSS, categories and tags disabled for an easy start
@@ -8,6 +8,11 @@ title = "grashobber GmbH & Co. KG"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
   facebookURL = "https://www.facebook.com/grashobber/"

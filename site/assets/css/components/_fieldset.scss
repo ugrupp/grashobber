@@ -1,0 +1,136 @@
+// Fieldset
+// --------------------------------------------------
+
+.c-fieldset__input {
+  @include input-reset;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid rgba($color-content, .3);
+  color: $color-content;
+  @include font-ci;
+  @include typi('form');
+  text-transform: uppercase;
+  padding: .25em .5em;
+  transition: all $transition-time-default;
+
+  &::placeholder {
+    color: rgba($color-content, .5);
+  }
+
+  &:focus {
+    border-color: rgba($color-content, .75);
+  }
+
+  & + &,
+  & + .c-fieldset__checkbox-wrapper,
+  .c-fieldset__checkbox-wrapper + & {
+    margin-top: rem(30px);
+  }
+
+  // inverted colors
+  .c-fieldset--inverted & {
+    color: $color-white;
+    border-color: rgba($color-white, .3);
+
+    &::placeholder {
+      color: rgba($color-white, .5);
+    }
+
+    &:focus {
+      border-color: rgba($color-white, .75);
+    }
+  }
+}
+
+// Checkbox
+$checkbox-size: 20px;
+/* stylelint-disable no-descending-specificity */
+.c-fieldset__checkbox-wrapper {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+
+  & + & {
+    margin-top: rem(16px);
+  }
+}
+
+// original checkbox
+.c-fieldset__checkbox {
+  height: rem($checkbox-size);
+  width: rem($checkbox-size);
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.c-fieldset__checkbox-label {
+  display: block;
+  padding-left: rem($checkbox-size + 12px);
+  color: rgba($color-content, .5);
+  @include font-ci;
+  @include typi('form');
+  text-transform: uppercase;
+  transition: all $transition-time-default;
+
+  // span {
+  //   display: block;
+  //   transform: translateY(.05em);
+  // }
+
+  // fancy checkbox
+  .c-fieldset__checkbox + &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: rem($checkbox-size);
+    width: rem($checkbox-size);
+    background-color: $color-gray-f;
+    transition: all $transition-time-default;
+  }
+
+  .c-fieldset__checkbox-wrapper:hover &::before {
+    background-color: rgba($color-content, .2);
+  }
+
+  .c-fieldset__checkbox:focus + &::before {
+    border: 2px solid rgba($color-content, .2);
+  }
+
+  // fancy indicator
+  .c-fieldset__checkbox + &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: rem($checkbox-size);
+    width: rem($checkbox-size);
+    opacity: 0;
+
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 11' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.413 5.059L.051 6.524l4.606 4.282 8.803-9.328L12.005.105 4.565 7.99z' fill='#{url-friendly-color($color-content-ci)}' fill-rule='nonzero'/%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-size: rem(14px);
+    background-repeat: no-repeat;
+    transition: all $transition-time-default;
+  }
+
+  .c-fieldset__checkbox:checked + &::after {
+    opacity: 1;
+  }
+
+  .c-fieldset__checkbox:active + &::before,
+  .c-fieldset__checkbox:active + &::after {
+    transform: scale(.9);
+  }
+
+  .c-fieldset__checkbox:checked + & {
+    color: $color-content;
+  }
+}

@@ -1,3 +1,6 @@
+---
+---
+
 <h3 class="c-plain__richtext-headline">Social Wall – Social Media Plugins</h3>
 
 Auf unserer Webseite werden Inhalte von unseren Social Media Kanälen angezeigt (Social Wall). Dafür nutzen wir das Plugin „Curator“.

@@ -1,0 +1,61 @@
+// Hero
+// --------------------------------------------------
+
+.c-hero {
+  width: 100%;
+  height: rem($hero-height);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: index($z-index, hero);
+
+  @include mappy-bp(sm) {
+    padding: rem($sidePadding);
+    padding-bottom: 0;
+  }
+
+  @include mappy-bp(md) {
+    height: rem($hero-height-md);
+  }
+}
+
+.c-hero--inverted::before,
+.c-hero--white::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10; // > image
+}
+
+.c-hero--inverted::before {
+  background-color: $color-ci-overlay;
+}
+
+.c-hero--white::before {
+  background-color: $color-white-overlay;
+}
+
+
+.c-hero__img-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; // for filter
+}
+
+.c-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: all $transition-time-medium;
+
+  &.lazyload,
+  &.lazyloading {
+    filter: blur(30px);
+  }
+}

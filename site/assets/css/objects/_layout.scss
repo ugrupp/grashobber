@@ -1,0 +1,90 @@
+// Layout
+// --------------------------------------------------
+
+.o-main {
+  position: relative;
+  z-index: index($z-index, main);
+
+  padding-top: rem($hero-height);
+
+  @include mappy-bp(md) {
+    padding-top: rem($hero-height-md);
+  }
+}
+
+.o-main__section {
+  position: relative;
+  z-index: index($z-index, content);
+
+  @include mappy-bp(sm) {
+    padding-left: rem($sidePadding);
+    padding-right: rem($sidePadding);
+  }
+}
+
+.o-main__section--default {
+  margin-top: rem(-100px);
+
+  @include mappy-bp(sm) {
+    margin-top: rem(-120px);
+  }
+
+  // grey background for whole section
+  @include mappy-bp(md) {
+    &::after {
+      content: "";
+      background-color: $color-gray-f;
+      position: absolute;
+      left: rem($sidePadding);
+      right: rem($sidePadding);
+      bottom: 0;
+      z-index: -10;
+      top: rem(120px);
+    }
+  }
+}
+
+// 2 col layout
+.o-2col {
+  position: relative;
+
+  @include mappy-bp(md) {
+    display: flex;
+  }
+}
+
+.o-2col__one {
+  position: absolute;
+  bottom: calc(100% - #{rem(70px)});
+  left: rem(20px);
+  right: rem(20px);
+
+  @include mappy-bp(md) {
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    width: 50%;
+    padding-right: rem(50px);
+  }
+}
+
+.o-2col__two {
+  @include mappy-bp(md) {
+    width: 50%;
+  }
+}
+
+// special special contact
+.o-main__section--contact {
+  .o-2col__one {
+    bottom: calc(100% - #{rem(70px + 280px)});
+  }
+
+  .c-box--default {
+    @include mappy-bp(max md) {
+      padding-top: rem(70px + 280px + 60px);
+    }
+  }
+}

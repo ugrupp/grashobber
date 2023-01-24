@@ -1,0 +1,50 @@
+// Buttons
+// --------------------------------------------------
+
+.c-button {
+  @include button-reset;
+
+  display: inline-block; // fallback
+  display: inline-flex; // might not work in safari
+  align-items: center;
+
+  @include font-ci;
+  @include font-smoothing;
+  font-weight: $font-weight-regular;
+  @include typi('button');
+  text-transform: uppercase;
+  background: $color-content-ci;
+  color: $color-white;
+  padding: rem(10px) rem(12px);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all $transition-time-default;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color-content-ci, .8);
+  }
+
+  span {
+    vertical-align: middle;
+    transform: translateY(.05em);
+  }
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .5em;
+    height: rem(18px);
+    width: rem(18px);
+  }
+}
+
+.c-button--inverted {
+  background: $color-white;
+  color: $color-content-ci;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color-white, .85);
+  }
+}

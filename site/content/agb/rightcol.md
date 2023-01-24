@@ -1,4 +1,5 @@
-
+---
+---
 
 <h2 class="c-plain__richtext-headline">8. Abnahme / Frist für Mängelrügen</h2>
 
