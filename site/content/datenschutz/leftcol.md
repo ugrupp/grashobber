@@ -2,14 +2,23 @@
 
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
 
-<h3 class="c-plain__richtext-headline">grashobber GmbH & Co. KG</h3>
+<h3 class="c-plain__richtext-headline">grashobber GmbH</h3>
 
-Andreasweg 7  
-D-72401 Haigerloch  
-**T** +49 7474 / 918635  
-**F** +49 7474 / 918636  
+Blütenweg 8  
+D-72351 Geislingen  
+**T** +49 7428 / 9179920  
 [info@grashobber.de](mailto:info@grashobber.de)  
 [www.grashobber.de](https://www.grashobber.de)
+
+<h3 class="c-plain__richtext-headline">grashobber Schweiz GmbH</h3>
+
+Lerchenfeldstr. 3  
+CH-9014 St.Gallen  
+**T** +41 71 / 2446262  
+[info@grashobber.ch](mailto:info@grashobber.ch)  
+[www.grashobber.ch](https://www.grashobber.ch)
+
+&nbsp;
 
 Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unserer Social Media Profile auf. Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).
 

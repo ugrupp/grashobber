@@ -16,7 +16,7 @@
     }
   }
 
-  &:not(.c-richtext--strong-light) strong {
+  &:where(:not(.c-richtext--strong-light)) strong {
     @extend .c-headline;
     @extend .c-headline--xxs;
     display: inline;

@@ -29,7 +29,15 @@
   display: none;
 
   @include mappy-bp(sm) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20px);
+  }
+
+  @include mappy-bp(md) {
+    display: flex;
+    flex-direction: row;
+    column-gap: rem(80px);
   }
 }
 

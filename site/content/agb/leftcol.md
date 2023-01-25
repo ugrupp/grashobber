@@ -1,8 +1,8 @@
 (Stand 01/2021)
 
-grashobber GmbH & Co. KG  
-Andreasweg 7  
-72401 Haigerloch  
+grashobber GmbH  
+Blütenweg 8  
+D-72351 Geislingen  
 
 <h2 class="c-plain__richtext-headline">1. Geltungsbereich und ausschließliche Geltung</h2>
 

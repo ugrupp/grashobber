@@ -4,19 +4,21 @@ headline: Rechtliches
 
 Angaben gemäß § 5 TMG:
 
-<h3 class="c-plain__richtext-headline">grashobber GmbH & Co. KG</h3>
+<h3 class="c-plain__richtext-headline">grashobber GmbH</h3>
 
-Andreasweg 7  
-D-72401 Haigerloch
-
-**T** +49 7474 / 918635  
-**F** +49 7474 / 918636
-
+Blütenweg 8  
+D-72351 Geislingen  
+**T** +49 7428 / 9179920  
 [info@grashobber.de](mailto:info@grashobber.de)  
 [www.grashobber.de](https://www.grashobber.de)
 
-Sitz der Gesellschaft: Haigerloch  
-Amtsgericht Stuttgart HRA 726246
+<h3 class="c-plain__richtext-headline">grashobber Schweiz GmbH</h3>
+
+Lerchenfeldstr. 3  
+CH-9014 St.Gallen  
+**T** +41 71 / 2446262  
+[info@grashobber.ch](mailto:info@grashobber.ch)  
+[www.grashobber.ch](https://www.grashobber.ch)
 
 <h3 class="c-plain__richtext-headline">Persönlich haftende Gesellschafterin:</h3>
 
