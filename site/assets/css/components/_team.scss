@@ -1,20 +1,39 @@
 // Team
 // --------------------------------------------------
 
-.c-team,
-.c-team-member {
+.c-team {
+  @include mappy-bp(md) {
+    background-color: $color-gray-f;
+  }
+}
+
+.c-team__inner {
+  background-color: $color-gray-f;
+  padding-left: rem($box-default-spacing);
+  padding-right: rem($box-default-spacing);
+  padding-bottom: rem(80px);
+
+  @include mappy-bp(md) {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.c-team__headline {
+  margin-bottom: rem(20px);
+
+  @include mappy-bp(md) {
+    margin-bottom: rem(40px);
+  }
+}
+
+
+// Members list
+.c-team-members--inverted,
+.c-team-member--inverted {
   color: $color-white;
   @include font-smoothing;
-
-  a {
-    color: inherit;
-    transition: all $transition-time-default;
-
-    &:hover,
-    &:focus {
-      opacity: .8;
-    }
-  }
 }
 
 // Team member
@@ -35,6 +54,23 @@
     @include mappy-bp(md) {
       margin-top: rem(40px);
     }
+  }
+
+  a {
+    color: $color-content-ci;
+    transition: all $transition-time-default;
+
+    &:hover,
+    &:focus {
+      opacity: .8;
+    }
+  }
+}
+
+.c-team-members--inverted .c-team-member,
+.c-team-member--inverted {
+  a {
+    color: inherit;
   }
 }
 
@@ -79,5 +115,37 @@
     @extend .c-headline--xxs;
     display: inline;
     font-weight: $font-weight-regular;
+  }
+}
+
+
+// 2 col layout for team
+.o-2col-team {
+  @include mappy-bp(md) {
+    display: flex;
+  }
+}
+
+.o-2col-team__one {
+  padding-bottom: rem(80px);
+
+  @include mappy-bp(md) {
+    width: 50%;
+    padding-bottom: 0;
+    padding-right: rem(50px);
+  }
+}
+
+.o-2col-team__two {
+  @include mappy-bp(md) {
+    width: 50%;
+    padding-left: rem($box-default-spacing-md);
+    padding-right: rem($box-default-spacing-md);
+    padding-top: 0;
+  }
+
+  @include mappy-bp(xl) {
+    padding-left: rem($box-default-spacing-xl);
+    padding-right: rem($box-default-spacing-xl);
   }
 }

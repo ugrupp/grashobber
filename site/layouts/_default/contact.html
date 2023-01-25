@@ -19,12 +19,12 @@
           {{/* Contact column */}}
           <div class="o-2col__two">
             <div class="c-box c-box--default c-box--inverted">
-              {{ with .Site.Data.contact }}
+              {{ with .Site.Data.team }}
                 <h2 class="c-headline c-headline--inverted">{{.title}}</h2>
 
                 {{/* Teammembers */}}
-                <div class="c-team">
-                  <ul class="c-team__members">
+                <div class="c-team-members c-team-members--inverted">
+                  <ul class="c-team-members__members">
                     {{ range $index, $teammember := .team }}
                       {{ if .team }}
                         <li class="c-team-member" data-reveal>
@@ -106,12 +106,12 @@
       <div class="o-container o-container--no-right-pad">
         <div class="c-contact-areas__box">
           <ul class="c-contact-areas__areas">
-            {{ range $index, $area := .Site.Data.contact.areas }}
+            {{ range $index, $area := .Site.Data.team.areas }}
               <li class="c-contact-areas__area">
-                <h3 class="c-contact-areas__name c-headline c-headline--xxs">{{ .name }}</h3>
+                <h3 class="c-contact-areas__name c-headline c-headline--xxs" data-reveal>{{ .name }}</h3>
                 {{/* Render team member */}}
-                {{ with index $.Site.Data.contact.team .teamMemberIndex }}
-                  <div class="c-team-member">
+                {{ with index $.Site.Data.team.team .teamMemberIndex }}
+                  <div class="c-team-member c-team-member--inverted" data-reveal>
                     {{/* Text */}}
                     <div class="c-team-member__content-wrapper">
                       {{/* Name */}}

@@ -1,6 +1,6 @@
 # grashobber Website 🌱
 
-**Website for grashobber GmbH & Co. KG. https://grashobber.de**
+**Website for grashobber – https://grashobber.de**
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5e506b0b-b6b3-41f1-a94f-fe205bf442c2/deploy-status)](https://app.netlify.com/sites/grashobber/deploys)
 

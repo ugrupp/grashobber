@@ -11,6 +11,7 @@ image = "heikoremmel.png"
 mobile = "+49 172 / 6964010"
 email = "heiko.remmel@grashobber.de"
 team = true
+area = "de"
 
 [[team]]
 name = "Tanja Remmel"
@@ -22,16 +23,7 @@ image = "tanjaremmel.png"
 phone = "+49 7474 / 918635"
 email = "tanja.remmel@grashobber.de"
 team = true
-
-[[team]]
-name = "Thorsten Cramer"
-positions = [
-  "Vertriebsaußendienst",
-]
-image = "thorstencramer.png"
-mobile = "+49 171 / 9360160"
-email = "thorsten.cramer@grashobber.de"
-team = true
+area = "de"
 
 [[team]]
 name = "Kristian Holik"
@@ -42,6 +34,7 @@ image = "kristianholik.png"
 mobile = "+49 171 / 9496734"
 email = "kristian.holik@grashobber.de"
 team = true
+area = "de"
 
 [[team]]
 name = "Martin Hocke"
@@ -52,6 +45,7 @@ image = "martinhocke.png"
 mobile = "+49 151 / 18525875"
 email = "martin.hocke@grashobber.de"
 team = true
+area = "de"
 
 [[team]]
 name = "Karsten Meyer"
@@ -62,16 +56,19 @@ image = "karstenmeyer.png"
 mobile = "+49 151 / 22189053"
 email = "karsten.meyer@grashobber.de"
 team = true
+area = "de"
 
 [[team]]
 name = "Martina Kodera"
 positions = [
-  "Fachlicher Vertriebsinnendienst",
+  "Dipl. Geoökologin Univ.",
+  "Wissenschaftliche Mitarbeiterin"
 ]
 image = "martinakodera.png"
 mobile = "+49 7474 / 918635"
 email = "martina.kodera@grashobber.de"
 team = true
+area = "de"
 
 [[team]]
 name = "Maria Harke"
@@ -82,6 +79,7 @@ image = "mariaharke.png"
 phone = "+49 7474 / 918635"
 email = "maria.harke@grashobber.de"
 team = true
+area = "de"
 
 [[team]]
 name = "Marion Zeiler"
@@ -92,13 +90,67 @@ image = "marionzeiler.png"
 phone = "+49 7474 / 918635"
 email = "marion.zeiler@grashobber.de"
 team = true
+area = "de"
+
+[[team]]
+name = "Werner Braun"
+positions = [
+  "Fachlagerist",
+]
+image = "wernerbraun.png"
+phone = "+49 7428 / 9179920"
+email = "werner.braun@grashobber.de"
+team = true
+area = "de"
 
 [[team]]
 name = "Katrin Ifländer"
 phone = "+41 58 / 3569075"
 email = "k.iflaender@interstein.com"
 team = false
+area = "de"
 
+[[team]]
+name = "Katrin Ifländer"
+phone = "+41 58 / 3569075"
+email = "k.iflaender@interstein.com"
+team = false
+area = "de"
+
+[[team]]
+name = "Reto Vincenz"
+positions = [
+  "Geschäftsführer",
+  "Vertrieb",
+]
+image = "retovincenz.png"
+phone = "+41 798728175"
+email = "reto.vincenz@grashobber.ch"
+team = true
+area = "ch"
+
+[[team]]
+name = "Nadine Brinkmann"
+positions = [
+  "Dr. sc. ETH Pflanzenphysiologie",
+  "Wissenschaftliche Mitarbeiterin",
+]
+image = "nadinebrinkmann.png"
+phone = "+41 774477854"
+email = "nadine.brinkmann@grashobber.ch"
+team = true
+area = "ch"
+
+[[team]]
+name = "Sandra Ambrosano"
+positions = [
+  "Vertriebsinnendienst",
+]
+image = "sandraambrosano.png"
+phone = "+41 712446262"
+email = "sandra.ambrosano@grashobber.ch"
+team = true
+area = "ch"
 
 # List of areas with responsible persons
 [[areas]]

@@ -1,6 +1,6 @@
 baseurl = "/"
 defaultContentLanguage = "de"
-title = "grashobber GmbH & Co. KG"
+title = "grashobber"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:

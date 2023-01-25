@@ -16,7 +16,7 @@ D-72351 Geislingen
 
 Lerchenfeldstr. 3  
 CH-9014 St.Gallen  
-**T** +41 71 / 2446262  
+**T** +41 712446262  
 [info@grashobber.ch](mailto:info@grashobber.ch)  
 [www.grashobber.ch](https://www.grashobber.ch)
 

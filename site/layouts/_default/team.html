@@ -1,0 +1,51 @@
+{{ define "main" }}
+  {{ partial "components/intro-section" . }}
+
+  <section class="o-main__section o-main__section--team-members">
+    <div class="c-team">
+      <div class="o-container o-container--no-right-pad">
+        <div class="c-team__inner">
+          {{/* Upper */}}
+          <div class="c-team__section">
+            <div class="o-2col-team">
+              <div class="o-2col-team__one" data-reveal>
+                <h2 class="c-team__headline c-headline c-headline--ci c-headline--sm">Team grashobber Deutschland</h2>
+
+                {{/* Teammembers (DE) */}}
+                <div class="c-team-members">
+                  <ul class="c-team-members__members">
+                    {{ with .Site.Data.team }}
+                      {{ range $index, $teammember := .team }}
+                        {{ if and .team (eq .area "de")  }}
+                          {{ partial "components/team-member" (dict "context" . "resources" $.Resources) }}
+                        {{ end }}
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+
+              <div class="o-2col-team__two" data-reveal>
+                <h2 class="c-team__headline c-headline c-headline--ci c-headline--sm">Team grashobber Schweiz</h2>
+
+                {{/* Teammembers (CH) */}}
+                <div class="c-team-members">
+                  <ul class="c-team-members__members">
+                    {{ with .Site.Data.team }}
+                      {{ range $index, $teammember := .team }}
+                        {{ if and .team (eq .area "ch")  }}
+                          {{ partial "components/team-member" (dict "context" . "resources" $.Resources) }}
+                        {{ end }}
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
