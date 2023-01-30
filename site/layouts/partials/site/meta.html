@@ -3,10 +3,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ with .Keywords }}<meta name="keywords" content="{{ delimit . ", "}}">{{ end }}
 {{ hugo.Generator }}
 
 {{/* Title */}}
-<title>{{- with .Title }}{{ . }} / {{ end }}{{ .Site.Title -}}{{- with .Params.subtitle }} / {{ . }}{{ end }}</title>
+<title>{{- with .Title }}{{ . }}{{ end }}</title>
 
 {{/* Favicon */}}
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2bQY0PMAKr">

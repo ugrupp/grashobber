@@ -1,12 +1,13 @@
 ---
-title: Mission
-subtitle: Wir leben easy Greenkeeping
-description: "Bei uns bekommen Sie das Komplettpaket: fundierte Beratung, weitreichendes Fachwissen, Analysemöglichkeiten und stimmige Produktlösungen."
+title: Wir finden Lösungen für die nachhaltige Rasenpflege.
+description: "Wir sind seit 2007 in Sachen Rasenpflege unterwegs. Unsere Mission: eine sinnvolle, ressourcenschonende Rasenpflege, im Einklang mit der Natur."
+keywords: ["nachhaltiger Rasen", "integrierter Pflanzenschutz", "Krankheitsvorbeugung", "Analytik"]
 layout: mission
 type: mission
 fiftypercenthack: true
 menu:
   main:
+    name: Mission
     weight: 20
 ---
 {{% col1 %}}

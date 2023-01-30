@@ -1,8 +1,9 @@
 ---
-title: Impressum
-subtitle: Ihr Spezialist für die nachhaltige Rasenpflege
-description: Wer stimmige Lösungen für die nachhaltige Rasenpflege und natürliche Sportflächen sucht, findet mit grashobber den passenden Weg.
+title: grashobber GmbH – der Spezialist für nachhaltige Rasenpflege
+description: Es braucht neue, nachhaltige Lösungen für das Greenkeeping. grashobber findet diese, begleitet Kunden und berät zur Umsetzung in der Praxis.
+keywords: ["Rasenpflege", "Dünger", "Sportrasen", "Golf", "Bundesliga", "Pflegetechnik", "Greenkeeping"]
 layout: plain
 type: imprint
+contentTitle: Impressum
 white: true
 ---

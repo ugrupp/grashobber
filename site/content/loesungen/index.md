@@ -1,12 +1,13 @@
 ---
-title: Lösungen
-subtitle: Produktlösungen für nachhaltige Rasenpflege und den integrierten Pflanzenschutz
-description: Unsere Produktlösungen unterstützen eine Pflege, die ohne hohe Stickstoffgaben und mit wenig Pflanzenschutz auskommt und damit auch den integrierten Pflanzenschutz.
+title: Wir stehen mit unseren Produktlösungen für eine nachhaltige Pflege.
+description: "Unser Konzept beschreiben wir mit dem Begriff Easy Greenkeeping. Das bedeutet kurzgefasst: so viel wie nötig, so wenig wie möglich."
+keywords: ["Dünger", "Bodenhilfsstoffe", "Biostimulanzien", "Meeresalgen", "Rasenmäher", "Drainage", "Hygiene", "Infinicut", "Sea Nymph"]
 layout: product
 type: product
 fiftypercenthack: true
 menu:
   main:
+    name: Lösungen
     weight: 30
 ---
 {{% col1 %}}

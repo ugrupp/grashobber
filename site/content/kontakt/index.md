@@ -1,11 +1,12 @@
 ---
-title: Kontakt
-subtitle: Ihr Spezialist für die nachhaltige Rasenpflege
-description: Wir nehmen uns Zeit für Sie. Sprechen Sie uns an. Wir sind gerne für Sie da.
+title: Wir finden Lösungen – auch für Ihren Rasen.
+description: "Bei uns bekommen Sie das Komplettpaket: fundierte Beratung, weitreichendes Fachwissen, Analysemöglichkeiten und stimmige Produktlösungen."
+keywords: ["grashobber", "Gebiete", "Ansprechpartner", "Beratung", "Analyse", "Produktlösungen"]
 layout: contact
 type: contact
 menu:
   main:
+    name: Kontakt
     weight: 50
 inverted: true
 fiftypercenthack: true

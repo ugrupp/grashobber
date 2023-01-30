@@ -1,12 +1,13 @@
 ---
-title: Team
-subtitle: Wir sind das Team der Lösungsfinder
-description: Wir sind das Team der Lösungsfinder
+title: Wir sind Lösungsfinder und handeln mit Lösungen.
+description: "Unser Auftrag: die besten Lösungen zu finden und die Kunden auf ihrem Weg zu beraten und zu unterstützen, damit sie ihre Ziele erreichen."
+keywords: ["Lösungsfinder", "grashobber Team", "Fachwissen Rasenpflege", "Experten", "Netzwerk"]
 layout: team
 type: team
 fiftypercenthack: true
 menu:
   main:
+    name: Team
     weight: 40
 ---
 {{% col1 %}}
