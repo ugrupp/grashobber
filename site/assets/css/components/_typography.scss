@@ -16,7 +16,7 @@
     padding-top: .09em; // totally magic number
     display: inline;
     box-decoration-break: clone;
-    background-color: rgba($color-white, .9);
+    background-color: $color-white;
   }
 
   span.br {
@@ -56,7 +56,7 @@
   color: $color-white;
 
   span:not(.br-md):not(.br) {
-    background-color: rgba($color-content-ci, .85);
+    background-color: $color-content-ci;
   }
 }
 
