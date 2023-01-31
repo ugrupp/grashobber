@@ -17,7 +17,7 @@
                   {{ .Content }}
                 </div>
 
-                <a href="http://unser-spielfeld.grashobber.de" target="_blank" class="c-button c-button">
+                <a href="https://unser-spielfeld.grashobber.de" target="_blank" class="c-button">
                   <span>{{.Params.buttontext}}</span>
                   {{ partial "util/svg" (dict "svg" "pfeil-weiss") }}
                 </a>
@@ -58,6 +58,11 @@
               <div class="c-richtext c-richtext--strong-light">
                 {{ .Content }}
               </div>
+
+              <a href="{{.Params.shopLink.url}}" target="_blank" class="c-button">
+                <span>{{.Params.shopLink.label}}</span>
+                {{ partial "util/svg" (dict "svg" "pfeil-weiss") }}
+              </a>
             {{ end }}
         </div>
         </div>
