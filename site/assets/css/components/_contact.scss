@@ -22,36 +22,6 @@
   }
 }
 
-.c-contact {
-  .c-headline + .c-team-members,
-  .c-headline + .c-contact__address {
-    margin-top: rem(30px);
-
-    @include mappy-bp(md) {
-      margin-top: rem(60px);
-    }
-  }
-}
-
-.c-richtext .c-contact__address-headline {
-  @extend .c-headline--xs;
-  display: inline;
-  font-weight: $font-weight-regular;
-}
-
-
-.c-richtext.c-contact__address {
-  p {
-    &:not(:last-child) {
-      margin-bottom: .5em;
-    }
-
-    &:not(:first-child) {
-      margin-top: .5em;
-    }
-  }
-}
-
 // Areas section
 .o-main__section--contact-areas {
   background-color: $color-green-overlayed;
@@ -61,7 +31,7 @@
 
 // Area Map
 .c-contact-map {
-  transform: translateX(-30%);
+  transform: translate(-30%, -10%);
   min-width: rem(400px);
   max-width: rem(600px);
 
@@ -69,7 +39,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    transform: translate(-30%, -50%);
+    transform: translate(-30%, 10%);
     width: calc(80% - #{rem(100px)});
     max-width: rem(1200px);
   }
@@ -142,7 +112,7 @@
 
 // Area Text
 .c-contact-areas {
-  background-color: rgba($color-white, .08);
+  background-color: rgba($color-white, .05);
 
   padding-top: rem(120px);
   padding-bottom: rem(60px);
@@ -153,6 +123,15 @@
     z-index: 10; // > map
     padding-top: 0;
     margin-top: 0;
+  }
+}
+
+
+.c-contact-areas__headline + .c-contact-areas__areas {
+  margin-top: rem(40px);
+
+  @include mappy-bp(md) {
+    margin-top: rem(60px);
   }
 }
 
@@ -171,13 +150,67 @@
   }
 }
 
+.c-contact-areas__headline {
+  @include mappy-bp(md) {
+    margin-top: rem(-206px);
+  }
+
+  @include mappy-bp(xl) {
+    margin-top: rem(-246px);
+  }
+}
+
 .c-contact-areas__area {
   & + & {
     margin-top: rem(40px);
   }
+
+  @include mappy-bp(md) {}
+  position: relative;
 }
 
 .c-contact-areas__name {
   margin-bottom: rem(15px);
   opacity: .6;
+
+  @include mappy-bp(md) {
+    white-space: nowrap;
+    text-align: right;
+    margin-bottom: 0;
+    position: absolute;
+    right: 100%;
+    margin-right: rem(30px);
+  }
+}
+
+// Address
+.c-contact-address {
+  margin-top: rem(100px);
+
+  @include mappy-bp(xl) {
+    margin-top: rem(200px)
+  }
+
+  @include mappy-bp(xxl) {
+    margin-top: rem(340px)
+  }
+}
+
+.c-richtext .c-contact-address__headline {
+  @extend .c-headline--xs;
+  display: inline;
+  font-weight: $font-weight-regular;
+}
+
+
+.c-richtext.c-contact-address {
+  p {
+    &:not(:last-child) {
+      margin-bottom: .5em;
+    }
+
+    &:not(:first-child) {
+      margin-top: .5em;
+    }
+  }
 }

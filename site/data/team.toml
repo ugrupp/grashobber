@@ -1,5 +1,3 @@
-title = "Auch für Sie."
-
 # List of teammembers
 [[team]]
 name = "Heiko Remmel"
@@ -111,13 +109,6 @@ team = false
 area = "de"
 
 [[team]]
-name = "Katrin Ifländer"
-phone = "+41 58 / 3569075"
-email = "k.iflaender@interstein.com"
-team = false
-area = "de"
-
-[[team]]
 name = "Reto Vincenz"
 positions = [
   "Geschäftsführer",
@@ -154,22 +145,25 @@ area = "ch"
 
 # List of areas with responsible persons
 [[areas]]
-name = "Gebiet 1 + Gebiet 5 + Schweiz"
+name = "Gebiet 1 <br />+ Gebiet 5 <br />+ CH/LI/AT"
 teamMemberIndex = 0
 
 [[areas]]
-name = "Gebiet 2 + Österreich"
+name = "Gebiet 2 <br />+ Gebiet 5"
 teamMemberIndex = 2
 
 [[areas]]
-name = "Gebiet 3"
+name = "Gebiet 3 <br />+ Luxemburg"
 teamMemberIndex = 3
 
 [[areas]]
-name = "Gebiet 4"
+name = "Gebiet 4 <br />+ Technik"
 teamMemberIndex = 4
 
 [[areas]]
 name = "Schweiz"
-subline = "Kooperationspartner interstein"
-teamMemberIndex = 7
+teamMemberIndex = 10
+
+[[areas]]
+name = "Schweiz"
+teamMemberIndex = 11

@@ -13,7 +13,7 @@ fiftypercenthack: true
 h1: '<span>Wir</span> <span class="br"></span> <span>finden</span> <span class="br"></span> <span>Lösungen</span>'
 ---
 
-<strong class="c-contact__address-headline">grashobber GmbH</strong>
+<strong class="c-contact-address__headline">grashobber GmbH</strong>
 
 Blütenweg 8  
 D-72351 Geislingen
@@ -25,7 +25,7 @@ D-72351 Geislingen
 
 &nbsp;  
 
-<strong class="c-contact__address-headline">grashobber Schweiz GmbH</strong>
+<strong class="c-contact-address__headline">grashobber Schweiz GmbH</strong>
 
 Lerchenfeldstr. 3  
 CH-9014 St.Gallen
