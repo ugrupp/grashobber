@@ -6,7 +6,7 @@ positions = [
   "Vertrieb",
 ]
 image = "heikoremmel.png"
-mobile = "+49 172 / 6964010"
+phone = "+49 172 / 6964010"
 email = "heiko.remmel@grashobber.de"
 team = true
 area = "de"
@@ -29,7 +29,7 @@ positions = [
   "Vertriebsaußendienst",
 ]
 image = "kristianholik.png"
-mobile = "+49 171 / 9496734"
+phone = "+49 171 / 9496734"
 email = "kristian.holik@grashobber.de"
 team = true
 area = "de"
@@ -40,7 +40,7 @@ positions = [
   "Vertriebsaußendienst",
 ]
 image = "martinhocke.png"
-mobile = "+49 151 / 18525875"
+phone = "+49 151 / 18525875"
 email = "martin.hocke@grashobber.de"
 team = true
 area = "de"
@@ -51,7 +51,7 @@ positions = [
   "Vertriebsaußendienst",
 ]
 image = "karstenmeyer.png"
-mobile = "+49 151 / 22189053"
+phone = "+49 151 / 22189053"
 email = "karsten.meyer@grashobber.de"
 team = true
 area = "de"
@@ -63,7 +63,7 @@ positions = [
   "Wissenschaftliche Mitarbeiterin"
 ]
 image = "martinakodera.png"
-mobile = "+49 7474 / 918635"
+phone = "+49 7474 / 918635"
 email = "martina.kodera@grashobber.de"
 team = true
 area = "de"
@@ -107,6 +107,18 @@ phone = "+41 58 / 3569075"
 email = "k.iflaender@interstein.com"
 team = false
 area = "de"
+
+[[team]]
+name = "Heiko Remmel"
+positions = [
+  "Geschäftsführer",
+  "Vertrieb",
+]
+image = "heikoremmel.png"
+phone = " +41 795317003"
+email = "heiko.remmel@grashobber.de"
+team = true
+area = "ch"
 
 [[team]]
 name = "Reto Vincenz"
@@ -162,8 +174,8 @@ teamMemberIndex = 4
 
 [[areas]]
 name = "Schweiz"
-teamMemberIndex = 10
+teamMemberIndex = 11
 
 [[areas]]
 name = "Schweiz"
-teamMemberIndex = 11
+teamMemberIndex = 12

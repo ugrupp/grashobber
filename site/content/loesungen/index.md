@@ -18,7 +18,7 @@ menu:
 
 {{% col2 %}}
 {{% box %}}
-Unsere Mission ist, für eine sinnvolle, ressourcenschonende Rasenpflege, im Einklang mit der Natur zu sorgen. Das erreichen wir mit vielfältigen Produktlösungen, die mindestens einem dieser drei Ziele dienen:
+Unsere Mission ist eine sinnvolle, ressourcenschonende Rasenpflege im Einklang mit der Natur. Das erreichen wir mit vielfältigen Produktlösungen, die mindestens einem dieser drei Ziele dienen:
 
 **Unsere Produkte lösen individuelle Herausforderungen.**  
 Lösungen für einen passgenaues Vorgehen sichern ein stimmiges Ergebnis.
