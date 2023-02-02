@@ -33,16 +33,6 @@ CHE-298.283.124
 Geschäftsführer: Heiko Remmel, Reto Vincenz  
 Steuernummer CHE-298.283.124 MWST
 
-<h3 class="c-plain__richtext-headline">Persönlich haftende Gesellschafterin:</h3>
-
-grashobber Verwaltungs GmbH  
-Andreasweg 7  
-72401 Haigerloch  
-Amtsgericht Stuttgart HRB 763839
-
-Geschäftsführer: Heiko Remmel und Tanja Remmel  
-Umsatzsteuer-Identifikationsnummer: DE277489248
-
 <h3 class="c-plain__richtext-headline">Konzept, Design &amp; Programmierung</h3>
 
 Format → Büro für Gestaltung  
