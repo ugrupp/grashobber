@@ -6,7 +6,7 @@ positions = [
   "Vertrieb",
 ]
 image = "heikoremmel.png"
-phone = "+49 172 / 6964010"
+phone = "+49 172 696 40 10"
 email = "heiko.remmel@grashobber.de"
 team = true
 area = "de"
@@ -17,7 +17,7 @@ positions = [
   "Geschäftsführerin",
 ]
 image = "tanjaremmel.png"
-phone = "+49 7474 / 918635"
+phone = "+49 7428 917 99 20"
 email = "tanja.remmel@grashobber.de"
 team = true
 area = "de"
@@ -29,7 +29,7 @@ positions = [
   "Fachagrarwirt Golfplatzpflege/Greenkeeper"
 ]
 image = "kristianholik.png"
-phone = "+49 171 / 9496734"
+phone = "+49 171 949 67 34"
 email = "kristian.holik@grashobber.de"
 team = true
 area = "de"
@@ -41,7 +41,7 @@ positions = [
   "Fachagrarwirt Golfplatzpflege/Greenkeeper"
 ]
 image = "martinhocke.png"
-phone = "+49 151 / 18525875"
+phone = "+49 151 185 258 75"
 email = "martin.hocke@grashobber.de"
 team = true
 area = "de"
@@ -53,7 +53,7 @@ positions = [
   "Fachagrarwirt Golfplatzpflege/Greenkeeper"
 ]
 image = "karstenmeyer.png"
-phone = "+49 151 / 22189053"
+phone = "+49 151 221 890 53"
 email = "karsten.meyer@grashobber.de"
 team = true
 area = "de"
@@ -65,7 +65,7 @@ positions = [
   "Wissenschaftliche Mitarbeiterin"
 ]
 image = "martinakodera.png"
-phone = "+49 7474 / 918635"
+phone = "+49 7428 917 99 20"
 email = "martina.kodera@grashobber.de"
 team = true
 area = "de"
@@ -76,7 +76,7 @@ positions = [
   "Vertriebsinnendienst",
 ]
 image = "mariaharke.png"
-phone = "+49 7474 / 918635"
+phone = "+49 7428 917 99 20"
 email = "maria.harke@grashobber.de"
 team = true
 area = "de"
@@ -87,7 +87,7 @@ positions = [
   "Vertriebsinnendienst",
 ]
 image = "marionzeiler.png"
-phone = "+49 7474 / 918635"
+phone = "+49 7428 917 99 20"
 email = "marion.zeiler@grashobber.de"
 team = true
 area = "de"
@@ -98,14 +98,14 @@ positions = [
   "Fachlagerist",
 ]
 image = "wernerbraun.png"
-phone = "+49 7428 / 9179920"
+phone = "+49 7428 917 99 20"
 email = "werner.braun@grashobber.de"
 team = true
 area = "de"
 
 [[team]]
 name = "Katrin Ifländer"
-phone = "+41 58 / 3569075"
+phone = "+41 58 356 90 75"
 email = "k.iflaender@interstein.com"
 team = false
 area = "de"
@@ -117,7 +117,7 @@ positions = [
   "Vertrieb",
 ]
 image = "heikoremmel.png"
-phone = " +41 795317003"
+phone = " +41 79 531 70 03"
 email = "heiko.remmel@grashobber.de"
 team = true
 area = "ch"
@@ -129,7 +129,7 @@ positions = [
   "Vertrieb",
 ]
 image = "retovincenz.png"
-phone = "+41 798728175"
+phone = "+41 79 872 81 75"
 email = "reto.vincenz@grashobber.ch"
 team = true
 area = "ch"
@@ -141,7 +141,7 @@ positions = [
   "Wissenschaftliche Mitarbeiterin",
 ]
 image = "nadinebrinkmann.png"
-phone = "+41 774477584"
+phone = "+41 77 447 75 84"
 email = "nadine.brinkmann@grashobber.ch"
 team = true
 area = "ch"
@@ -152,7 +152,7 @@ positions = [
   "Vertriebsinnendienst",
 ]
 image = "sandraambrosano.png"
-phone = "+41 712446262"
+phone = "+41 71 244 62 62"
 email = "sandra.ambrosano@grashobber.ch"
 team = true
 area = "ch"

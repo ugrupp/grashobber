@@ -8,7 +8,7 @@ Angaben gemäß § 5 TMG:
 
 Blütenweg 8  
 D-72351 Geislingen  
-**T** +49 7428 / 9179920  
+**T** +49 7428 917 99 20  
 [info@grashobber.de](mailto:info@grashobber.de)  
 [www.grashobber.de](https://www.grashobber.de)
 
@@ -23,7 +23,7 @@ USt-IdNr. DE318384771
 
 Lerchenfeldstraße 3  
 CH-9014 St.Gallen  
-**T** +41 712446262  
+**T** +41 71 244 62 62  
 [info@grashobber.ch](mailto:info@grashobber.ch)  
 [www.grashobber.ch](https://www.grashobber.ch)
 
