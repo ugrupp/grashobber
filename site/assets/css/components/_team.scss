@@ -11,12 +11,12 @@
   background-color: $color-gray-f;
   padding-left: rem($box-default-spacing);
   padding-right: rem($box-default-spacing);
-  padding-bottom: rem(80px);
 
   @include mappy-bp(md) {
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: rem(80px);
   }
 }
 
@@ -137,6 +137,13 @@
 }
 
 .o-2col-team__two {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    width: 100%;
+  }
+
   @include mappy-bp(md) {
     width: 50%;
     padding-left: rem($box-default-spacing-md);
@@ -147,5 +154,90 @@
   @include mappy-bp(xl) {
     padding-left: rem($box-default-spacing-xl);
     padding-right: rem($box-default-spacing-xl);
+  }
+}
+
+// Career section
+.c-team-career {
+  flex-grow: 1;
+
+  position: relative;
+  padding-top: rem(80px);
+  padding-bottom: rem(80px);
+  padding-right: rem($box-default-spacing);
+
+  @include mappy-bp(md) {
+    padding-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+
+    margin-left: rem($box-default-spacing * -1);
+
+    @include mappy-bp(md) {
+      margin-left: rem($box-default-spacing-md * -1);
+      margin-right: rem($box-default-spacing-md * -1);
+      margin-bottom: rem(-80px);
+    }
+
+
+    @include mappy-bp(xl) {
+      margin-left: rem($box-default-spacing-xl * -1);
+      margin-right: rem($box-default-spacing-xl * -1);
+    }
+  }
+
+  .c-team-members + & {
+    margin-top: rem(80px);
+  }
+}
+
+.c-team-career__inner {
+  position: relative;
+  z-index: 10;
+
+  @include mappy-bp(xs) {
+    max-width: rem(430px);
+  }
+}
+
+.c-team-career__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: rem(40px);
+
+  @include mappy-bp(xl) {
+    column-gap: rem(80px);
+  }
+}
+
+.c-team-career__image-wrapper {
+  display: none;
+  flex-shrink: 0;
+
+  @include mappy-bp(xs) {
+    display: block;
+  }
+}
+
+.c-team-career__image {
+  display: block;
+  width: rem(144px);
+  height: rem(144px);
+}
+
+.c-team-career__content {
+  margin-top: rem(40px);
+
+  * + * {
+    margin-top: rem(30px);
   }
 }

@@ -5,6 +5,15 @@ keywords: ["Lösungsfinder", "grashobber Team", "Fachwissen Rasenpflege", "Exper
 layout: team
 type: team
 fiftypercenthack: true
+career:
+  headline: Du hast Erfahrungen im Greenkeeping? Du hast Lust auf eine neue Herausforderung?
+  text: |-
+      Wir sind auf der Suche nach weiteren Lösungsfindern für den Vertriebsaußendienst.
+
+      Für nähere Infos melde dich gerne bei Heiko oder Tanja.
+
+      <strong class="c-headline c-headline--xxs c-headline--ci">Wir freuen uns auf dich.</strong>
+  image: "neuer-mitarbeiter.png"
 menu:
   main:
     name: Team

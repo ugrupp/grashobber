@@ -40,6 +40,35 @@
                     {{ end }}
                   </ul>
                 </div>
+
+                {{/* Career */}}
+                {{ with .Params.career }}
+                  <div class="c-team-career">
+                    <div class="c-team-career__inner">
+                      <div class="c-team-career__head">
+                        {{/* Headline */}}
+                        <h2 class="c-headline c-headline--ci c-headline--xs">{{ .headline }}</h2>
+
+                        {{/* Image */}}
+                        <div class="c-team-career__image-wrapper">
+                          {{ with $.Resources.GetMatch .image }}
+                            {{ $image := .Resize "144x" }}
+
+                            <img
+                              alt="Du?"
+                              src="{{ $image.RelPermalink }}"
+                              class="c-team-career__image" />
+                          {{ end }}
+                        </div>
+                      </div>
+
+                      {{/* Content */}}
+                      <div class="c-team-career__content">
+                        {{ .text | markdownify }}
+                      </div>
+                    </div>
+                  </div>
+                {{ end }}
               </div>
             </div>
           </div>
