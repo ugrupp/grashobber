@@ -37,11 +37,13 @@
 .c-headline--xs {
   @include typi('headline--xs');
   hyphens: none;
+  letter-spacing: 0.02em;
 }
 
 .c-headline--xxs {
   @include typi('headline--xxs');
   hyphens: none;
+  letter-spacing: 0.02em;
 }
 
 .c-headline--richtext {

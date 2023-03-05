@@ -12,7 +12,8 @@
     "build:vite": "vite build",
     "dev": "run-p dev:**",
     "dev:vite": "npm run build:hugo && vite --host",
-    "dev:hugo-watch": "onchange 'site/content/**/*' 'site/config.toml' 'site/layouts/**/*' 'site/static/**/*' -- npm run build:hugo"
+    "dev:hugo-watch": "onchange 'site/content/**/*' 'site/config.toml' 'site/layouts/**/*' 'site/static/**/*' -- npm run build:hugo",
+    "svgo": "mkdir -p ../svg/svg-o && svgo ../svg/*.svg -o ../svg/svg-o"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.19.1",
@@ -52,5 +53,8 @@
     "ios >= 7",
     "android >= 4.4",
     "bb >= 10"
-  ]
+  ],
+  "devDependencies": {
+    "svgo": "^3.0.2"
+  }
 }

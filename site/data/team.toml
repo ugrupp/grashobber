@@ -15,7 +15,6 @@ area = "de"
 name = "Tanja Remmel"
 positions = [
   "Geschäftsführerin",
-  "Verwaltung/Marketing",
 ]
 image = "tanjaremmel.png"
 phone = "+49 7474 / 918635"
@@ -27,6 +26,7 @@ area = "de"
 name = "Kristian Holik"
 positions = [
   "Vertriebsaußendienst",
+  "Fachagrarwirt Golfplatzpflege/Greenkeeper"
 ]
 image = "kristianholik.png"
 phone = "+49 171 / 9496734"
@@ -38,6 +38,7 @@ area = "de"
 name = "Martin Hocke"
 positions = [
   "Vertriebsaußendienst",
+  "Fachagrarwirt Golfplatzpflege/Greenkeeper"
 ]
 image = "martinhocke.png"
 phone = "+49 151 / 18525875"
@@ -49,6 +50,7 @@ area = "de"
 name = "Karsten Meyer"
 positions = [
   "Vertriebsaußendienst",
+  "Fachagrarwirt Golfplatzpflege/Greenkeeper"
 ]
 image = "karstenmeyer.png"
 phone = "+49 151 / 22189053"
@@ -157,7 +159,7 @@ area = "ch"
 
 # List of areas with responsible persons
 [[areas]]
-name = "Gebiet 1 <br />+ Gebiet 5 <br />+ CH/LI/AT"
+name = "Gebiet 1 <br />+ Gebiet 5 <br />+ CH / LI / AT"
 teamMemberIndex = 0
 
 [[areas]]

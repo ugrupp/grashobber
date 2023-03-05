@@ -5,7 +5,7 @@ Blütenweg 8
 D-72351 Geislingen
 
 grashobber Schweiz GmbH  
-Lerchenfeldstr. 3  
+Lerchenfeldstraße 3  
 CH-9014 St.Gallen  
 
 <h2 class="c-plain__richtext-headline">1. Geltungsbereich und ausschließliche Geltung</h2>

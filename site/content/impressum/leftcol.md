@@ -21,7 +21,7 @@ USt-IdNr. DE318384771
 
 <h3 class="c-plain__richtext-headline">grashobber Schweiz GmbH</h3>
 
-Lerchenfeldstr. 3  
+Lerchenfeldstraße 3  
 CH-9014 St.Gallen  
 **T** +41 712446262  
 [info@grashobber.ch](mailto:info@grashobber.ch)  

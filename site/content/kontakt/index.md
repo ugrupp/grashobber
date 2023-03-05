@@ -27,7 +27,7 @@ D-72351 Geislingen
 
 <strong class="c-contact-address__headline">grashobber Schweiz GmbH</strong>
 
-Lerchenfeldstr. 3  
+Lerchenfeldstraße 3  
 CH-9014 St.Gallen
 
 **T** +41 712446262
