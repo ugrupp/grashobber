@@ -24,6 +24,7 @@ export default defineConfig({
     }),
     svgSpritePlugin({ symbolId: (name) => "icon-" + name }),
     hugoPlugin({
+      hugoConfigFileName: "config.toml",
       appDir: resolve(__dirname, "site"),
       hugoOutDir: resolve(__dirname, "dist"),
     }),
