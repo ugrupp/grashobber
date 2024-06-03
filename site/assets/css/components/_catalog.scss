@@ -87,16 +87,13 @@
 .c-catalog-info {
   background-color: $color-white;
   padding: rem($container-gutter + $box-default-spacing);
-  padding-bottom: 0;
 
   @include mappy-bp(md) {
     padding: rem($box-default-spacing-md);
-    padding-bottom: 0;
   }
 
   @include mappy-bp(xl) {
     padding: rem($box-default-spacing-xl);
-    padding-bottom: 0;
   }
 
   .c-button {

@@ -1,5 +1,5 @@
 ---
-buttontext: Viel Spaß beim Stöbern und Blättern
+buttontext: Viel Spaß beim Blättern
 ---
 
 ## Das ist unser Spielfeld
