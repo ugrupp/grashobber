@@ -1,0 +1,62 @@
+{{/* Catalog section */}}
+
+{{/* Get headless home bundle which holds the content */}}
+{{ $bundle := .Site.GetPage "page" "home" }}
+
+<section class="o-main__section o-main__section--shop">
+  <div class="c-shop-section" data-reveal>
+    <div class="o-container o-container--no-pad">
+      <div class="c-shop-section__cols">
+        <div class="c-shop-section__col1">
+          {{/* Main image */}}
+          {{ with $bundle.Resources.GetMatch "privatkunden-2.jpg" }}
+            {{ $imagePlaceholder := .Resize "100x" }}
+            {{ $imageSmall := .Resize "600x" }}
+            {{ $imageMedium := .Resize "800x" }}
+            {{ $imageBig := .Resize "1000x" }}
+
+            <div class="c-shop-section__img-wrapper">
+              <img
+                alt='Unser Spielfeld'
+                data-srcset="{{ $imageSmall.RelPermalink }} 600w, {{ $imageMedium.RelPermalink }} 800w, {{ $imageBig.RelPermalink }} 1000w"
+                data-src="{{ $imageMedium.RelPermalink }}"
+                src="{{ $imagePlaceholder.RelPermalink }}"
+                class="c-shop-section__img lazyload" />
+            </div>
+          {{ end }}
+        </div>
+
+        <div class="c-shop-section__col2">
+          {{/* BG image */}}
+          {{ with $bundle.Resources.GetMatch "privatkunden-3.jpg" }}
+            {{ $imagePlaceholder := .Resize "100x" }}
+            {{ $imageSmall := .Resize "400x" }}
+            {{ $imageMedium := .Resize "600x" }}
+
+            <div class="c-shop-section__bg-img-wrapper">
+              <img
+                alt='Unser Spielfeld'
+                data-srcset="{{ $imageSmall.RelPermalink }} 400w, {{ $imageMedium.RelPermalink }} 600w"
+                data-src="{{ $imageMedium.RelPermalink }}"
+                src="{{ $imagePlaceholder.RelPermalink }}"
+                class="c-shop-section__bg-img lazyload" />
+            </div>
+          {{ end }}
+
+          {{ with $bundle.Resources.GetMatch "shop.md" }}
+            <div class="c-shop-section__content">
+              <div class="c-richtext c-richtext--inverted">
+                {{ .Content }}
+              </div>
+
+              <a href="{{ .Params.cta.url }}" target="_blank" class="c-button c-button--inverted">
+                <span>{{ .Params.cta.label }}</span>
+                {{ partial "util/svg" (dict "svg" "pfeil-gruen") }}
+              </a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,115 @@
+// Shop section
+// --------------------------------------------------
+
+.o-main__section--shop {
+  background-color: $color-white; // > parallax
+}
+
+.c-shop-section > .o-container {
+  @include mappy-bp(md) {
+    padding-left: rem($container-gutter);
+    padding-right: rem($container-gutter);
+  }
+}
+
+.c-shop-section__cols {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include mappy-bp(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Image column
+.c-shop-section__col1 {
+  position: relative;
+  min-height: rem(300px);
+}
+
+.c-shop-section__img-wrapper {
+  overflow: hidden; // for filter
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.c-shop-section__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all $transition-time-medium;
+
+  &.lazyload,
+  &.lazyloading {
+    filter: blur(30px);
+  }
+}
+
+// Content column
+.c-shop-section__col2 {
+  position: relative;
+  padding: rem($container-gutter + $box-default-spacing);
+
+  @include mappy-bp(md) {
+    padding: rem($box-default-spacing-md);
+  }
+
+  @include mappy-bp(xl) {
+    padding: rem($box-default-spacing-xl);
+  }
+}
+
+.c-shop-section__bg-img-wrapper {
+  overflow: hidden; // for filter
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &::after {
+    background-color: $color-ci-overlay;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    content: "";
+  }
+}
+
+.c-shop-section__bg-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  transition: all $transition-time-medium;
+
+  &.lazyload,
+  &.lazyloading {
+    filter: blur(30px);
+  }
+}
+
+.c-shop-section__content {
+  position: relative;
+  z-index: 10;
+  color: $color-white;
+
+  .c-richtext {
+    h1,
+    h2,
+    h3 {
+      @extend .c-headline--sm;
+    }
+  }
+
+  .c-button {
+    margin-top: 1em;
+  }
+}
