@@ -111,6 +111,37 @@
   }
 }
 
+// Order
+.c-catalog-order {
+  background-color: $color-white;
+  padding: rem($container-gutter + $box-default-spacing);
+
+  @include mappy-bp(md) {
+    padding: rem($box-default-spacing-md);
+  }
+
+  @include mappy-bp(xl) {
+    padding: rem($box-default-spacing-xl);
+  }
+
+  .c-button {
+    margin-top: 1em;
+  }
+
+  .c-fieldset {
+    margin-top: rem(30px);
+
+    @include mappy-bp(md) {
+      margin-top: rem(40px);
+    }
+  }
+}
+
+.c-catalog-order__dsgvo {
+  opacity: .5;
+  margin-top: rem(30px);
+}
+
 // 2 col layout for catalog section
 .o-2col-catalog {
   @include mappy-bp(md) {
@@ -124,6 +155,7 @@
   @include mappy-bp(md) {
     width: 50%;
     padding-right: rem(50px);
+    padding-bottom: rem(100px);
   }
 }
 
@@ -132,6 +164,7 @@
     width: 50%;
     display: flex;
     align-items: flex-end;
+    padding-top: rem(160px);
   }
 }
 
@@ -151,7 +184,8 @@
 
 // Headline style
 .c-catalog-view,
-.c-catalog-info {
+.c-catalog-info,
+.c-catalog-order {
   .c-richtext {
     h1,
     h2,
