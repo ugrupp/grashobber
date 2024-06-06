@@ -22,6 +22,14 @@
   padding-left: $container-gutter;
   padding-right: $container-gutter;
 
+  .c-catalog-section--2 & {
+    margin-top: rem(-200px);
+
+    @include mappy-bp(md) {
+      margin-top: 0;
+    }
+  }
+
   @include mappy-bp(sm) {
     display: flex;
     align-items: flex-start;
@@ -31,10 +39,7 @@
     padding-left: 0;
     padding-right: 0;
     display: block;
-  }
-
-  @include mappy-bp(xl) {
-    display: flex;
+    position: relative;
   }
 }
 
@@ -48,6 +53,13 @@
   @include mappy-bp(sm) {
     flex-shrink: 0;
     max-width: rem(400px);
+  }
+
+  @include mappy-bp(md) {
+    padding: rem($box-default-spacing * 2);
+    position: absolute;
+    left: rem(-$container-gutter);
+    bottom: calc(100% - rem(70px));
   }
 
   .c-button {
@@ -72,14 +84,12 @@
 
   @include mappy-bp(md) {
     width: auto;
-    margin-top: rem(-70px);
+    margin-top: 0;
     margin-left: rem(80px);
-  }
 
-  @include mappy-bp(xl) {
-    width: 100%;
-    margin-top: rem(70px);
-    margin-left: rem(-200px);
+    .c-catalog-section--1 & {
+      margin-top: rem(-180px);
+    }
   }
 }
 
@@ -114,7 +124,6 @@
   @include mappy-bp(md) {
     width: 50%;
     padding-right: rem(50px);
-    transform: translateY(rem(-200px));
   }
 }
 
@@ -123,6 +132,20 @@
     width: 50%;
     display: flex;
     align-items: flex-end;
+  }
+}
+
+.o-2col-catalog__zero {
+  position: relative;
+  min-height: rem(350px);
+
+  @include mappy-bp(sm) {
+    margin-left: rem($container-gutter);
+  }
+
+  @include mappy-bp(md) {
+    width: 50%;
+    margin-left: auto;
   }
 }
 
@@ -199,3 +222,21 @@ $catalog-bottom-padding: 5%;
   }
 }
 
+.c-catalog__img2-wrapper {
+  height: auto;
+  width: 100%;
+  overflow: hidden; // for filter
+  position: relative;
+}
+
+.c-catalog__img2 {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all $transition-time-medium;
+
+  &.lazyload,
+  &.lazyloading {
+    filter: blur(30px);
+  }
+}

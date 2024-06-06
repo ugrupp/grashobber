@@ -16,6 +16,10 @@
   @include mappy-bp(sm) {
     padding-left: rem($sidePadding);
   }
+
+  @include mappy-bp(md) {
+    padding-bottom: 0;
+  }
 }
 
 .c-home-intro__box {

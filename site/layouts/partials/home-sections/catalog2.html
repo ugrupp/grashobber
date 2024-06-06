@@ -2,10 +2,28 @@
 
 {{/* Get headless home bundle which holds the content */}}
 {{ $bundle := .Site.GetPage "page" "home" }}
-{{ with $bundle.Resources.GetMatch "catalog-view.md" }}
+{{ with $bundle.Resources.GetMatch "catalog-view-2.md" }}
   <section class="o-main__section o-main__section--catalog">
-    <div class="c-catalog-section c-catalog-section--1">
+    <div class="c-catalog-section c-catalog-section--2">
       <div class="o-container o-container--no-pad">
+        <div class="o-2col-catalog__zero" data-reveal>
+          {{ with $bundle.Resources.GetMatch .Params.image2 }}
+            {{ $imagePlaceholder := .Resize "100x" }}
+            {{ $imageSmall := .Resize "600x" }}
+            {{ $imageMedium := .Resize "800x" }}
+            {{ $imageBig := .Resize "1000x" }}
+
+            <div class="c-catalog__img2-wrapper">
+              <img
+                alt=""
+                data-srcset="{{ $imageSmall.RelPermalink }} 600w, {{ $imageMedium.RelPermalink }} 800w, {{ $imageBig.RelPermalink }} 1000w"
+                data-src="{{ $imageMedium.RelPermalink }}"
+                src="{{ $imagePlaceholder.RelPermalink }}"
+                class="c-catalog__img2 lazyload" />
+            </div>
+          {{ end }}
+        </div>
+
         <div class="o-2col-catalog">
           <div class="o-2col-catalog__one">
             {{/* Catalog view */}}
@@ -47,17 +65,6 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="o-2col-catalog__two" data-reveal>
-            {{/* Info box */}}
-            <div class="c-catalog-info">
-              {{ with $bundle.Resources.GetMatch "info.md" }}
-                <div class="c-richtext c-richtext--strong-light">
-                  {{ .Content }}
-                </div>
-              {{ end }}
-          </div>
           </div>
         </div>
       </div>
