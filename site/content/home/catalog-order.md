@@ -5,4 +5,4 @@ dsgvo: "Wir legen größten Wert auf den Schutz Ihrer Daten. Hier finden Sie uns
 
 ## Sie wollen das gute Stück lieber in den Händen halten?
 
-Dann tragen Sie bitte hier Ihre Daten ein und wir schicken den Postboten mit Ihrem Exemplar los.
+Dann tragen Sie bitte hier Ihre Firmendaten ein und wir schicken den Postboten mit Ihrem Exemplar los.
