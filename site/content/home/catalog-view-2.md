@@ -1,7 +1,7 @@
 ---
 title: Der Dicke
 buttontext: Viel Spaß beim Blättern
-buttonurl: https://der-dicke.grashobber.de
+buttonurl: http://der-dicke.grashobber.de
 image: der-dicke.png
 image2: hintergrund-der-dicke.jpg
 ---
