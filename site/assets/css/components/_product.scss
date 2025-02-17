@@ -33,6 +33,7 @@ $product-grid-gutter: 80px;
   @include mappy-bp(sm) {
     display: flex;
     flex-wrap: wrap;
+    align-items: start;
   }
 }
 
@@ -61,6 +62,9 @@ $product-bubble-size-lg: 300px;
 
 .c-product__item-inner {
   width: rem($product-bubble-size);
+
+  display: block;
+  color: inherit;
 
   @include mappy-bp(sm) {
     width: rem($product-bubble-size-sm);
@@ -111,6 +115,13 @@ $product-bubble-size-lg: 300px;
   padding-left: rem(20px);
   padding-right: rem(20px);
   margin-top: rem(-50px);
+
+  transition: opacity $transition-time-default;
+
+  a.c-product__item-inner:hover &,
+  a.c-product__item-inner:focus & {
+    opacity: .8;
+  }
 }
 
 .c-product__content {

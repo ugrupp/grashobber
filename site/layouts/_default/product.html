@@ -13,7 +13,11 @@
           {{/* Grid items */}}
           {{ range $index, $item := .Site.Data.product.items }}
             <div class="c-product__item" data-reveal>
+              {{ if .url }}
+              <a href="{{ .url }}" class="c-product__item-inner" target="_blank" rel="noopener noreferrer">
+              {{ else }}
               <div class="c-product__item-inner">
+              {{ end }}
                 {{/* Image */}}
                 <div class="c-product__image">
                   {{ with $.Resources.GetMatch .image }}
@@ -37,7 +41,11 @@
                     {{ .content | markdownify }}
                   </div>
                 </div>
+              {{ if .url }}
+              </a>
+              {{ else }}
               </div>
+              {{ end }}
             </div>
           {{ end }}
 

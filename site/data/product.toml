@@ -82,6 +82,7 @@ image = "draintalent.png"
 content = """
 Innovatives System für Unterflurbewässerung
 """
+url = "https://draintalent.com/de/"
 
 [[items]]
 title = "INFINICUT-Mäher"
@@ -96,6 +97,33 @@ image = "stand-on-streuer.png"
 content = """
 Spart Zeit und Kosten
 """
+
+[[items]]
+title = "GKB Pflegetechnik"
+image = "gkb-pflegetechnik.png"
+content = """
+Unterschiedliche Profi-Lösungen für die Pflege von Sportrasenflächen
+Entwickelt und produziert im Familienunternehmen in den Niederlanden
+"""
+url = "https://www.gkbmachines.de/"
+
+[[items]]
+title = "HEGE Striegel – Golf"
+image = "hege-striegel-golf.png"
+content = """
+Nachhaltige Pflege von Profirasen auf Golfanlagen
+Entwickelt und produziert im Familienunternehmen in Frankreich
+"""
+url = "https://hege-applications.com/de/"
+
+[[items]]
+title = "HEGE Striegel – Sportplatz"
+image = "hege-striegel-sportplatz.png"
+content = """
+Besondere Striegeltechnik für Sportplätze und Stadien
+Entwickelt und produziert im Familienunternehmen in Frankreich
+"""
+url = "https://hege-applications.com/de/"
 
 [[items]]
 title = "Werkzeuge"
