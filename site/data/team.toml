@@ -60,6 +60,18 @@ team = true
 area = "de"
 
 [[team]]
+name = "Jack Smillie"
+positions = [
+  "Vertriebsaußendienst",
+  "HNC Golf Course Management/Greenkeeper",
+]
+image = "jack-smillie.png"
+phone = "+49 175 976 40 36"
+email = "jack.smillie@grashobber.de"
+team = true
+area = "de"
+
+[[team]]
 name = "Martina Kodera"
 positions = [
   "Dipl. Geoökologin Univ.",
@@ -101,6 +113,17 @@ positions = [
 image = "wernerbraun.png"
 phone = "+49 7428 917 99 20"
 email = "werner.braun@grashobber.de"
+team = true
+area = "de"
+
+[[team]]
+name = "Sebastian Remmel"
+positions = [
+  "Managementassistent",
+]
+image = "sebastian-remmel.png"
+phone = "+49 7428 917 99 20"
+email = "sebastian.remmel@grashobber.de"
 team = true
 area = "de"
 
