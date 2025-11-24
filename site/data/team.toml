@@ -128,13 +128,6 @@ team = true
 area = "de"
 
 [[team]]
-name = "Katrin Ifländer"
-phone = "+41 58 356 90 75"
-email = "k.iflaender@interstein.com"
-team = false
-area = "de"
-
-[[team]]
 name = "Heiko Remmel"
 positions = [
   "Geschäftsführer",
@@ -183,11 +176,11 @@ area = "ch"
 
 # List of areas with responsible persons
 [[areas]]
-name = "Gebiet 1 <br />+ Gebiet 5 <br />+ CH / LI / AT"
+name = "Gebiet 1 <br />+ CH / LI / AT"
 teamMemberIndex = 0
 
 [[areas]]
-name = "Gebiet 2 <br />+ Gebiet 5"
+name = "Gebiet 2"
 teamMemberIndex = 2
 
 [[areas]]
@@ -199,9 +192,13 @@ name = "Gebiet 4 <br />+ Technik"
 teamMemberIndex = 4
 
 [[areas]]
-name = "Schweiz"
-teamMemberIndex = 11
+name = "Gebiet 5"
+teamMemberIndex = 5
 
 [[areas]]
 name = "Schweiz"
 teamMemberIndex = 12
+
+[[areas]]
+name = "Schweiz"
+teamMemberIndex = 13
