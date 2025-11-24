@@ -17,3 +17,4 @@ enableRobotsTXT = true
 [params]
   facebookURL = "https://www.facebook.com/grashobber/"
   instagramURL = "https://www.instagram.com/grashobber/"
+  linkedinURL = "https://www.linkedin.com/company/grashobber"

@@ -19,4 +19,13 @@
       <span>Instagram</span>
     </a>
   </li>
+  <li class="c-social-icons__item">
+    <a class="c-social-icons__link" href="{{.context.Site.Params.linkedinurl}}" target="_blank">
+      {{ if .inverted }}
+        {{ partial "util/svg" (dict "svg" "linkedin-gruen") }}
+      {{ else }}
+        {{ partial "util/svg" (dict "svg" "linkedin") }}
+      {{ end }}
+      <span>LinkedIn</span>
+    </a>
 </ul>
