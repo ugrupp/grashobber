@@ -15,9 +15,14 @@ $color-gray-9: #999591;
 $color-green-default: #97c420;
 $color-green-light: #bdd34d;
 $color-green-dark: #567029;
+$color-green-darker: #194c3b;
 $color-green-muted: #618d39;
 $color-green-blue: #5c7a5b;
 $color-green-overlayed: #9cc72d; // works with rgba($color-content-ci, .95);
+
+// Status colors
+$color-error: #f00;
+$color-success: $color-green-default;
 
 // Content color mapping
 $color-content: $color-gray-9;

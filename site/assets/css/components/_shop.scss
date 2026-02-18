@@ -3,13 +3,10 @@
 
 .o-main__section--shop {
   background-color: $color-white; // > parallax
-  padding-bottom: rem(80px);
-}
+  padding-bottom: rem(60px);
 
-.c-shop-section > .o-container {
   @include mappy-bp(md) {
-    padding-left: rem($container-gutter);
-    padding-right: rem($container-gutter);
+    padding-bottom: rem(80px);
   }
 }
 
@@ -101,6 +98,7 @@
   position: relative;
   z-index: 10;
   color: $color-white;
+  @include font-smoothing;
 
   .c-richtext {
     h1,

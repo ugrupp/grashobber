@@ -12,6 +12,7 @@ import './modules/topbar';
 import './modules/reveal-animations';
 import './modules/smooth-scroll';
 import './modules/checkbox-group';
+import './modules/konnekt-form';
 import Menu from './modules/menu';
 
 // init modules

@@ -1,0 +1,117 @@
+{{/* Konnekt section */}}
+
+{{/* Get headless home bundle which holds the content */}}
+{{ $bundle := .Site.GetPage "page" "home" }}
+
+<section class="o-main__section o-main__section--konnekt" id="konnekt">
+  <div class="c-konnekt-section">
+    <div class="o-container o-container--no-pad">
+      <div class="c-konnekt-section__grid">
+        {{/* Main image area */}}
+        <div class="c-konnekt-section__area1" data-reveal>
+          {{/* Main image */}}
+          {{ with $bundle.Resources.GetMatch "grashobber-konnekt-foto-1.jpg" }}
+            {{ $imagePlaceholder := .Resize "100x" }}
+            {{ $imageSmall := .Resize "600x" }}
+            {{ $imageMedium := .Resize "800x" }}
+            {{ $imageBig := .Resize "1000x" }}
+
+            <div class="c-konnekt-section__img-wrapper">
+              <img
+                alt='grashobber konnekt – die Heimat fürs Greenkeeping'
+                data-srcset="{{ $imageSmall.RelPermalink }} 600w, {{ $imageMedium.RelPermalink }} 800w, {{ $imageBig.RelPermalink }} 1000w"
+                data-src="{{ $imageMedium.RelPermalink }}"
+                src="{{ $imagePlaceholder.RelPermalink }}"
+                class="c-konnekt-section__img lazyload" />
+            </div>
+          {{ end }}
+        </div>
+
+        {{/* Content area */}}
+        <div class="c-konnekt-section__area2" data-reveal>
+          {{/* BG image */}}
+          {{ with $bundle.Resources.GetMatch "grashobber-konnekt-hintergrund.jpg" }}
+            {{ $imagePlaceholder := .Resize "100x" }}
+
+            <div class="c-konnekt-section__bg-img-wrapper">
+              <img
+                alt=''
+                data-src="{{ .RelPermalink }}"
+                src="{{ $imagePlaceholder.RelPermalink }}"
+                class="c-konnekt-section__bg-img lazyload" />
+            </div>
+          {{ end }}
+
+          {{ with $bundle.Resources.GetMatch "konnekt.md" }}
+            <div class="c-konnekt-section__content">
+              <figure class="c-konnekt-section__logo">
+                {{ partial "util/svg" (dict "svg" "konnekt-logo") }}
+                <figcaption class="u-invisible">grashobber connect</figcaption>
+              </figure>
+
+              <div class="c-richtext c-richtext--inverted c-richtext--lg">
+                {{ .Content }}
+              </div>
+            </div>
+          {{ end }}
+
+          {{/* Content image */}}
+          {{ with $bundle.Resources.GetMatch "grashobber-konnekt-foto-2.jpg" }}
+            {{ $imagePlaceholder := .Resize "100x" }}
+            {{ $imageXSmall := .Resize "300x" }}
+            {{ $imageSmall := .Resize "600x" }}
+            {{ $imageMedium := .Resize "800x" }}
+
+            <div class="c-konnekt-section__content-img-wrapper">
+              <img
+                alt='grashobber konnekt'
+                data-srcset="{{ $imageXSmall.RelPermalink }} 300w, {{ $imageSmall.RelPermalink }} 600w, {{ $imageMedium.RelPermalink }} 800w"
+                data-src="{{ $imageMedium.RelPermalink }}"
+                src="{{ $imagePlaceholder.RelPermalink }}"
+                class="c-konnekt-section__content-img lazyload" />
+            </div>
+          {{ end }}
+        </div>
+
+        {{/* Form area */}}
+        <div class="c-konnekt-section__area3" data-reveal>
+          {{ with $bundle.Resources.GetMatch "konnekt.md" }}
+            <div class="c-konnekt-form">
+              <form class="c-konnekt-form__form" data-konnekt-form>
+                {{/* Intro */}}
+                <div class="c-richtext">
+                  {{ .Params.formIntro | markdownify }}
+                </div>
+
+                {{/* Form elements */}}
+                <fieldset class="c-fieldset">
+                  <input class="c-fieldset__input" type="text" name="firstName" required placeholder="Vorname*">
+                  <input class="c-fieldset__input" type="text" name="lastName" required placeholder="Nachname*">
+                  <input class="c-fieldset__input" type="email" name="email" required placeholder="E-Mail*">
+                  <input class="c-fieldset__input" type="text" name="currentEmployerCompany" required placeholder="Aktueller Arbeitgeber*">
+                  <input class="c-fieldset__input" type="text" name="currentEmployerPosition" required placeholder="Aktuelle Position*">
+                </fieldset>
+
+                {{/* DSGVO hint */}}
+                <div class="c-konnekt-form__dsgvo c-richtext c-richtext--sm">
+                  {{ .Params.dsgvo | markdownify }}
+                </div>
+
+                <input type="hidden" name="gender" value="Other" />
+
+                {{/* Submit */}}
+                <button type="submit" class="c-button c-button">
+                  <span>{{ .Params.buttonText }}</span>
+                  {{ partial "util/svg" (dict "svg" "pfeil-weiss") }}
+                </button>
+
+                {{/* Message */}}
+                <div class="c-konnekt-form__message" data-konnekt-message data-success="{{ .Params.formSuccessMessage }}" data-error="{{ .Params.formErrorMessage }}" style="display: none;"></div>
+              </form>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

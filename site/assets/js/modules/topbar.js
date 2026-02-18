@@ -28,5 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     headroom.init();
+
+    // Hide topbar on konnekt section
+    if (window.location.hash === '#konnekt') {
+      headroom.unpin();
+      headroom.freeze();
+
+      setTimeout(() => {
+        headroom.unfreeze();
+      }, 2500);
+    }
   }
 });

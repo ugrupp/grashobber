@@ -1,13 +1,13 @@
-{{/* Catalog section */}}
+{{/* Shop section */}}
 
 {{/* Get headless home bundle which holds the content */}}
 {{ $bundle := .Site.GetPage "page" "home" }}
 
 <section class="o-main__section o-main__section--shop">
-  <div class="c-shop-section" data-reveal>
+  <div class="c-shop-section">
     <div class="o-container o-container--no-pad">
       <div class="c-shop-section__cols">
-        <div class="c-shop-section__col1">
+        <div class="c-shop-section__col1" data-reveal>
           {{/* Main image */}}
           {{ with $bundle.Resources.GetMatch "privatkunden-2.jpg" }}
             {{ $imagePlaceholder := .Resize "100x" }}
@@ -26,7 +26,7 @@
           {{ end }}
         </div>
 
-        <div class="c-shop-section__col2">
+        <div class="c-shop-section__col2" data-reveal>
           {{/* BG image */}}
           {{ with $bundle.Resources.GetMatch "privatkunden-3.jpg" }}
             {{ $imagePlaceholder := .Resize "100x" }}

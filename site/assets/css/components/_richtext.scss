@@ -69,8 +69,23 @@
   @include typi(sm);
 }
 
-.c-richtext--inverted {
+.c-richtext--lg {
+  @include typi(lg);
+
   /* stylelint-disable no-descending-specificity */
+  p,
+  table {
+    &:not(:last-child) {
+      margin-bottom: 1.3em;
+    }
+
+    &:not(:first-child) {
+      margin-top: 1.3em;
+    }
+  }
+}
+
+.c-richtext--inverted {
   a {
     color: $color-white;
 

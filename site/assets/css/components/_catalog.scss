@@ -58,7 +58,7 @@
   @include mappy-bp(md) {
     padding: rem($box-default-spacing * 2);
     position: absolute;
-    left: rem(-$container-gutter);
+    left: 0;
     bottom: calc(100% - rem(70px));
   }
 
