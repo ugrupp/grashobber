@@ -106,17 +106,6 @@ team = true
 area = "de"
 
 [[team]]
-name = "Werner Braun"
-positions = [
-  "Fachlagerist",
-]
-image = "wernerbraun.png"
-phone = "+49 7428 917 99 20"
-email = "werner.braun@grashobber.de"
-team = true
-area = "de"
-
-[[team]]
 name = "Sebastian Remmel"
 positions = [
   "Managementassistent",
