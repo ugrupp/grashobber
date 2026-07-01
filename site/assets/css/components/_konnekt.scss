@@ -3,11 +3,6 @@
 
 .o-main__section--konnekt {
   background-color: $color-white; // > parallax
-  padding-bottom: rem(60px);
-
-  @include mappy-bp(md) {
-    padding-bottom: rem(80px);
-  }
 }
 
 .c-konnekt-section__grid {
